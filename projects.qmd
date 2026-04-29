@@ -1,16 +1,6 @@
 ---
 title: "Work"
 description: "Professional projects across drug discovery, medical imaging, and infrastructure."
-listing:
-  contents: "projects/*.qmd"
-  type: default
-  sort: "date desc"
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, description, categories]
-  categories: false
-  include:
-    categories: "Professional"
 page-layout: article
 ---
 
@@ -19,6 +9,103 @@ page-layout: article
 :::
 
 Drug discovery ML, medical imaging and segmentation, and the tooling and
-infrastructure that supports both. Most recent work first.
+infrastructure that supports both. Grouped by thread, most recent work
+first inside each.
+
+## Drug Discovery ML
+
+::: {.work-entry}
+<div class="work-meta">2025 – Present</div>
+### Multimodal IC50 prediction
+PyTorch models fusing cell painting microscopy with SMILES chemical
+representations for compound activity prediction. Deployed across compound
+libraries totaling 39K compounds; jointly learned image-and-structure
+embeddings inform downstream phenotype-to-target reasoning.
+<div class="work-links">
+[Read more →](projects/ic50-multimodal.qmd)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2021 – 2022</div>
+### Graph-based analysis of multiplex immunofluorescence
+Graph Neural Networks over multi-channel images, capturing spatial
+cell-cell relationships in multiplex IF for downstream phenotype
+classification. Preprint on bioRxiv; abstracts at SITC and AACR.
+<div class="work-links">
+[Read more →](projects/multiplex-if-gnn.qmd) ·
+[Preprint — bioRxiv](https://www.biorxiv.org/content/10.1101/2021.06.09.447654v1){.external}
+</div>
+:::
+
+## Medical Imaging & Segmentation
+
+::: {.work-entry}
+<div class="work-meta">2026 · AACR poster</div>
+### Automatic contrast phase classification of polyphasic CT scans
+Deep learning classifier inferring contrast phase from CT volumes — a
+prerequisite for downstream tumor segmentation pipelines that depend on
+consistent imaging protocol. Co-authored work, poster at AACR 2026.
+<div class="work-links">
+[Read more →](projects/aacr-2026-contrast-classification.qmd) ·
+[Abstract — AACR 2026](https://aacrjournals.org/cancerres/article/86/7_Supplement/2777/778083/Abstract-2777-Automatic-contrast-phase){.external}
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2023 – Present</div>
+### Interactive 3D segmentation toolset
+Transformer-backed segmentation tool for 3D volumetric data with
+text-guided prompts. Halved annotation time and deployed to twelve
+internal users across R&D. Companion paper as poster at AACR 2024.
+<div class="work-links">
+[Read more →](projects/segmentation-toolkit.qmd) ·
+[Abstract — AACR 2024](https://aacrjournals.org/cancerres/article/84/6_Supplement/887/741446){.external}
+</div>
+:::
+
+## Tooling & Infrastructure
+
+::: {.work-entry}
+<div class="work-meta">2025 – Present</div>
+### Biomedical imaging data platform
+Unified ingestion and preprocessing platform for biomedical imaging at
+scale — now the team's standard data layer. Sixteen multi-center datasets,
+150K CT volumes, automated mapping of thousands of annotation masks across
+DICOM and NIfTI standards.
+<div class="work-links">
+[Read more →](projects/data-ingestion-platform.qmd)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2022 – Present</div>
+### Embedding visualization toolkit
+Web-based visualization suite for high-dimensional embedding
+interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms,
+archetype analysis. Used by R&D labs across several modeling projects.
+<div class="work-links">
+[Read more →](projects/embedding-visualization.qmd)
+</div>
+:::
+
+::: {.eyebrow style="margin-top: 3.5rem;"}
+§ Ann Arbor Algorithms · 2018 – 2019
+:::
+
+Software Engineer building containerized end-to-end deep learning
+pipelines for medical imaging — classification, 3D bounding-box detection,
+and anomaly identification across multimodal datasets at scale.
+
+- **Chest vessel segmentation** — 3D deep learning for atherosclerosis
+  identification on chest MRI.
+- **Integrated tumor segmentation** — Dockerized lung-cancer segmentation
+  with 3D visualization.
+- **Lung cancer prediction** — XGBoost over patient metadata
+  (1,658 patients).
+- **ECG abnormality identification** — ResNet variant for 12-lead ECG
+  analysis (7,191 samples).
+- **Colorectal surgical phase detection** — video and sensor-based phase
+  prediction.
 
 For personal projects and side builds, see [Tinkering](experiments.qmd).

@@ -113,6 +113,24 @@ disagreement and adversarial critique before final synthesis.
 ::: {.section-marker}
 <span class="section-num">§ 03</span>
 
+## Career — AstraZeneca, 2019 – present
+:::
+
+::: {.career-threads}
+**Drug Discovery ML** — [IC50 multimodal](projects/ic50-multimodal.qmd) · [GNN multiplex IF](projects/multiplex-if-gnn.qmd)
+
+**Medical Imaging & Segmentation** — [interactive 3D segmentation](projects/segmentation-toolkit.qmd) · [contrast phase classification](projects/aacr-2026-contrast-classification.qmd) · patch-based unsupervised analysis · microcalcification detection
+
+**Tooling & Infrastructure** — [biomedical imaging data platform](projects/data-ingestion-platform.qmd) · [embedding visualization toolkit](projects/embedding-visualization.qmd) · DICOM/NIfTI annotation pipelines
+:::
+
+Before AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) —
+chest vessel segmentation, 3D tumor segmentation, lung cancer prediction,
+ECG abnormality detection. [Full project list →](projects.qmd)
+
+::: {.section-marker}
+<span class="section-num">§ 04</span>
+
 ## More
 :::
 

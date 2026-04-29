@@ -307,6 +307,29 @@ blockquote {
   color: $fg-mute;
 }
 
+// Career-threads — condensed CV-summary block on the home page
+.career-threads {
+  margin: 0.75rem 0 1.25rem;
+}
+.career-threads p {
+  margin: 0.55rem 0;
+  line-height: 1.55;
+  font-size: 0.97rem;
+  color: $fg-soft;
+}
+.career-threads strong {
+  color: $fg-primary;
+  font-weight: 600;
+}
+.career-threads a {
+  color: $fg-soft;
+  border-bottom: 1px solid rgba(126, 231, 135, 0.20);
+}
+.career-threads a:hover {
+  color: $accent;
+  border-bottom-color: $accent;
+}
+
 // Publications page
 .csl-entry {
   margin-bottom: 1rem;

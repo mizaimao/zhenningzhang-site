@@ -1,0 +1,514 @@
+/*-- scss:defaults --*/
+
+// =====================================================
+// Light theme — paired with theme.scss for dual-mode toggle.
+// Same rules and structure as the dark variant; palette inverted.
+// Accent is exposed as a CSS custom property (--accent) so the
+// appearance picker can override at runtime in either theme.
+// =====================================================
+
+// Color palette (GitHub-light inspired)
+$bg-primary:   #ffffff;
+$bg-elevated:  #f6f8fa;
+$bg-code:      #f6f8fa;
+$fg-primary:   #1f2328;
+$fg-soft:      #4d535b;
+$fg-mute:      #656d76;
+$rule:         #d0d7de;
+$accent:       #2da44e;
+$accent-deep:  #1a7f37;
+
+// Bootstrap variable overrides
+$body-bg:                      $bg-primary;
+$body-color:                   $fg-primary;
+$link-color:                   $accent;
+$link-hover-color:             $accent-deep;
+
+$primary:                      $accent;
+$secondary:                    $fg-mute;
+
+$navbar-bg:                    $bg-elevated;
+$navbar-fg:                    $fg-primary;
+$navbar-hl:                    $accent;
+
+$footer-bg:                    $bg-elevated;
+$footer-fg:                    $fg-mute;
+
+// Typography
+$font-family-sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace:        "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+$headings-font-family:         "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight:         600;
+$headings-color:               $fg-primary;
+$headings-line-height:         1.2;
+
+$font-size-base:               1.0625rem;
+$line-height-base:             1.65;
+
+// Code block colors
+$code-bg:                      rgba(45, 164, 78, 0.10);
+$code-color:                   $accent;
+$pre-bg:                       $bg-code;
+
+/*-- scss:rules --*/
+
+// Runtime-overridable accent (light-mode default — picker overrides).
+// Bootstrap CSS variables also re-pointed at var(--accent). The
+// `[data-bs-theme]` selector matches Bootstrap's specificity so my
+// override wins by source order.
+:root,
+[data-bs-theme] {
+  --accent: #{$accent};
+  --accent-deep: #{$accent-deep};
+  --bs-primary: var(--accent);
+  --bs-link-color: var(--accent);
+  --bs-link-hover-color: var(--accent-deep);
+  --bs-code-color: var(--accent);
+  --bs-navbar-active-color: var(--accent);
+  --bs-navbar-brand-hover-color: var(--accent);
+  --bs-navbar-hover-color: var(--accent);
+}
+
+body {
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: -0.012em;
+  font-feature-settings: "kern", "liga";
+}
+h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.1; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+h1.title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-family: $font-family-monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+hr, .section-break {
+  border: none;
+  border-top: 1px solid $rule;
+  margin: 3rem 0;
+}
+
+main a, .quarto-title-block a {
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: border-color 200ms ease, color 200ms ease;
+  color: var(--accent);
+}
+main a:hover {
+  border-bottom-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+.external-link, a.external { border-bottom: none; }
+
+// Navbar — re-point navbar-scoped Bootstrap CSS vars (see dark theme
+// for the same fix; Bootstrap declares these on .navbar which shadows :root).
+.navbar,
+.navbar-dark,
+.navbar[data-bs-theme="dark"],
+.navbar[data-bs-theme="light"] {
+  --bs-navbar-active-color: var(--accent);
+  --bs-navbar-hover-color: var(--accent);
+  --bs-navbar-brand-hover-color: var(--accent);
+}
+.navbar {
+  border-bottom: 1px solid $rule;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+.navbar-brand, .navbar .navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.navbar .nav-link {
+  font-family: $font-family-sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-bottom: none;
+  color: $fg-soft;
+}
+.navbar .nav-link:hover { color: var(--accent) !important; }
+
+.page-footer {
+  border-top: 1px solid $rule;
+  font-size: 0.85rem;
+  padding: 1.5rem 0;
+}
+.page-footer a { color: $fg-mute; border-bottom: 1px solid transparent; }
+.page-footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+.quarto-listing { margin-top: 1rem; }
+.quarto-listing-default .listing-item {
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0;
+  margin: 0;
+}
+.quarto-listing-default .listing-item:last-child { border-bottom: 1px solid $rule; }
+.listing-title {
+  font-family: $headings-font-family;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+.listing-title a {
+  color: $fg-primary !important;
+  border-bottom: none !important;
+}
+.listing-title a:hover { color: var(--accent) !important; }
+.listing-description {
+  color: $fg-soft;
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+.listing-categories .listing-category {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  background: transparent;
+  border: 1px solid $rule;
+  padding: 2px 8px;
+  border-radius: 0;
+  margin-right: 6px;
+}
+.listing-date {
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  color: $fg-mute;
+  letter-spacing: 0.05em;
+}
+
+pre, code { font-feature-settings: "kern" off; }
+pre {
+  border: 1px solid $rule;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  background: $pre-bg;
+}
+code:not(pre code) {
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 3px;
+  color: var(--accent-deep);
+}
+
+blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.25rem;
+  margin-left: 0;
+  color: $fg-soft;
+  font-style: italic;
+}
+
+::selection { background: var(--accent); color: $bg-primary; }
+
+.hero-block { padding: 1rem 0 2.5rem; }
+.hero-block .hero-name {
+  font-family: $headings-font-family;
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.0;
+  margin: 0 0 0.5rem;
+  color: $fg-primary;
+}
+.hero-block .hero-role {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.75rem;
+}
+.hero-block .hero-lede {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: $fg-soft;
+  max-width: 36em;
+  margin-bottom: 1.5rem;
+}
+
+.section-marker {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 2.75rem 0 0.5rem;
+}
+.section-marker .section-num {
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: $fg-mute;
+  font-weight: 500;
+}
+.section-marker h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.work-entry {
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0;
+}
+.work-entry:last-child { border-bottom: 1px solid $rule; }
+.work-entry .work-meta {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin-bottom: 0.4rem;
+}
+.work-entry h3 {
+  font-family: $headings-font-family;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.45rem;
+  color: $fg-primary;
+}
+.work-entry p {
+  margin: 0 0 0.5rem;
+  color: $fg-soft;
+}
+.work-entry .work-links {
+  font-size: 0.9rem;
+  color: $fg-mute;
+}
+
+// Demo GIF placeholder
+.demo-placeholder {
+  border: 1px dashed $rule;
+  border-radius: 4px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  background: color-mix(in srgb, var(--accent) 5%, transparent);
+  margin: 0.5rem 0 0.75rem;
+}
+
+// Demo figure (real GIF / image)
+.demo-figure {
+  margin: 0.5rem 0 0.75rem;
+}
+.demo-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 4px;
+}
+
+.career-threads { margin: 0.75rem 0 1.25rem; }
+.career-threads p {
+  margin: 0.55rem 0;
+  line-height: 1.55;
+  font-size: 0.97rem;
+  color: $fg-soft;
+}
+.career-threads strong {
+  color: $fg-primary;
+  font-weight: 600;
+}
+.career-threads a {
+  color: $fg-soft;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.career-threads a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.csl-entry {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $rule;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: $fg-soft;
+}
+.csl-entry:last-child { border-bottom: none; }
+
+.experiment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.25rem;
+  align-items: center;
+  border-top: 1px solid $rule;
+  padding: 2rem 0;
+}
+.experiment-row:last-of-type { border-bottom: 1px solid $rule; }
+.experiment-row .experiment-meta {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin-bottom: 0.4rem;
+}
+.experiment-row h3 {
+  font-family: $headings-font-family;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: $fg-primary;
+}
+.experiment-row h3 a {
+  color: $fg-primary !important;
+  border-bottom: none !important;
+}
+.experiment-row h3 a:hover { color: var(--accent) !important; }
+.experiment-row p {
+  color: $fg-soft;
+  margin: 0 0 0.75rem;
+}
+.experiment-row .experiment-links {
+  font-size: 0.9rem;
+  color: $fg-mute;
+}
+.experiment-row .experiment-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 4px;
+}
+.experiment-row .experiment-media.portrait {
+  display: flex;
+  justify-content: center;
+}
+.experiment-row .experiment-media.portrait img { max-width: 280px; }
+.experiment-row .audio-stack > * + * { margin-top: 0.7rem; }
+.experiment-row .audio-stack audio { width: 100%; }
+.experiment-row .audio-stack .audio-caption {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin-top: 0.3rem;
+}
+
+// Appearance picker — same structure as dark variant
+.appearance-picker {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  font-family: $font-family-monospace;
+}
+.appearance-picker__trigger {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid $rule;
+  background: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  transition: transform 150ms ease;
+}
+.appearance-picker__trigger:hover { transform: scale(1.06); }
+.appearance-picker__trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.appearance-picker__menu {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  right: 0;
+  background: $bg-elevated;
+  border: 1px solid $rule;
+  border-radius: 6px;
+  padding: 0.85rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+  min-width: 180px;
+}
+.appearance-picker__menu[hidden] { display: none; }
+.appearance-picker__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+.appearance-picker__swatches {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.4rem;
+}
+.appearance-picker__swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid $rule;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform 120ms ease;
+}
+.appearance-picker__swatch:hover { transform: scale(1.15); }
+.appearance-picker__swatch[aria-pressed="true"] {
+  outline: 2px solid $fg-primary;
+  outline-offset: 2px;
+}
+.appearance-picker__swatch:focus-visible {
+  outline: 2px solid $fg-primary;
+  outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+  h1.title { font-size: 2rem; }
+  .hero-block .hero-name { font-size: 2.25rem; }
+  .hero-block .hero-lede { font-size: 1.05rem; }
+  .experiment-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+  .experiment-row .experiment-media.portrait img { max-width: 220px; }
+  .appearance-picker { bottom: 0.75rem; right: 0.75rem; }
+}

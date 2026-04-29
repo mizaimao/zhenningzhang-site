@@ -1,7 +1,7 @@
 ---
 title: ""
 pagetitle: "Zhenning Zhang — Machine Learning Engineer"
-description-meta: "Machine Learning Engineer specializing in deep learning for drug discovery and medical imaging. Nearly seven years at AstraZeneca R&D IT."
+description-meta: "Machine Learning Engineer specializing in deep learning for drug discovery and medical imaging. Nearly seven years at AstraZeneca R&D."
 page-layout: full
 include-in-header:
   text: |
@@ -14,7 +14,7 @@ include-in-header:
 
 <p class="hero-lede">
 I build deep learning systems for drug discovery and medical imaging.
-Nearly seven years at AstraZeneca R&D IT, with peer-reviewed work in
+Nearly seven years at AstraZeneca R&D, with peer-reviewed work in
 <em>Patterns</em> and four AACR poster presentations.
 M.S. Bioinformatics, University of Michigan.
 </p>
@@ -51,7 +51,7 @@ segmentation pipelines that depend on consistent imaging protocol.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2025 – Present · AstraZeneca</div>
+<div class="work-meta">2024 – Present · AstraZeneca</div>
 ### Multimodal IC50 prediction
 PyTorch models fusing cell painting microscopy with SMILES chemical
 representations for compound activity prediction. Deployed across compound
@@ -63,7 +63,7 @@ inform downstream phenotype-to-target reasoning.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2025 – Present · AstraZeneca</div>
+<div class="work-meta">2022 – Present · AstraZeneca</div>
 ### Biomedical imaging data platform
 Unified ingestion and preprocessing platform for biomedical imaging at scale —
 now the team's standard data layer. Sixteen multi-center datasets, 150K CT
@@ -119,7 +119,7 @@ disagreement and adversarial critique before final synthesis.
 ::: {.career-threads}
 **Drug Discovery ML** — [IC50 multimodal](projects/ic50-multimodal.qmd) · [GNN multiplex IF](projects/multiplex-if-gnn.qmd)
 
-**Medical Imaging & Segmentation** — [interactive 3D segmentation](projects/segmentation-toolkit.qmd) · [contrast phase classification](projects/aacr-2026-contrast-classification.qmd) · patch-based unsupervised analysis · microcalcification detection
+**Medical Imaging & Segmentation** — [interactive 3D segmentation](projects/segmentation-toolkit.qmd) · [contrast phase classification](projects/aacr-2026-contrast-classification.qmd) · patch-based unsupervised analysis · [microcalcification detection](projects/microcalcification-mammography.qmd)
 
 **Tooling & Infrastructure** — [biomedical imaging data platform](projects/data-ingestion-platform.qmd) · [embedding visualization toolkit](projects/embedding-visualization.qmd) · DICOM/NIfTI annotation pipelines
 :::

@@ -142,7 +142,17 @@ main a:hover {
 // External links: no border
 .external-link, a.external { border-bottom: none; }
 
-// Navbar
+// Navbar — also re-point the navbar-scoped Bootstrap CSS vars so the
+// picker flows through to active-page highlight, brand hover, etc.
+// (Bootstrap declares these on `.navbar` itself, which shadows :root.)
+.navbar,
+.navbar-dark,
+.navbar[data-bs-theme="dark"],
+.navbar[data-bs-theme="light"] {
+  --bs-navbar-active-color: var(--accent);
+  --bs-navbar-hover-color: var(--accent);
+  --bs-navbar-brand-hover-color: var(--accent);
+}
 .navbar {
   border-bottom: 1px solid $rule;
   padding-top: 0.85rem;
@@ -328,6 +338,33 @@ blockquote {
 .work-entry .work-links {
   font-size: 0.9rem;
   color: $fg-mute;
+}
+
+// Demo GIF placeholder — temporary visual until real GIFs land
+.demo-placeholder {
+  border: 1px dashed $rule;
+  border-radius: 4px;
+  padding: 1.75rem 1rem;
+  text-align: center;
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  margin: 0.5rem 0 0.75rem;
+}
+
+// Demo figure (real GIF / image)
+.demo-figure {
+  margin: 0.5rem 0 0.75rem;
+}
+.demo-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 4px;
 }
 
 // Career-threads — condensed CV-summary block on the home page

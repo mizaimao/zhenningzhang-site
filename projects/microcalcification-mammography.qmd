@@ -1,0 +1,35 @@
+---
+title: "Microcalcification detection in mammography"
+description: "End-to-end deep learning detection of microcalcifications using a U-Net architecture, with downstream localization of asymmetric patterns. Peer-reviewed in Patterns (Cell Press)."
+date: 2020-07-01
+categories: [Professional, Medical Imaging, Mammography]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+Peer-reviewed · Patterns (Cell Press), 2020
+:::
+
+## Idea
+
+Microcalcifications are among the earliest visible markers of breast cancer
+on a mammogram, but they are tiny — often a few pixels wide — and easy to
+miss against the surrounding tissue. The goal here was end-to-end detection:
+a deep learning model that segments microcalcifications directly from the
+raw mammogram, no hand-crafted features or multi-stage pipelines.
+
+## Approach
+
+A U-Net segmentation backbone trained on annotated mammograms, with a
+detection head producing pixel-level masks. The downstream pipeline locates
+asymmetric patterns and surfaces candidate cancer regions for radiologist
+review. Performance was evaluated on held-out studies and compared against
+the standard CAD baselines of the time.
+
+## Outcome
+
+Published as part of *"Detecting asymmetric patterns and localizing cancers
+on mammograms"* in *Patterns* (Cell Press), 2020 — Guan, Wang, Li,
+**Zhang**, Chen, Siddiqui, Nehring, Huang.
+
+[Read the paper →](https://www.cell.com/patterns/fulltext/S2666-3899(20)30140-9){.external}

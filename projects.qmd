@@ -15,7 +15,7 @@ first inside each.
 ## Drug Discovery ML
 
 ::: {.work-entry}
-<div class="work-meta">2025 – Present</div>
+<div class="work-meta">2024 – Present</div>
 ### Multimodal IC50 prediction
 PyTorch models fusing cell painting microscopy with SMILES chemical
 representations for compound activity prediction. Deployed across compound
@@ -67,7 +67,7 @@ internal users across R&D. Companion paper as poster at AACR 2024.
 ## Tooling & Infrastructure
 
 ::: {.work-entry}
-<div class="work-meta">2025 – Present</div>
+<div class="work-meta">2022 – Present</div>
 ### Biomedical imaging data platform
 Unified ingestion and preprocessing platform for biomedical imaging at
 scale — now the team's standard data layer. Sixteen multi-center datasets,
@@ -97,6 +97,22 @@ Software Engineer building containerized end-to-end deep learning
 pipelines for medical imaging — classification, 3D bounding-box detection,
 and anomaly identification across multimodal datasets at scale.
 
+::: {.work-entry}
+<div class="work-meta">2020 · Patterns (Cell Press)</div>
+### Microcalcification detection in mammography
+End-to-end deep learning detection of microcalcifications using a U-Net
+architecture, with downstream localization of asymmetric patterns. The
+work was peer-reviewed and published in *Patterns* — Guan, Wang, Li,
+**Zhang**, Chen, Siddiqui, Nehring, Huang. *Detecting asymmetric patterns
+and localizing cancers on mammograms.* Patterns 1, no. 7 (2020).
+<div class="work-links">
+[Read more →](projects/microcalcification-mammography.qmd) ·
+[Paper — Patterns DOI](https://www.cell.com/patterns/fulltext/S2666-3899(20)30140-9){.external}
+</div>
+:::
+
+Other work at AAA:
+
 - **Chest vessel segmentation** — 3D deep learning for atherosclerosis
   identification on chest MRI.
 - **Integrated tumor segmentation** — Dockerized lung-cancer segmentation
@@ -107,5 +123,48 @@ and anomaly identification across multimodal datasets at scale.
   analysis (7,191 samples).
 - **Colorectal surgical phase detection** — video and sensor-based phase
   prediction.
+
+## Demos
+
+AZ work is largely confidential. These demos from earlier work at Ann Arbor
+Algorithms remain publicly viewable.
+
+::: {.work-entry}
+<div class="work-meta">Dash · 2018 – 2019</div>
+### Patient Info — disease prediction dashboard
+<div class="demo-placeholder">[ demo gif placeholder ]</div>
+Integrated dashboard for displaying lung-disease predictions and patient
+metadata. Built in Dash; produced from real data with a placeholder ECG
+panel due to data availability constraints.
+<div class="work-links">
+Live demo — relinking to new host.
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">DICOM viewer · 2018 – 2019</div>
+### Papaya — lung-nodule DICOM viewer
+<div class="demo-figure"><img src="assets/img/demos/papaya.gif" alt="Papaya DICOM viewer screen recording"></div>
+Dockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes
+load slowly — expect 1–2 minutes per case after click. Case 1 is the
+smallest and quickest to load.
+<div class="work-links">
+[Case 1](assets/papaya/papaya_5c4c25f93529bf21469f81a0acd5d324/) ·
+[Case 2](assets/papaya/papaya_7f1d2088b4244395b72eb8287f66a295/) ·
+[Case 3](assets/papaya/papaya_85746d90494345e38ab61533e999b3f1/) ·
+[Case 4](assets/papaya/papaya_37e90452caa5924546f33804040fc858/)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">three.js · 2018 – 2019</div>
+### Plaque — chest-vessel atherosclerosis 3D viewer
+<div class="demo-figure"><img src="assets/img/demos/plaque.gif" alt="Plaque 3D viewer screen recording"></div>
+Interactive three.js viewer for chest-vessel classification and
+atherosclerosis detection. Two cases included.
+<div class="work-links">
+[Live demo](assets/plaque/)
+</div>
+:::
 
 For personal projects and side builds, see [Tinkering](experiments.qmd).

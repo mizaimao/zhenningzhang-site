@@ -1,7 +1,7 @@
 ---
 title: "Biomedical imaging data platform"
 description: "Unified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI."
-date: 2025-01-01
+date: 2022-08-01
 categories: [Professional, Infrastructure, Medical Imaging]
 image: ../assets/img/placeholder-square.png
 ---

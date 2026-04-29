@@ -1,8 +1,9 @@
 /*-- scss:defaults --*/
 
 // =====================================================
-// Dark Technical theme override for Quarto Darkly.
-// Deep slate background, mono headings, single green accent.
+// Dark theme — deep slate background, mono accents.
+// Accent is exposed as a CSS custom property (--accent)
+// so the appearance picker can override at runtime.
 // =====================================================
 
 // Color palette (GitHub-dark inspired)
@@ -16,7 +17,9 @@ $rule:         #30363d;
 $accent:       #7ee787;
 $accent-deep:  #56d364;
 
-// Bootstrap variable overrides
+// Bootstrap variable overrides — these compile to fixed values in
+// bootstrap.min.css. Custom rules below use var(--accent) so the picker
+// can override at runtime.
 $body-bg:                      $bg-primary;
 $body-color:                   $fg-primary;
 $link-color:                   $accent;
@@ -49,6 +52,26 @@ $code-color:                   $accent;
 $pre-bg:                       $bg-code;
 
 /*-- scss:rules --*/
+
+// Runtime-overridable accent. Picker writes to these via inline style.
+// Bootstrap CSS variables that compiled to the green hex from $accent
+// are re-pointed at var(--accent) so the picker actually flows through
+// to navbar links, active states, primary buttons, code colors, etc.
+//
+// The `[data-bs-theme]` selector matches the same specificity (0,1,0) as
+// Bootstrap's per-theme overrides, so source-order (mine later) wins.
+:root,
+[data-bs-theme] {
+  --accent: #{$accent};
+  --accent-deep: #{$accent-deep};
+  --bs-primary: var(--accent);
+  --bs-link-color: var(--accent);
+  --bs-link-hover-color: var(--accent-deep);
+  --bs-code-color: var(--accent);
+  --bs-navbar-active-color: var(--accent);
+  --bs-navbar-brand-hover-color: var(--accent);
+  --bs-navbar-hover-color: var(--accent);
+}
 
 // Body refinement
 body {
@@ -107,13 +130,13 @@ hr, .section-break {
 // Links — subtle underline
 main a, .quarto-title-block a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(126, 231, 135, 0.30);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
   transition: border-color 200ms ease, color 200ms ease;
-  color: $accent;
+  color: var(--accent);
 }
 main a:hover {
-  border-bottom-color: $accent;
-  color: $accent-deep;
+  border-bottom-color: var(--accent);
+  color: var(--accent-deep);
 }
 
 // External links: no border
@@ -138,7 +161,7 @@ main a:hover {
   border-bottom: none;
   color: $fg-soft;
 }
-.navbar .nav-link:hover { color: $accent !important; }
+.navbar .nav-link:hover { color: var(--accent) !important; }
 
 // Footer
 .page-footer {
@@ -147,7 +170,7 @@ main a:hover {
   padding: 1.5rem 0;
 }
 .page-footer a { color: $fg-mute; border-bottom: 1px solid transparent; }
-.page-footer a:hover { color: $accent; border-bottom-color: $accent; }
+.page-footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 // Listings (project cards)
 .quarto-listing {
@@ -171,7 +194,7 @@ main a:hover {
   color: $fg-primary !important;
   border-bottom: none !important;
 }
-.listing-title a:hover { color: $accent !important; }
+.listing-title a:hover { color: var(--accent) !important; }
 .listing-description {
   color: $fg-soft;
   font-size: 0.97rem;
@@ -211,14 +234,14 @@ pre {
 code:not(pre code) {
   font-size: 0.88em;
   padding: 0.1em 0.35em;
-  background: $code-bg;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
   border-radius: 3px;
-  color: $accent;
+  color: var(--accent);
 }
 
 // Block quotes
 blockquote {
-  border-left: 2px solid $accent;
+  border-left: 2px solid var(--accent);
   padding-left: 1.25rem;
   margin-left: 0;
   color: $fg-soft;
@@ -226,7 +249,7 @@ blockquote {
 }
 
 // Selection
-::selection { background: $accent; color: $bg-primary; }
+::selection { background: var(--accent); color: $bg-primary; }
 
 // Hero block (used on index)
 .hero-block {
@@ -246,7 +269,7 @@ blockquote {
   font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: $accent;
+  color: var(--accent);
   margin-bottom: 1.75rem;
 }
 .hero-block .hero-lede {
@@ -323,11 +346,11 @@ blockquote {
 }
 .career-threads a {
   color: $fg-soft;
-  border-bottom: 1px solid rgba(126, 231, 135, 0.20);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
 }
 .career-threads a:hover {
-  color: $accent;
-  border-bottom-color: $accent;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 // Publications page
@@ -370,7 +393,7 @@ blockquote {
   color: $fg-primary !important;
   border-bottom: none !important;
 }
-.experiment-row h3 a:hover { color: $accent !important; }
+.experiment-row h3 a:hover { color: var(--accent) !important; }
 .experiment-row p {
   color: $fg-soft;
   margin: 0 0 0.75rem;
@@ -404,6 +427,76 @@ blockquote {
   margin-top: 0.3rem;
 }
 
+// Appearance picker — floating widget bottom-right
+.appearance-picker {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  font-family: $font-family-monospace;
+}
+.appearance-picker__trigger {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid $rule;
+  background: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 150ms ease;
+}
+.appearance-picker__trigger:hover { transform: scale(1.06); }
+.appearance-picker__trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.appearance-picker__menu {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  right: 0;
+  background: $bg-elevated;
+  border: 1px solid $rule;
+  border-radius: 6px;
+  padding: 0.85rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  min-width: 180px;
+}
+.appearance-picker__menu[hidden] { display: none; }
+.appearance-picker__label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin: 0 0 0.5rem;
+  font-weight: 500;
+}
+.appearance-picker__swatches {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.4rem;
+}
+.appearance-picker__swatch {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid $rule;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  transition: transform 120ms ease;
+}
+.appearance-picker__swatch:hover { transform: scale(1.15); }
+.appearance-picker__swatch[aria-pressed="true"] {
+  outline: 2px solid $fg-primary;
+  outline-offset: 2px;
+}
+.appearance-picker__swatch:focus-visible {
+  outline: 2px solid $fg-primary;
+  outline-offset: 2px;
+}
+
 // Mobile
 @media (max-width: 768px) {
   h1.title { font-size: 2rem; }
@@ -415,4 +508,5 @@ blockquote {
     padding: 1.5rem 0;
   }
   .experiment-row .experiment-media.portrait img { max-width: 220px; }
+  .appearance-picker { bottom: 0.75rem; right: 0.75rem; }
 }

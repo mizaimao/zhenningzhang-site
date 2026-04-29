@@ -15,8 +15,6 @@ website:
 
   navbar:
     pinned: true
-    background: "#161b22"
-    foreground: "#e6edf3"
     logo: false
     title: "Zhenning Zhang"
     left:
@@ -41,7 +39,6 @@ website:
         aria-label: LinkedIn
 
   page-footer:
-    background: "#161b22"
     left: |
       © 2026 Zhenning Zhang
     right: |
@@ -50,8 +47,12 @@ website:
 format:
   html:
     theme:
-      - darkly
-      - theme.scss
+      dark:
+        - darkly
+        - theme.scss
+      light:
+        - cosmo
+        - theme-light.scss
     toc: false
     grid:
       body-width: 800px
@@ -70,6 +71,7 @@ format:
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    include-after-body: assets/appearance.html
 
 execute:
   freeze: auto

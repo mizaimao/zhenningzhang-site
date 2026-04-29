@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _site
   resources:
-    - "assets/zhenning_zhang_resume.pdf"
+    - "assets/**"
 
 website:
   title: "Zhenning Zhang"

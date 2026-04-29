@@ -1,16 +1,6 @@
 ---
 title: "Experiments"
 description: "Personal projects, learning experiments, and weekend builds."
-listing:
-  contents: "projects/*.qmd"
-  type: default
-  sort: "date desc"
-  sort-ui: false
-  filter-ui: false
-  fields: [date, title, description, categories]
-  categories: false
-  include:
-    categories: "Personal"
 page-layout: article
 ---
 
@@ -23,3 +13,105 @@ generative models, retro computing, game development, agentic AI experiments,
 and the homelab work that supports it all.
 
 For professional work, see [Work](projects.qmd).
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2024 · Generative Models · PyTorch</div>
+
+### [Music generation transformer](projects/music-gen.qmd)
+
+Decoder-only generative transformer in PyTorch — small enough to be readable,
+big enough to learn something interesting. Dual-modality: text tokenizer for
+language modeling, MIDI tokenizer for music generation. Trained on Bach's
+*Goldberg Variations* and *The Well-Tempered Clavier*.
+
+<div class="experiment-links">
+[Read more →](projects/music-gen.qmd) ·
+[GitHub](https://github.com/mizaimao/DecoderTest){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<div class="audio-stack">
+<div>
+<audio controls preload="none">
+<source src="assets/audio/gen_gold_overfit_2.mp3" type="audio/mpeg">
+</audio>
+<div class="audio-caption">Goldberg Variations · 1</div>
+</div>
+<div>
+<audio controls preload="none">
+<source src="assets/audio/gen_gold_overfit_3.mp3" type="audio/mpeg">
+</audio>
+<div class="audio-caption">Goldberg Variations · 2</div>
+</div>
+<div>
+<audio controls preload="none">
+<source src="assets/audio/gen_clavier_chicken.mp3" type="audio/mpeg">
+</audio>
+<div class="audio-caption">Well-Tempered Clavier</div>
+</div>
+</div>
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2023 · Graphics · Python</div>
+
+### [Raycasting renderer](projects/raycasting.qmd)
+
+A from-scratch raycasting renderer in Python and PyQt5 — the rendering
+technique behind *Wolfenstein 3D* (1992). Casts rays per pixel column over a
+2D map and computes wall heights from intersection distance.
+
+<div class="experiment-links">
+[Read more →](projects/raycasting.qmd) ·
+[GitHub](https://github.com/mizaimao/raycasting_pyqt){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media portrait">
+<img src="assets/img/projects/raycasting.gif" alt="Raycasting renderer demo">
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2023 · Cryptography · Python</div>
+
+### [Enigma machine emulator](projects/enigma.qmd)
+
+Object-oriented Python 3 emulation of the Enigma M3 cipher machine, with
+rotors, reflectors, and the plugboard modeled as first-class classes.
+Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.
+
+<div class="experiment-links">
+[Read more →](projects/enigma.qmd) ·
+[GitHub](https://github.com/mizaimao/Enigma){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<picture>
+<source srcset="assets/img/projects/enigma.webp" type="image/webp">
+<img src="assets/img/projects/enigma.png" alt="Enigma M3 emulator screenshot">
+</picture>
+</div>
+```
+
+:::
+
+Also building: a [multi-agent stock analysis pipeline](projects/multi-agent-stock.qmd)
+(2025) — three-role architecture (analyst → challenger → synthesizer) running
+on local Gemma via Ollama. Screenshots coming.

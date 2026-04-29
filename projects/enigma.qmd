@@ -3,12 +3,17 @@ title: "Enigma machine emulator"
 description: "Object-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors and reflectors as first-class classes."
 date: 2023-04-01
 categories: [Personal, Cryptography, Python]
-image: ../assets/img/placeholder-square.png
+image: ../assets/img/projects/enigma.png
 ---
 
 ::: {.eyebrow}
 Personal project
 :::
+
+<picture>
+  <source srcset="../assets/img/projects/enigma.webp" type="image/webp">
+  <img src="../assets/img/projects/enigma.png" alt="Enigma M3 emulator screenshot" style="width:100%; max-width:560px; height:auto; border:1px solid #30363d; border-radius:4px;">
+</picture>
 
 ## Idea
 

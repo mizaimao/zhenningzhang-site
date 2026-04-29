@@ -3,12 +3,14 @@ title: "Raycasting renderer"
 description: "A from-scratch raycasting renderer in Python and PyQt5, evoking the rendering technique used in Wolfenstein 3D (1992)."
 date: 2023-09-01
 categories: [Personal, Graphics, Python]
-image: ../assets/img/placeholder-square.png
+image: ../assets/img/projects/raycasting.gif
 ---
 
 ::: {.eyebrow}
 Personal project
 :::
+
+<img src="../assets/img/projects/raycasting.gif" alt="Raycasting renderer demo" style="width:100%; max-width:280px; height:auto; border:1px solid #30363d; border-radius:4px;">
 
 ## Idea
 

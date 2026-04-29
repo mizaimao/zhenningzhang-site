@@ -31,8 +31,29 @@ for the music generation experiments.
 
 ## Demo
 
-Generated audio samples are linked from the [GitHub
-repo](https://github.com/mizaimao/DecoderTest){.external}.
+Three generated samples below — the first two trained on the *Goldberg
+Variations*, the third on *The Well-Tempered Clavier*.
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin:1rem 0;">
+  <div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="../assets/audio/gen_gold_overfit_2.mp3" type="audio/mpeg">
+    </audio>
+    <div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Goldberg Variations · 1</div>
+  </div>
+  <div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="../assets/audio/gen_gold_overfit_3.mp3" type="audio/mpeg">
+    </audio>
+    <div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Goldberg Variations · 2</div>
+  </div>
+  <div>
+    <audio controls preload="none" style="width:100%;">
+      <source src="../assets/audio/gen_clavier_chicken.mp3" type="audio/mpeg">
+    </audio>
+    <div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Well-Tempered Clavier</div>
+  </div>
+</div>
 
 ## Stack
 

@@ -318,9 +318,78 @@ blockquote {
 }
 .csl-entry:last-child { border-bottom: none; }
 
+// Experiments page — two-column rows: description left, media right
+.experiment-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.25rem;
+  align-items: center;
+  border-top: 1px solid $rule;
+  padding: 2rem 0;
+}
+.experiment-row:last-of-type { border-bottom: 1px solid $rule; }
+.experiment-row .experiment-meta {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin-bottom: 0.4rem;
+}
+.experiment-row h3 {
+  font-family: $headings-font-family;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: $fg-primary;
+}
+.experiment-row h3 a {
+  color: $fg-primary !important;
+  border-bottom: none !important;
+}
+.experiment-row h3 a:hover { color: $accent !important; }
+.experiment-row p {
+  color: $fg-soft;
+  margin: 0 0 0.75rem;
+}
+.experiment-row .experiment-links {
+  font-size: 0.9rem;
+  color: $fg-mute;
+}
+.experiment-row .experiment-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 4px;
+}
+.experiment-row .experiment-media.portrait {
+  display: flex;
+  justify-content: center;
+}
+.experiment-row .experiment-media.portrait img {
+  max-width: 280px;
+}
+.experiment-row .audio-stack > * + * { margin-top: 0.7rem; }
+.experiment-row .audio-stack audio { width: 100%; }
+.experiment-row .audio-stack .audio-caption {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $fg-mute;
+  margin-top: 0.3rem;
+}
+
 // Mobile
 @media (max-width: 768px) {
   h1.title { font-size: 2rem; }
   .hero-block .hero-name { font-size: 2.25rem; }
   .hero-block .hero-lede { font-size: 1.05rem; }
+  .experiment-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.5rem 0;
+  }
+  .experiment-row .experiment-media.portrait img { max-width: 220px; }
 }

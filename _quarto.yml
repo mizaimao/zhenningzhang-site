@@ -3,7 +3,6 @@ project:
   output-dir: _site
   resources:
     - "assets/zhenning_zhang_resume.pdf"
-    - "CNAME"
 
 website:
   title: "Zhenning Zhang"

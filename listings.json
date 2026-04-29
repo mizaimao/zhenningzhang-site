@@ -3,9 +3,9 @@
     "listing": "/projects.html",
     "items": [
       "/projects/aacr-2026-contrast-classification.html",
+      "/projects/data-ingestion-platform.html",
       "/projects/ic50-multimodal.html",
       "/projects/segmentation-toolkit.html",
-      "/projects/data-ingestion-platform.html",
       "/projects/embedding-visualization.html",
       "/projects/multiplex-if-gnn.html"
     ]

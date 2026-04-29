@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-32d12faac1a8dffbe27ec749f5aade6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-528222e20f96d229c3a9e0c83aad354d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-d03d2a2f351f4f7379988c8810cbeab8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -201,7 +201,27 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="demo" class="level2">
 <h2 data-anchor-id="demo">Demo</h2>
-<p>Generated audio samples are linked from the <a href="https://github.com/mizaimao/DecoderTest" class="external">GitHub repo</a>.</p>
+<p>Three generated samples below — the first two trained on the <em>Goldberg Variations</em>, the third on <em>The Well-Tempered Clavier</em>.</p>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:1rem; margin:1rem 0;">
+<div>
+<pre><code>&lt;audio controls preload="none" style="width:100%;"&gt;
+  &lt;source src="../assets/audio/gen_gold_overfit_2.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;"&gt;Goldberg Variations · 1&lt;/div&gt;</code></pre>
+</div>
+<div>
+<pre><code>&lt;audio controls preload="none" style="width:100%;"&gt;
+  &lt;source src="../assets/audio/gen_gold_overfit_3.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;"&gt;Goldberg Variations · 2&lt;/div&gt;</code></pre>
+</div>
+<div>
+<pre><code>&lt;audio controls preload="none" style="width:100%;"&gt;
+  &lt;source src="../assets/audio/gen_clavier_chicken.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+&lt;div style="font-family:'JetBrains Mono', monospace; font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;"&gt;Well-Tempered Clavier&lt;/div&gt;</code></pre>
+</div>
+</div>
 </section>
 <section id="stack" class="level2">
 <h2 data-anchor-id="stack">Stack</h2>

@@ -557,14 +557,35 @@
     "href": "projects.html",
     "title": "Work",
     "section": "",
-    "text": "§ AstraZeneca · 2019 – present\n\nDrug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Most recent work first.\nFor personal projects and side builds, see Tinkering.\n\n\n\n\n\n\n\n\n\nAutomatic contrast phase classification of polyphasic CT scans\n\n\n\nProfessional\n\nMedical Imaging\n\nAACR 2026\n\n\n\nCo-authored work on identifying contrast phase from CT volumes — poster at AACR 2026.\n\n\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\nBiomedical imaging data platform\n\n\n\nProfessional\n\nInfrastructure\n\nMedical Imaging\n\n\n\nUnified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI.\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\n\n\nMultimodal IC50 prediction\n\n\n\nProfessional\n\nDrug Discovery\n\nMultimodal\n\n\n\nPyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds.\n\n\n\n\n\nJan 1, 2025\n\n\n\n\n\n\n\nInteractive 3D segmentation toolset\n\n\n\nProfessional\n\nMedical Imaging\n\nSegmentation\n\n\n\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D.\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\nEmbedding visualization toolkit\n\n\n\nProfessional\n\nVisualization\n\nTooling\n\n\n\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis.\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\nGraph-based analysis of multiplex immunofluorescence\n\n\n\nProfessional\n\nDrug Discovery\n\nGraph Learning\n\n\n\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification.\n\n\n\n\n\nJun 1, 2021\n\n\n\n\n\nNo matching items"
+    "text": "§ AstraZeneca · 2019 – present\nDrug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Grouped by thread, most recent work first inside each."
+  },
+  {
+    "objectID": "projects.html#drug-discovery-ml",
+    "href": "projects.html#drug-discovery-ml",
+    "title": "Work",
+    "section": "Drug Discovery ML",
+    "text": "Drug Discovery ML\n\n\n2025 – Present\n\n\nMultimodal IC50 prediction\nPyTorch models fusing cell painting microscopy with SMILES chemical representations for compound activity prediction. Deployed across compound libraries totaling 39K compounds; jointly learned image-and-structure embeddings inform downstream phenotype-to-target reasoning.\n\nRead more →\n\n\n\n\n\n2021 – 2022\n\n\nGraph-based analysis of multiplex immunofluorescence\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification. Preprint on bioRxiv; abstracts at SITC and AACR.\n\nRead more → · Preprint — bioRxiv"
+  },
+  {
+    "objectID": "projects.html#medical-imaging-segmentation",
+    "href": "projects.html#medical-imaging-segmentation",
+    "title": "Work",
+    "section": "Medical Imaging & Segmentation",
+    "text": "Medical Imaging & Segmentation\n\n\n2026 · AACR poster\n\n\nAutomatic contrast phase classification of polyphasic CT scans\nDeep learning classifier inferring contrast phase from CT volumes — a prerequisite for downstream tumor segmentation pipelines that depend on consistent imaging protocol. Co-authored work, poster at AACR 2026.\n\nRead more → · Abstract — AACR 2026\n\n\n\n\n\n2023 – Present\n\n\nInteractive 3D segmentation toolset\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D. Companion paper as poster at AACR 2024.\n\nRead more → · Abstract — AACR 2024"
+  },
+  {
+    "objectID": "projects.html#tooling-infrastructure",
+    "href": "projects.html#tooling-infrastructure",
+    "title": "Work",
+    "section": "Tooling & Infrastructure",
+    "text": "Tooling & Infrastructure\n\n\n2025 – Present\n\n\nBiomedical imaging data platform\nUnified ingestion and preprocessing platform for biomedical imaging at scale — now the team’s standard data layer. Sixteen multi-center datasets, 150K CT volumes, automated mapping of thousands of annotation masks across DICOM and NIfTI standards.\n\nRead more →\n\n\n\n\n\n2022 – Present\n\n\nEmbedding visualization toolkit\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms, archetype analysis. Used by R&D labs across several modeling projects.\n\nRead more →\n\n\n\n\n§ Ann Arbor Algorithms · 2018 – 2019\n\nSoftware Engineer building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, and anomaly identification across multimodal datasets at scale.\n\nChest vessel segmentation — 3D deep learning for atherosclerosis identification on chest MRI.\nIntegrated tumor segmentation — Dockerized lung-cancer segmentation with 3D visualization.\nLung cancer prediction — XGBoost over patient metadata (1,658 patients).\nECG abnormality identification — ResNet variant for 12-lead ECG analysis (7,191 samples).\nColorectal surgical phase detection — video and sensor-based phase prediction.\n\nFor personal projects and side builds, see Tinkering."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Zhenning Zhang",
     "section": "",
-    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI\n\n\nI build deep learning systems for drug discovery and medical imaging. Nearly seven years at AstraZeneca R&D IT, with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
+    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI\n\n\nI build deep learning systems for drug discovery and medical imaging. Nearly seven years at AstraZeneca R&D IT, with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nBefore AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) — chest vessel segmentation, 3D tumor segmentation, lung cancer prediction, ECG abnormality detection. Full project list →\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
   },
   {
     "objectID": "index.html#recent",
@@ -579,6 +600,13 @@
     "title": "Zhenning Zhang",
     "section": "Selected work",
     "text": "Selected work"
+  },
+  {
+    "objectID": "index.html#career-astrazeneca-2019-present",
+    "href": "index.html#career-astrazeneca-2019-present",
+    "title": "Zhenning Zhang",
+    "section": "Career — AstraZeneca, 2019 – present",
+    "text": "Career — AstraZeneca, 2019 – present"
   },
   {
     "objectID": "index.html#more",

@@ -33,8 +33,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -43,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-32d12faac1a8dffbe27ec749f5aade6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d03d2a2f351f4f7379988c8810cbeab8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-9fb84b7bd85bce9c5a13bffaaf566919.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,69 +69,11 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <meta property="og:title" content="Work – Zhenning Zhang">
 <meta property="og:description" content="Professional projects across drug discovery, medical imaging, and infrastructure.">
@@ -235,173 +175,104 @@ window.Quarto = {
 <div class="eyebrow">
 <p>§ AstraZeneca · 2019 – present</p>
 </div>
-<p>Drug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Most recent work first.</p>
+<p>Drug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Grouped by thread, most recent work first inside each.</p>
+<section id="drug-discovery-ml" class="level2">
+<h2 data-anchor-id="drug-discovery-ml">Drug Discovery ML</h2>
+<div class="work-entry">
+<div class="work-meta">
+2025 – Present
+</div>
+<section id="multimodal-ic50-prediction" class="level3">
+<h3 data-anchor-id="multimodal-ic50-prediction">Multimodal IC50 prediction</h3>
+PyTorch models fusing cell painting microscopy with SMILES chemical representations for compound activity prediction. Deployed across compound libraries totaling 39K compounds; jointly learned image-and-structure embeddings inform downstream phenotype-to-target reasoning.
+<div class="work-links">
+<p><a href="./projects/ic50-multimodal.html">Read more →</a></p>
+</div>
+</section>
+</div>
+<div class="work-entry">
+<div class="work-meta">
+2021 – 2022
+</div>
+<section id="graph-based-analysis-of-multiplex-immunofluorescence" class="level3">
+<h3 data-anchor-id="graph-based-analysis-of-multiplex-immunofluorescence">Graph-based analysis of multiplex immunofluorescence</h3>
+Graph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification. Preprint on bioRxiv; abstracts at SITC and AACR.
+<div class="work-links">
+<p><a href="./projects/multiplex-if-gnn.html">Read more →</a> · <a href="https://www.biorxiv.org/content/10.1101/2021.06.09.447654v1" class="external">Preprint — bioRxiv</a></p>
+</div>
+</section>
+</div>
+</section>
+<section id="medical-imaging-segmentation" class="level2">
+<h2 data-anchor-id="medical-imaging-segmentation">Medical Imaging &amp; Segmentation</h2>
+<div class="work-entry">
+<div class="work-meta">
+2026 · AACR poster
+</div>
+<section id="automatic-contrast-phase-classification-of-polyphasic-ct-scans" class="level3">
+<h3 data-anchor-id="automatic-contrast-phase-classification-of-polyphasic-ct-scans">Automatic contrast phase classification of polyphasic CT scans</h3>
+Deep learning classifier inferring contrast phase from CT volumes — a prerequisite for downstream tumor segmentation pipelines that depend on consistent imaging protocol. Co-authored work, poster at AACR 2026.
+<div class="work-links">
+<p><a href="./projects/aacr-2026-contrast-classification.html">Read more →</a> · <a href="https://aacrjournals.org/cancerres/article/86/7_Supplement/2777/778083/Abstract-2777-Automatic-contrast-phase" class="external">Abstract — AACR 2026</a></p>
+</div>
+</section>
+</div>
+<div class="work-entry">
+<div class="work-meta">
+2023 – Present
+</div>
+<section id="interactive-3d-segmentation-toolset" class="level3">
+<h3 data-anchor-id="interactive-3d-segmentation-toolset">Interactive 3D segmentation toolset</h3>
+Transformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&amp;D. Companion paper as poster at AACR 2024.
+<div class="work-links">
+<p><a href="./projects/segmentation-toolkit.html">Read more →</a> · <a href="https://aacrjournals.org/cancerres/article/84/6_Supplement/887/741446" class="external">Abstract — AACR 2024</a></p>
+</div>
+</section>
+</div>
+</section>
+<section id="tooling-infrastructure" class="level2">
+<h2 data-anchor-id="tooling-infrastructure">Tooling &amp; Infrastructure</h2>
+<div class="work-entry">
+<div class="work-meta">
+2025 – Present
+</div>
+<section id="biomedical-imaging-data-platform" class="level3">
+<h3 data-anchor-id="biomedical-imaging-data-platform">Biomedical imaging data platform</h3>
+Unified ingestion and preprocessing platform for biomedical imaging at scale — now the team’s standard data layer. Sixteen multi-center datasets, 150K CT volumes, automated mapping of thousands of annotation masks across DICOM and NIfTI standards.
+<div class="work-links">
+<p><a href="./projects/data-ingestion-platform.html">Read more →</a></p>
+</div>
+</section>
+</div>
+<div class="work-entry">
+<div class="work-meta">
+2022 – Present
+</div>
+<section id="embedding-visualization-toolkit" class="level3">
+<h3 data-anchor-id="embedding-visualization-toolkit">Embedding visualization toolkit</h3>
+Web-based visualization suite for high-dimensional embedding interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms, archetype analysis. Used by R&amp;D labs across several modeling projects.
+<div class="work-links">
+<p><a href="./projects/embedding-visualization.html">Read more →</a></p>
+</div>
+</section>
+</div>
+<div class="eyebrow" style="margin-top: 3.5rem;">
+<p>§ Ann Arbor Algorithms · 2018 – 2019</p>
+</div>
+<p>Software Engineer building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, and anomaly identification across multimodal datasets at scale.</p>
+<ul>
+<li><strong>Chest vessel segmentation</strong> — 3D deep learning for atherosclerosis identification on chest MRI.</li>
+<li><strong>Integrated tumor segmentation</strong> — Dockerized lung-cancer segmentation with 3D visualization.</li>
+<li><strong>Lung cancer prediction</strong> — XGBoost over patient metadata (1,658 patients).</li>
+<li><strong>ECG abnormality identification</strong> — ResNet variant for 12-lead ECG analysis (7,191 samples).</li>
+<li><strong>Colorectal surgical phase detection</strong> — video and sensor-based phase prediction.</li>
+</ul>
 <p>For personal projects and side builds, see <a href="./experiments.html">Tinkering</a>.</p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHJvZmVzc2lvbmFsJTJDTWVkaWNhbCUyMEltYWdpbmclMkNBQUNSJTIwMjAyNg==" data-listing-date-sort="1775001600000" data-listing-file-modified-sort="1777494822471" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/aacr-2026-contrast-classification.html" class="no-external">Automatic contrast phase classification of polyphasic CT scans</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QUFDUiUyMDIwMjY='); return false;">AACR 2026</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/aacr-2026-contrast-classification.html" class="no-external">
-<p>Co-authored work on identifying contrast phase from CT volumes — poster at AACR 2026.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/aacr-2026-contrast-classification.html" class="no-external">
-<div class="listing-date">
-Apr 1, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJvZmVzc2lvbmFsJTJDSW5mcmFzdHJ1Y3R1cmUlMkNNZWRpY2FsJTIwSW1hZ2luZw==" data-listing-date-sort="1735689600000" data-listing-file-modified-sort="1777494822472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/data-ingestion-platform.html" class="no-external">Biomedical imaging data platform</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5mcmFzdHJ1Y3R1cmU='); return false;">Infrastructure</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/data-ingestion-platform.html" class="no-external">
-<p>Unified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/data-ingestion-platform.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHJvZmVzc2lvbmFsJTJDRHJ1ZyUyMERpc2NvdmVyeSUyQ011bHRpbW9kYWw=" data-listing-date-sort="1735689600000" data-listing-file-modified-sort="1777494822472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/ic50-multimodal.html" class="no-external">Multimodal IC50 prediction</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RHJ1ZyUyMERpc2NvdmVyeQ=='); return false;">Drug Discovery</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TXVsdGltb2RhbA=='); return false;">Multimodal</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/ic50-multimodal.html" class="no-external">
-<p>PyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/ic50-multimodal.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHJvZmVzc2lvbmFsJTJDTWVkaWNhbCUyMEltYWdpbmclMkNTZWdtZW50YXRpb24=" data-listing-date-sort="1685577600000" data-listing-file-modified-sort="1777494822472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/segmentation-toolkit.html" class="no-external">Interactive 3D segmentation toolset</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U2VnbWVudGF0aW9u'); return false;">Segmentation</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/segmentation-toolkit.html" class="no-external">
-<p>Transformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&amp;D.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/segmentation-toolkit.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UHJvZmVzc2lvbmFsJTJDVmlzdWFsaXphdGlvbiUyQ1Rvb2xpbmc=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1777494822472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/embedding-visualization.html" class="no-external">Embedding visualization toolkit</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VG9vbGluZw=='); return false;">Tooling</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/embedding-visualization.html" class="no-external">
-<p>Web-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/embedding-visualization.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UHJvZmVzc2lvbmFsJTJDRHJ1ZyUyMERpc2NvdmVyeSUyQ0dyYXBoJTIwTGVhcm5pbmc=" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1777494822472" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/multiplex-if-gnn.html" class="no-external">Graph-based analysis of multiplex immunofluorescence</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RHJ1ZyUyMERpc2NvdmVyeQ=='); return false;">Drug Discovery</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3JhcGglMjBMZWFybmluZw=='); return false;">Graph Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/multiplex-if-gnn.html" class="no-external">
-<p>Graph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/multiplex-if-gnn.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2021
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

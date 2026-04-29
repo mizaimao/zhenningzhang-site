@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/experiments.html",
+    "items": [
+      "/projects/multi-agent-stock.html",
+      "/projects/music-gen.html",
+      "/projects/raycasting.html",
+      "/projects/enigma.html"
+    ]
+  },
+  {
     "listing": "/projects.html",
     "items": [
       "/projects/aacr-2026-contrast-classification.html",
@@ -8,15 +17,6 @@
       "/projects/data-ingestion-platform.html",
       "/projects/embedding-visualization.html",
       "/projects/multiplex-if-gnn.html"
-    ]
-  },
-  {
-    "listing": "/experiments.html",
-    "items": [
-      "/projects/multi-agent-stock.html",
-      "/projects/music-gen.html",
-      "/projects/raycasting.html",
-      "/projects/enigma.html"
     ]
   }
 ]

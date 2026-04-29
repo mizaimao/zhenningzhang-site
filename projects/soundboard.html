@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Professional projects across drug discovery, medical imaging, and infrastructure.">
+<meta name="dcterms.date" content="2024-12-01">
+<meta name="description" content="Cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Originally Swift 5 on iOS; later rewritten in Flutter for macOS, Windows, and Linux.">
 
-<title>Work – Zhenning Zhang</title>
+<title>Soundboard app – Zhenning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,23 +28,21 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-32d12faac1a8dffbe27ec749f5aade6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d03d2a2f351f4f7379988c8810cbeab8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-32d12faac1a8dffbe27ec749f5aade6c.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d03d2a2f351f4f7379988c8810cbeab8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,73 +70,18 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Work – Zhenning Zhang">
-<meta property="og:description" content="Professional projects across drug discovery, medical imaging, and infrastructure.">
+<meta property="og:title" content="Soundboard app – Zhenning Zhang">
+<meta property="og:description" content="Cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Originally Swift 5 on iOS; later rewritten in Flutter for macOS, Windows, and Linux.">
+<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/soundboard-macos.png">
 <meta property="og:site_name" content="Zhenning Zhang">
+<meta property="og:image:height" content="1928">
+<meta property="og:image:width" content="1226">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -147,7 +91,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Zhenning Zhang</span>
     </a>
   </div>
@@ -158,29 +102,29 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./experiments.html"> 
+    <a class="nav-link" href="../experiments.html"> 
 <span class="menu-text">Experiments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./assets/zhenning_zhang_resume.pdf"> 
+    <a class="nav-link" href="../assets/zhenning_zhang_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -210,12 +154,18 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Work</h1>
-</div>
+<h1 class="title">Soundboard app</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Personal</div>
+    <div class="quarto-category">Mobile</div>
+    <div class="quarto-category">Flutter</div>
+    <div class="quarto-category">Swift</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Professional projects across drug discovery, medical imaging, and infrastructure.
+    Cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Originally Swift 5 on iOS; later rewritten in Flutter for macOS, Windows, and Linux.
   </div>
 </div>
 
@@ -223,6 +173,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 1, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -233,175 +189,49 @@ window.Quarto = {
 
 
 <div class="eyebrow">
-<p>§ AstraZeneca · Ann Arbor Algorithms · 2018 – present</p>
+<p>Personal project</p>
 </div>
-<p>Drug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Most recent work first.</p>
-<p>For personal projects and learning experiments, see <a href="./experiments.html">Experiments</a>.</p>
+<div style="display:grid; grid-template-columns:160px 1fr 1fr; gap:1rem; align-items:end; margin:1rem 0;">
+<div>
+<img src="../assets/img/projects/soundboard-ios.gif" alt="Original iOS Swift build" style="width:100%; height:auto; border:1px solid #30363d; border-radius:4px;">
+<div style="font-family:'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Swift · iOS</div>
+</div>
+<div>
+<picture>
+<source srcset="../assets/img/projects/soundboard-macos.webp" type="image/webp">
+<img src="../assets/img/projects/soundboard-macos.png" alt="Flutter macOS build" style="width:100%; height:auto; border:1px solid #30363d; border-radius:4px;">
+</picture>
+<div style="font-family:'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Flutter · macOS</div>
+</div>
+<div>
+<picture>
+<source srcset="../assets/img/projects/soundboard-windows.webp" type="image/webp">
+<img src="../assets/img/projects/soundboard-windows.png" alt="Flutter Windows build" style="width:100%; height:auto; border:1px solid #30363d; border-radius:4px;">
+</picture>
+<div style="font-family:'JetBrains Mono', monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:#8b949e; margin-top:0.4rem;">Flutter · Windows</div>
+</div>
+</div>
+<section id="idea" class="level2">
+<h2 data-anchor-id="idea">Idea</h2>
+<p>A soundboard app with audio mixing, shuffling, video playback, and motion control. Started life as a Swift 5 iOS prank; once it became fun to use, I rewrote it in Flutter to ship the same UI on macOS, Windows, and Linux from a single codebase.</p>
+</section>
+<section id="implementation" class="level2">
+<h2 data-anchor-id="implementation">Implementation</h2>
+<ul>
+<li><strong>Original</strong> — Swift 5 / iOS, with motion sensors driving sample triggers.</li>
+<li><strong>Rewrite</strong> — Flutter and Dart for cross-platform desktop targets. GitHub Actions produces Linux binaries alongside the macOS and Windows builds, so a tagged release ships all three at once.</li>
+</ul>
+<p>Source clips for the soundboard are produced by the small companion <a href="../projects/audio-cutter.html">audio cutter</a> tool — extracting audio fragments by time interval from a curated set of videos.</p>
+</section>
+<section id="stack" class="level2">
+<h2 data-anchor-id="stack">Stack</h2>
+<p>Swift 5 (original iOS), Flutter + Dart (cross-platform rewrite). Animations built in Adobe After Effects; icon work in Affinity Photo. All audio assets are royalty-free.</p>
+<p><a href="https://github.com/mizaimao/r_flutter" class="external">GitHub repository →</a></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UHJvZmVzc2lvbmFsJTJDTWVkaWNhbCUyMEltYWdpbmclMkNBQUNSJTIwMjAyNg==" data-listing-date-sort="1775001600000" data-listing-file-modified-sort="1777490712302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/aacr-2026-contrast-classification.html" class="no-external">Automatic contrast phase classification of polyphasic CT scans</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QUFDUiUyMDIwMjY='); return false;">AACR 2026</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/aacr-2026-contrast-classification.html" class="no-external">
-<p>Co-authored work on identifying contrast phase from CT volumes — poster at AACR 2026.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/aacr-2026-contrast-classification.html" class="no-external">
-<div class="listing-date">
-Apr 1, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UHJvZmVzc2lvbmFsJTJDRHJ1ZyUyMERpc2NvdmVyeSUyQ011bHRpbW9kYWw=" data-listing-date-sort="1725148800000" data-listing-file-modified-sort="1777490712303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="167">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/ic50-multimodal.html" class="no-external">Multimodal IC50 prediction</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RHJ1ZyUyMERpc2NvdmVyeQ=='); return false;">Drug Discovery</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TXVsdGltb2RhbA=='); return false;">Multimodal</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/ic50-multimodal.html" class="no-external">
-<p>PyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/ic50-multimodal.html" class="no-external">
-<div class="listing-date">
-Sep 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UHJvZmVzc2lvbmFsJTJDTWVkaWNhbCUyMEltYWdpbmclMkNTZWdtZW50YXRpb24=" data-listing-date-sort="1685577600000" data-listing-file-modified-sort="1777490712303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="196">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/segmentation-toolkit.html" class="no-external">Interactive 3D segmentation toolset</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U2VnbWVudGF0aW9u'); return false;">Segmentation</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/segmentation-toolkit.html" class="no-external">
-<p>Transformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&amp;D.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/segmentation-toolkit.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UHJvZmVzc2lvbmFsJTJDSW5mcmFzdHJ1Y3R1cmUlMkNNZWRpY2FsJTIwSW1hZ2luZw==" data-listing-date-sort="1659312000000" data-listing-file-modified-sort="1777490712303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="194">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/data-ingestion-platform.html" class="no-external">Biomedical imaging data platform</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5mcmFzdHJ1Y3R1cmU='); return false;">Infrastructure</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWVkaWNhbCUyMEltYWdpbmc='); return false;">Medical Imaging</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/data-ingestion-platform.html" class="no-external">
-<p>Unified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/data-ingestion-platform.html" class="no-external">
-<div class="listing-date">
-Aug 1, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="UHJvZmVzc2lvbmFsJTJDVmlzdWFsaXphdGlvbiUyQ1Rvb2xpbmc=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1777490712303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="128">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/embedding-visualization.html" class="no-external">Embedding visualization toolkit</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VmlzdWFsaXphdGlvbg=='); return false;">Visualization</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VG9vbGluZw=='); return false;">Tooling</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/embedding-visualization.html" class="no-external">
-<p>Web-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/embedding-visualization.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2022
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UHJvZmVzc2lvbmFsJTJDRHJ1ZyUyMERpc2NvdmVyeSUyQ0dyYXBoJTIwTGVhcm5pbmc=" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1777490712303" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="141">
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./projects/multiplex-if-gnn.html" class="no-external">Graph-based analysis of multiplex immunofluorescence</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJvZmVzc2lvbmFs'); return false;">Professional</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RHJ1ZyUyMERpc2NvdmVyeQ=='); return false;">Drug Discovery</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R3JhcGglMjBMZWFybmluZw=='); return false;">Graph Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./projects/multiplex-if-gnn.html" class="no-external">
-<p>Graph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./projects/multiplex-if-gnn.html" class="no-external">
-<div class="listing-date">
-Jun 1, 2021
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -818,5 +648,5 @@ Jun 1, 2021
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -77,9 +77,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Experiments – Zhenning Zhang">
 <meta property="og:description" content="Personal projects, learning experiments, and weekend builds.">
-<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/raycasting.gif">
+<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/isometric-tiles.gif">
 <meta property="og:site_name" content="Zhenning Zhang">
-<meta property="og:image:alt" content="Raycasting renderer demo">
+<meta property="og:image:alt" content="Isometric tile simulation">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -218,18 +218,18 @@ ul.task-list li input[type="checkbox"] {
 <div class="experiment-row">
 <div class="experiment-text">
 <div class="experiment-meta">
-2023 · Graphics · Python
+2022 · Simulation · Python · C++
 </div>
-<section id="raycasting-renderer" class="level3">
-<h3 data-anchor-id="raycasting-renderer"><a href="./projects/raycasting.html">Raycasting renderer</a></h3>
-<p>A from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind <em>Wolfenstein 3D</em> (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.</p>
+<section id="isometric-tiles" class="level3">
+<h3 data-anchor-id="isometric-tiles"><a href="./projects/isometric-tiles.html">Isometric tiles</a></h3>
+<p>A Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.</p>
 <div class="experiment-links">
-<p><a href="./projects/raycasting.html">Read more →</a> · <a href="https://github.com/mizaimao/raycasting_pyqt" class="external">GitHub</a></p>
+<p><a href="./projects/isometric-tiles.html">Read more →</a> · <a href="https://github.com/mizaimao/ColonySim" class="external">GitHub — Python</a> · <a href="https://github.com/mizaimao/ColonySimR" class="external">GitHub — C++</a></p>
 </div>
 </section>
 </div>
-<div class="experiment-media portrait">
-<img src="assets/img/projects/raycasting.gif" alt="Raycasting renderer demo">
+<div class="experiment-media">
+<img src="assets/img/projects/isometric-tiles.gif" alt="Isometric tile simulation">
 </div>
 </div>
 <div class="experiment-row">
@@ -249,6 +249,82 @@ ul.task-list li input[type="checkbox"] {
 <picture>
 <source srcset="assets/img/projects/enigma.webp" type="image/webp">
 <img src="assets/img/projects/enigma.png" alt="Enigma M3 emulator screenshot">
+</picture>
+</div>
+</div>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+2023 · Graphics · Python
+</div>
+<section id="raycasting-renderer" class="level3">
+<h3 data-anchor-id="raycasting-renderer"><a href="./projects/raycasting.html">Raycasting renderer</a></h3>
+<p>A from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind <em>Wolfenstein 3D</em> (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.</p>
+<div class="experiment-links">
+<p><a href="./projects/raycasting.html">Read more →</a> · <a href="https://github.com/mizaimao/raycasting_pyqt" class="external">GitHub</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media portrait">
+<img src="assets/img/projects/raycasting.gif" alt="Raycasting renderer demo">
+</div>
+</div>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+2019 · Game Engines · Unreal
+</div>
+<section id="unreal-engine-cutscene-experiment" class="level3">
+<h3 data-anchor-id="unreal-engine-cutscene-experiment"><a href="./projects/unreal-engine.html">Unreal Engine cutscene experiment</a></h3>
+<p>A video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.</p>
+<div class="experiment-links">
+<p><a href="./projects/unreal-engine.html">Read more →</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media">
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border:1px solid #30363d; border-radius:4px;">
+<iframe src="https://www.youtube.com/embed/kLks7bYS2z8" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allow="picture-in-picture; encrypted-media" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+2024 · Mobile · Flutter · Swift
+</div>
+<section id="soundboard-app" class="level3">
+<h3 data-anchor-id="soundboard-app"><a href="./projects/soundboard.html">Soundboard app</a></h3>
+<p>A cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.</p>
+<div class="experiment-links">
+<p><a href="./projects/soundboard.html">Read more →</a> · <a href="https://github.com/mizaimao/r_flutter" class="external">GitHub</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media">
+<picture>
+<source srcset="assets/img/projects/soundboard-macos.webp" type="image/webp">
+<img src="assets/img/projects/soundboard-macos.png" alt="Soundboard — Flutter macOS build">
+</picture>
+</div>
+</div>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+2023 · Web · Python
+</div>
+<section id="online-audio-cutter" class="level3">
+<h3 data-anchor-id="online-audio-cutter"><a href="./projects/audio-cutter.html">Online audio cutter</a></h3>
+<p>A small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.</p>
+<div class="experiment-links">
+<p><a href="./projects/audio-cutter.html">Read more →</a> · <a href="https://github.com/mizaimao/audio_cutter" class="external">GitHub</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media">
+<picture>
+<source srcset="assets/img/projects/audio-cutter.webp" type="image/webp">
+<img src="assets/img/projects/audio-cutter.png" alt="Online audio cutter UI">
 </picture>
 </div>
 </div>

@@ -248,5 +248,5 @@ Soundboard app without round-tripping through a desktop editor.
 :::
 
 Also building: a [multi-agent stock analysis pipeline](projects/multi-agent-stock.qmd)
-(2025) — three-role architecture (analyst → challenger → synthesizer) running
+(2026) — three-role architecture (analyst → challenger → synthesizer) running
 on local Gemma via Ollama. Screenshots coming.

@@ -1,13 +1,13 @@
 ---
 title: "Multi-agent stock analysis pipeline"
 description: "Three-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard."
-date: 2025-12-01
+date: 2026-01-01
 categories: [Personal, Agentic AI, LLMs]
 image: ../assets/img/placeholder-square.png
 ---
 
 ::: {.eyebrow}
-Personal project · 2025
+Personal project · 2026
 :::
 
 ## Idea

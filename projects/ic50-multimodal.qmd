@@ -1,7 +1,7 @@
 ---
 title: "Multimodal IC50 prediction"
 description: "PyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds."
-date: 2024-09-01
+date: 2025-01-01
 categories: [Professional, Drug Discovery, Multimodal]
 image: ../assets/img/placeholder-square.png
 ---

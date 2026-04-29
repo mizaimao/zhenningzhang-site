@@ -14,9 +14,8 @@ include-in-header:
 
 <p class="hero-lede">
 I build deep learning systems for drug discovery and medical imaging.
-Five years at AstraZeneca on multimodal models for IC50 prediction,
-3D volumetric segmentation with transformer architectures, and
-graph-based analysis of multiplex immunofluorescence.
+Five years at AstraZeneca R&D IT, with peer-reviewed work in
+<em>Patterns</em> and four AACR poster presentations.
 M.S. Bioinformatics, University of Michigan.
 </p>
 
@@ -52,7 +51,7 @@ segmentation pipelines that depend on consistent imaging protocol.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2024 – Present · AstraZeneca</div>
+<div class="work-meta">2025 – Present · AstraZeneca</div>
 ### Multimodal IC50 prediction
 PyTorch models fusing cell painting microscopy with SMILES chemical
 representations for compound activity prediction. Deployed across compound
@@ -60,6 +59,18 @@ libraries totaling 39K compounds; jointly learned image-and-structure embeddings
 inform downstream phenotype-to-target reasoning.
 <div class="work-links">
 [Read more →](projects/ic50-multimodal.qmd)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2025 – Present · AstraZeneca</div>
+### Biomedical imaging data platform
+Unified ingestion and preprocessing platform for biomedical imaging at scale —
+now the team's standard data layer. Sixteen multi-center datasets, 150K CT
+volumes, automated mapping of thousands of annotation masks across DICOM and
+NIfTI standards.
+<div class="work-links">
+[Read more →](projects/data-ingestion-platform.qmd)
 </div>
 :::
 
@@ -76,18 +87,6 @@ Companion paper as poster at AACR 2024.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2022 – Present · AstraZeneca</div>
-### Biomedical imaging data platform
-Unified ingestion and preprocessing platform for biomedical imaging at scale —
-now the team's standard data layer. Sixteen multi-center datasets, 150K CT
-volumes, automated mapping of thousands of annotation masks across DICOM and
-NIfTI standards.
-<div class="work-links">
-[Read more →](projects/data-ingestion-platform.qmd)
-</div>
-:::
-
-::: {.work-entry}
 <div class="work-meta">2021 – 2022 · AstraZeneca</div>
 ### Graph-based analysis of multiplex immunofluorescence
 Graph Neural Networks over multi-channel images, capturing spatial cell-cell
@@ -100,7 +99,7 @@ Preprint on bioRxiv; abstracts at SITC and AACR.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2025 · Personal</div>
+<div class="work-meta">2026 · Personal</div>
 ### Multi-agent stock analysis pipeline
 Three-agent system (analyst → challenger → synthesizer) running on locally
 hosted Gemma via Ollama, with a Streamlit dashboard. Designed to surface

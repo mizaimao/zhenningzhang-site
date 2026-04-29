@@ -15,7 +15,7 @@ page-layout: article
 ---
 
 ::: {.eyebrow}
-§ AstraZeneca · Ann Arbor Algorithms · 2018 – present
+§ AstraZeneca · 2019 – present
 :::
 
 Drug discovery ML, medical imaging and segmentation, and the tooling and

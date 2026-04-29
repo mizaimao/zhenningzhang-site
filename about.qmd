@@ -11,8 +11,8 @@ page-layout: article
 ## Background
 
 I am a Machine Learning Engineer focused on medical AI. Since 2019, I have
-worked at AstraZeneca's R&D group in Maryland, building deep
-learning systems across drug discovery and medical imaging.
+worked at AstraZeneca R&D IT in Maryland, building deep learning systems
+across drug discovery and medical imaging.
 
 My work spans three threads. **Drug discovery ML** — multimodal models that
 fuse cell painting microscopy with SMILES chemical representations to predict
@@ -33,19 +33,24 @@ bioinformatician at the University of Michigan (M.S., 2018) after my
 biomedical sciences B.S. at the University of Macau.
 
 ::: {.eyebrow style="margin-top: 3rem;"}
-§ 02 · Currently
+§ 02 · Now
 :::
 
 ## What I am working on
 
-Medical AI continues to be the through-line. Recent and ongoing threads:
+Medical AI continues to be the through-line.
 
-- **Automatic contrast phase classification** of polyphasic CT scans —
-  poster at AACR 2026.
+**Recent threads at AstraZeneca**
+
+- **Automatic contrast phase classification** of polyphasic CT scans
+  (poster, AACR 2026).
 - **Multimodal IC50 prediction** at scale across compound libraries.
-- **Adversarial-critique multi-agent systems** as a personal project
-  (analyst → challenger → synthesizer architecture, locally hosted models
-  via Ollama, lightweight Streamlit interface).
+
+**Currently**
+
+- **Adversarial-critique multi-agent systems** — analyst → challenger →
+  synthesizer architecture, locally hosted models via Ollama, lightweight
+  Streamlit interface.
 - **GPU compute environments** — Proxmox/KVM virtualization with PCIe
   passthrough for specialized ML and cross-platform development workloads.
 

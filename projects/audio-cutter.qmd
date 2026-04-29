@@ -1,0 +1,35 @@
+---
+title: "Online audio cutter"
+description: "A small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app."
+date: 2023-10-01
+categories: [Personal, Web, Python]
+image: ../assets/img/projects/audio-cutter.png
+---
+
+::: {.eyebrow}
+Personal project
+:::
+
+<picture>
+  <source srcset="../assets/img/projects/audio-cutter.webp" type="image/webp">
+  <img src="../assets/img/projects/audio-cutter.png" alt="Online audio cutter UI" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
+</picture>
+
+## Idea
+
+A web service for extracting audio clips by time interval from a curated
+set of videos. Built to feed source material into the
+[Soundboard app](soundboard.qmd) without round-tripping through a desktop
+editor every time I wanted a new clip.
+
+## Implementation
+
+Dash front-end and back-end. Previously submitted requests are listed on
+the right pane and remain available for download, so iterating on a clip
+across several attempts doesn't lose history.
+
+## Stack
+
+Python, Dash.
+
+[GitHub repository →](https://github.com/mizaimao/audio_cutter){.external}

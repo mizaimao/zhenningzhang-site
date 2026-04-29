@@ -35,4 +35,4 @@ Hughes G, Patwari M, Wei Y, Parker M, Parkin J, **Zhang Z**, Filippov A.
 "Automatic contrast phase classification of polyphasic CT scans."
 Poster, *AACR Annual Meeting 2026*. Abstract: *Cancer Research* 86, Suppl. 7, 2777.
 
-[Read the abstract](https://aacrjournals.org/cancerres/article/86/7_Supplement/2777){.external}
+[Read the abstract](https://aacrjournals.org/cancerres/article/86/7_Supplement/2777/778083/Abstract-2777-Automatic-contrast-phase){.external}

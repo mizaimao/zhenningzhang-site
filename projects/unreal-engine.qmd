@@ -1,0 +1,31 @@
+---
+title: "Unreal Engine cutscene experiment"
+description: "Video cutscene and programmed object movement in Unreal Engine 4.22, with physics simulation and raytracing enabled. Built from royalty-free assets."
+date: 2019-06-01
+categories: [Personal, Game Engines, Unreal]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+Personal project
+:::
+
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border:1px solid #30363d; border-radius:4px; max-width:680px; margin:1rem 0;">
+  <iframe src="https://www.youtube.com/embed/kLks7bYS2z8" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allow="picture-in-picture; encrypted-media" allowfullscreen></iframe>
+</div>
+
+## Idea
+
+An experiment in Unreal Engine 4.22: a video cutscene with programmed
+object movement, physics simulation, and raytracing enabled. The point
+was the scripting and rendering pipeline, not original art — the scene is
+assembled entirely from royalty-free assets.
+
+## Implementation
+
+Scripted object movement, physics-driven secondary motion, and raytracing
+on the lighting pass. The cutscene is sequenced as a single take.
+
+## Stack
+
+Unreal Engine 4.22, royalty-free asset packs.

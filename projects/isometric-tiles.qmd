@@ -1,0 +1,33 @@
+---
+title: "Isometric tiles"
+description: "A Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. First in Python, then ported to C++."
+date: 2022-06-01
+categories: [Personal, Simulation, Python, C++]
+image: ../assets/img/projects/isometric-tiles.gif
+---
+
+::: {.eyebrow}
+Personal project
+:::
+
+<img src="../assets/img/projects/isometric-tiles.gif" alt="Isometric tile simulation" style="width:100%; max-width:560px; height:auto; border:1px solid #30363d; border-radius:4px;">
+
+## Idea
+
+A grid simulation in the spirit of Conway's Game of Life — blue and red
+blocks that can move, multiply, and decay across an isometric tile field.
+Cell-to-cell interactions are deliberately simple; the visual interest
+comes from the emergent population dynamics on a rendered isometric grid.
+
+## Implementation
+
+First written in Python 3 for fast iteration on the simulation rules, then
+ported to C++ once I wanted larger grids and faster step rates than the
+Python version could deliver.
+
+## Stack
+
+Python 3 (`ColonySim`) and C++ (`ColonySimR`).
+
+[GitHub — Python →](https://github.com/mizaimao/ColonySim){.external} ·
+[GitHub — C++ →](https://github.com/mizaimao/ColonySimR){.external}

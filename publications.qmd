@@ -46,7 +46,7 @@ page-layout: article
   Automatic contrast phase classification of polyphasic CT scans.
   Poster, <em>AACR Annual Meeting 2026</em>.
   Abstract: <em>Cancer Research</em> 86, Suppl. 7, 2777.
-  <a href="https://aacrjournals.org/cancerres/article/86/7_Supplement/2777" class="external">Abstract</a>
+  <a href="https://aacrjournals.org/cancerres/article/86/7_Supplement/2777/778083/Abstract-2777-Automatic-contrast-phase" class="external">Abstract</a>
 </div>
 
 <div class="csl-entry">

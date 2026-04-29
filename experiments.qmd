@@ -62,23 +62,24 @@ language modeling, MIDI tokenizer for music generation. Trained on Bach's
 ::: {.experiment-row}
 
 ::: {.experiment-text}
-<div class="experiment-meta">2023 · Graphics · Python</div>
+<div class="experiment-meta">2022 · Simulation · Python · C++</div>
 
-### [Raycasting renderer](projects/raycasting.qmd)
+### [Isometric tiles](projects/isometric-tiles.qmd)
 
-A from-scratch raycasting renderer in Python and PyQt5 — the rendering
-technique behind *Wolfenstein 3D* (1992). Casts rays per pixel column over a
-2D map and computes wall heights from intersection distance.
+A Game-of-Life-inspired tile simulation. Blue and red blocks move,
+multiply, and decay over an isometric grid. Written in Python first, then
+ported to C++ for larger grids and faster step rates.
 
 <div class="experiment-links">
-[Read more →](projects/raycasting.qmd) ·
-[GitHub](https://github.com/mizaimao/raycasting_pyqt){.external}
+[Read more →](projects/isometric-tiles.qmd) ·
+[GitHub — Python](https://github.com/mizaimao/ColonySim){.external} ·
+[GitHub — C++](https://github.com/mizaimao/ColonySimR){.external}
 </div>
 :::
 
 ```{=html}
-<div class="experiment-media portrait">
-<img src="assets/img/projects/raycasting.gif" alt="Raycasting renderer demo">
+<div class="experiment-media">
+<img src="assets/img/projects/isometric-tiles.gif" alt="Isometric tile simulation">
 </div>
 ```
 
@@ -106,6 +107,114 @@ Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.
 <picture>
 <source srcset="assets/img/projects/enigma.webp" type="image/webp">
 <img src="assets/img/projects/enigma.png" alt="Enigma M3 emulator screenshot">
+</picture>
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2023 · Graphics · Python</div>
+
+### [Raycasting renderer](projects/raycasting.qmd)
+
+A from-scratch raycasting renderer in Python and PyQt5 — the rendering
+technique behind *Wolfenstein 3D* (1992). Casts rays per pixel column over a
+2D map and computes wall heights from intersection distance.
+
+<div class="experiment-links">
+[Read more →](projects/raycasting.qmd) ·
+[GitHub](https://github.com/mizaimao/raycasting_pyqt){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media portrait">
+<img src="assets/img/projects/raycasting.gif" alt="Raycasting renderer demo">
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2019 · Game Engines · Unreal</div>
+
+### [Unreal Engine cutscene experiment](projects/unreal-engine.qmd)
+
+A video cutscene and physics-driven object-movement experiment in Unreal
+Engine 4.22, with raytracing enabled. Built from royalty-free assets —
+the focus was the scripting and rendering pipeline rather than original
+art.
+
+<div class="experiment-links">
+[Read more →](projects/unreal-engine.qmd)
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border:1px solid #30363d; border-radius:4px;">
+<iframe src="https://www.youtube.com/embed/kLks7bYS2z8" style="position:absolute; top:0; left:0; width:100%; height:100%;" frameborder="0" allow="picture-in-picture; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2024 · Mobile · Flutter · Swift</div>
+
+### [Soundboard app](projects/soundboard.qmd)
+
+A cross-platform soundboard with audio mixing, shuffling, video playback,
+and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter
+to ship the same UI on macOS, Windows, and Linux from one codebase.
+
+<div class="experiment-links">
+[Read more →](projects/soundboard.qmd) ·
+[GitHub](https://github.com/mizaimao/r_flutter){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<picture>
+<source srcset="assets/img/projects/soundboard-macos.webp" type="image/webp">
+<img src="assets/img/projects/soundboard-macos.png" alt="Soundboard — Flutter macOS build">
+</picture>
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
+<div class="experiment-meta">2023 · Web · Python</div>
+
+### [Online audio cutter](projects/audio-cutter.qmd)
+
+A small Dash web service that extracts audio clips from pre-defined
+videos by time interval. Built to feed source material into the
+Soundboard app without round-tripping through a desktop editor.
+
+<div class="experiment-links">
+[Read more →](projects/audio-cutter.qmd) ·
+[GitHub](https://github.com/mizaimao/audio_cutter){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<picture>
+<source srcset="assets/img/projects/audio-cutter.webp" type="image/webp">
+<img src="assets/img/projects/audio-cutter.png" alt="Online audio cutter UI">
 </picture>
 </div>
 ```

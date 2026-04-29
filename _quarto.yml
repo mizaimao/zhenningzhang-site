@@ -63,13 +63,13 @@ format:
     smooth-scroll: true
     anchor-sections: false
     fontsize: "1.0625rem"
-    mainfont: "Inter Tight, -apple-system, BlinkMacSystemFont, Segoe UI, system-ui, sans-serif"
+    mainfont: "Helvetica Neue, Helvetica, Arial, sans-serif"
     monofont: "JetBrains Mono, ui-monospace, SF Mono, Menlo, monospace"
     include-in-header:
       text: |
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 execute:
   freeze: auto

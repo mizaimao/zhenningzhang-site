@@ -5,3 +5,6 @@ CLAUDE.md
 
 /.quarto/
 **/*.quarto_ipynb
+
+# Old website import
+public_html/

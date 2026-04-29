@@ -33,10 +33,10 @@ $footer-bg:                    $bg-elevated;
 $footer-fg:                    $fg-mute;
 
 // Typography
-$font-family-sans-serif:       "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+$font-family-sans-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-family-monospace:        "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
-$headings-font-family:         "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
-$headings-font-weight:         500;
+$headings-font-family:         "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight:         600;
 $headings-color:               $fg-primary;
 $headings-line-height:         1.2;
 
@@ -58,20 +58,20 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-// Headings — mono, slightly relaxed letter-spacing
+// Headings
 h1, h2, h3, h4 {
-  letter-spacing: -0.005em;
+  letter-spacing: -0.012em;
   font-feature-settings: "kern", "liga";
 }
-h1 { font-size: 2.1rem; font-weight: 600; line-height: 1.15; }
-h2 { font-size: 1.4rem; font-weight: 500; margin-top: 2.5rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.1rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.1; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.15rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; }
 
 h1.title {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
 
@@ -163,8 +163,8 @@ main a:hover {
 }
 .listing-title {
   font-family: $headings-font-family;
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1.25rem;
+  font-weight: 600;
   margin-bottom: 0.35rem;
 }
 .listing-title a {
@@ -234,10 +234,10 @@ blockquote {
 }
 .hero-block .hero-name {
   font-family: $headings-font-family;
-  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
+  font-size: clamp(2.5rem, 5vw, 3.6rem);
   font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.05;
+  letter-spacing: -0.025em;
+  line-height: 1.0;
   margin: 0 0 0.5rem;
   color: $fg-primary;
 }
@@ -273,8 +273,8 @@ blockquote {
 }
 .section-marker h2 {
   margin: 0;
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 // Featured work entry
@@ -293,8 +293,8 @@ blockquote {
 }
 .work-entry h3 {
   font-family: $headings-font-family;
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 600;
   margin: 0 0 0.45rem;
   color: $fg-primary;
 }
@@ -320,7 +320,7 @@ blockquote {
 
 // Mobile
 @media (max-width: 768px) {
-  h1.title { font-size: 1.8rem; }
-  .hero-block .hero-name { font-size: 2rem; }
+  h1.title { font-size: 2rem; }
+  .hero-block .hero-name { font-size: 2.25rem; }
   .hero-block .hero-lede { font-size: 1.05rem; }
 }

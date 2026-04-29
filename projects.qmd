@@ -21,5 +21,4 @@ page-layout: article
 Drug discovery ML, medical imaging and segmentation, and the tooling and
 infrastructure that supports both. Most recent work first.
 
-For personal projects and learning experiments, see
-[Experiments](experiments.qmd).
+For personal projects and side builds, see [Tinkering](experiments.qmd).

@@ -1,6 +1,6 @@
 ---
-title: "Experiments"
-description: "Personal projects, learning experiments, and weekend builds."
+title: "Tinkering"
+description: "Side projects, weekend builds, and things I make for the fun of figuring them out."
 page-layout: article
 ---
 
@@ -8,9 +8,9 @@ page-layout: article
 § Personal · Outside the day job
 :::
 
-Side projects, weekend builds, and things I make to learn something new —
-generative models, retro computing, game development, agentic AI experiments,
-and the homelab work that supports it all.
+The stuff I build for the fun of figuring it out — generative models,
+retro computing, game engines, agentic AI, terminal toys, and the homelab
+work that supports it all.
 
 For professional work, see [Work](projects.qmd).
 

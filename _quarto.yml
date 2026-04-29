@@ -27,7 +27,7 @@ website:
       - href: publications.qmd
         text: Publications
       - href: experiments.qmd
-        text: Experiments
+        text: Tinkering
       - href: about.qmd
         text: About
     right:

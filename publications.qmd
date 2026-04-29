@@ -1,0 +1,97 @@
+---
+title: "Publications"
+description: "Peer-reviewed papers, preprints, and conference presentations."
+page-layout: article
+---
+
+::: {.eyebrow}
+§ 01 · Peer-reviewed
+:::
+
+## Journal
+
+```{=html}
+<div class="csl-entry">
+  Guan Y, Wang X, Li H, <strong>Zhang Z</strong>, Chen X, Siddiqui O, Nehring S, Huang X.
+  Detecting asymmetric patterns and localizing cancers on mammograms.
+  <em>Patterns</em> 1, no. 7 (2020).
+  <a href="https://www.cell.com/patterns/fulltext/S2666-3899(20)30140-9" class="external">DOI</a>
+</div>
+```
+
+::: {.eyebrow style="margin-top: 3rem;"}
+§ 02 · Preprint
+:::
+
+## bioRxiv
+
+```{=html}
+<div class="csl-entry">
+  Innocenti C, <strong>Zhang Z</strong>, Selvaraj B, Gaffney I, Frangos M, Cohen-Setton J, et al.
+  An unsupervised graph embeddings approach to multiplex immunofluorescence image exploration.
+  <em>bioRxiv</em> 2021.06.09.447654 (2021).
+  <a href="https://www.biorxiv.org/content/10.1101/2021.06.09.447654v1" class="external">Preprint</a>
+</div>
+```
+
+::: {.eyebrow style="margin-top: 3rem;"}
+§ 03 · Conference presentations
+:::
+
+## AACR Annual Meeting
+
+```{=html}
+<div class="csl-entry">
+  Hughes G, Patwari M, Wei Y, Parker M, Parkin J, <strong>Zhang Z</strong>, Filippov A.
+  Automatic contrast phase classification of polyphasic CT scans.
+  Poster, <em>AACR Annual Meeting 2026</em>.
+  Abstract: <em>Cancer Research</em> 86, Suppl. 7, 2777.
+  <a href="https://aacrjournals.org/cancerres/article/86/7_Supplement/2777" class="external">Abstract</a>
+</div>
+
+<div class="csl-entry">
+  Patwari M, Wei Y, Xu M, <strong>Zhang Z</strong>, Sidiropoulos K, Selvaraj B, Hughes G, et al.
+  Fast, interactive, AI-assisted 3D lung tumour segmentation.
+  Poster, <em>AACR Annual Meeting 2024</em>.
+  Abstract: <em>Cancer Research</em> 84, Suppl. 6, 887.
+  <a href="https://aacrjournals.org/cancerres/article/84/6_Supplement/887/741446" class="external">Abstract</a>
+</div>
+
+<div class="csl-entry">
+  Wei Y, Selvaraj B, Patwari M, Li Q, Xu M, Sidiropoulos K, <strong>Zhang Z</strong>, et al.
+  Improving non-small cell lung cancer segmentation on a challenging dataset.
+  Poster, <em>AACR Annual Meeting 2023</em>.
+  Abstract: <em>Cancer Research</em> 83, Suppl. 7, 5427.
+  <a href="https://aacrjournals.org/cancerres/article/83/7_Supplement/5427/719631" class="external">Abstract</a>
+</div>
+
+<div class="csl-entry">
+  Fedden L, <strong>Zhang Z</strong>, Baykaner K, Li Q, Bordeaux L.
+  DIME-CT: Self-supervised learning for medical image analysis using patch-based embeddings.
+  Poster, <em>AACR Annual Meeting 2022</em>.
+  Abstract: <em>Cancer Research</em> 82, Suppl. 12, 1937.
+  <a href="https://aacrjournals.org/cancerres/article/82/12_Supplement/1937/703544" class="external">Abstract</a>
+</div>
+```
+
+## Society for Immunotherapy of Cancer (SITC)
+
+```{=html}
+<div class="csl-entry">
+  Innocenti C, <strong>Zhang Z</strong>, et al.
+  Multiplex immunofluorescence image exploration via unsupervised graph embeddings.
+  Poster, <em>SITC 2021</em>.
+  <a href="https://jitc.bmj.com/content/9/Suppl_2/A860" class="external">Abstract</a>
+</div>
+```
+
+## AACR Tumor Immunology and Immunotherapy
+
+```{=html}
+<div class="csl-entry">
+  <strong>Zhang Z</strong>, et al.
+  Graph-based analysis of multiplex immunofluorescence imaging.
+  <em>Clinical Cancer Research</em> 27, no. 5 Supplement (2021): PR-05.
+  <a href="https://aacrjournals.org/clincancerres/article/27/5_Supplement/PR-05/32768" class="external">Abstract</a>
+</div>
+```

@@ -1,0 +1,49 @@
+---
+title: "Biomedical imaging data platform"
+description: "Unified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI."
+date: 2022-08-01
+categories: [Professional, Infrastructure, Medical Imaging]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AstraZeneca · Tooling & Infrastructure
+:::
+
+## Problem
+
+Multi-center medical imaging data is fundamentally heterogeneous. A single
+research question — say, "train a lung tumor segmentation model robust to
+acquisition variability" — touches data from many sources: different
+hospitals, different scanner vendors, different annotation conventions,
+different file formats (DICOM, NIfTI), different metadata schemas. Without a
+unified data layer, every new model or analysis re-implements ingestion and
+preprocessing from scratch, with subtle inconsistencies that compound across
+the team.
+
+## Approach
+
+A unified data ingestion and preprocessing platform that standardizes:
+
+- **File format normalization** — DICOM and NIfTI volumes brought to a
+  consistent on-disk representation with preserved provenance.
+- **Annotation mapping** — automatic mapping of thousands of annotation
+  masks (segmentations, lesion bounding boxes, classifier labels) to the
+  corresponding volumes, across diverse annotation file standards.
+- **Metadata harmonization** — schema unification across vendor-specific
+  DICOM tag conventions, with explicit handling of missing or inconsistent
+  fields.
+- **Versioned snapshots** — reproducible dataset definitions tied to
+  experiments.
+
+## Result
+
+Sixteen multi-center datasets ingested, totaling **150K CT volumes**, with
+automated mapping of thousands of annotation masks. Adopted as the team's
+standard data layer, reducing the time-to-experiment for new modeling work
+substantially.
+
+## Stack
+
+Python, PyTorch, MONAI, ITK / SimpleITK for medical imaging I/O, custom
+metadata schema, internal annotation tooling.

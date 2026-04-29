@@ -1,0 +1,43 @@
+---
+title: "Graph-based analysis of multiplex immunofluorescence"
+description: "Graph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification."
+date: 2021-06-01
+categories: [Professional, Drug Discovery, Graph Learning]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AstraZeneca · Drug Discovery ML
+:::
+
+## Problem
+
+Multiplex immunofluorescence (mIF) images carry rich information about cell
+type, marker expression, and — crucially — **spatial relationships between
+cells**. Conventional analysis pipelines flatten this to per-cell feature
+tables, discarding the spatial structure that often correlates most directly
+with biological mechanism and clinical outcome.
+
+## Approach
+
+Treat mIF images as graphs. Each cell becomes a node with marker-expression
+features; spatial proximity defines edges. Graph Neural Networks then learn
+representations that explicitly model cell-neighborhood interactions for
+downstream phenotype classification.
+
+## Result
+
+The approach is described in a preprint on bioRxiv and was presented at SITC
+2021 and at the AACR Tumor Immunology and Immunotherapy 2021 meeting:
+
+> Innocenti C, **Zhang Z**, Selvaraj B, Gaffney I, Frangos M, Cohen-Setton J, et al.
+> "An unsupervised graph embeddings approach to multiplex immunofluorescence image exploration."
+> *bioRxiv* 2021.06.09.447654 (preprint).
+
+[bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2021.06.09.447654v1){.external} ·
+[SITC 2021 abstract](https://jitc.bmj.com/content/9/Suppl_2/A860){.external} ·
+[AACR Clinical Cancer Research abstract](https://aacrjournals.org/clincancerres/article/27/5_Supplement/PR-05/32768){.external}
+
+## Stack
+
+PyTorch Geometric, scikit-learn, custom mIF preprocessing pipeline.

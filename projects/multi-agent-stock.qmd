@@ -1,0 +1,48 @@
+---
+title: "Multi-agent stock analysis pipeline"
+description: "Three-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard."
+date: 2025-12-01
+categories: [Personal, Agentic AI, LLMs]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+Personal project · 2025
+:::
+
+## Idea
+
+Single-LLM "stock analyst" demos tend to produce confidently wrong analysis
+because the model never has to defend its own claims. This project explores
+a three-role architecture where roles are deliberately adversarial:
+
+- **Analyst** — surfaces the bullish or neutral case from available data.
+- **Challenger** — argues the bearish case, identifies weaknesses in the
+  analyst's reasoning, surfaces disconfirming evidence.
+- **Synthesizer** — adjudicates the disagreement and produces a final
+  reasoned summary, including stated uncertainty.
+
+The structure forces explicit disagreement before synthesis, which surfaces
+edge cases that a single-agent pipeline would miss.
+
+## Implementation
+
+- **Inference** — locally hosted Gemma via Ollama on an RTX 4090 Linux
+  desktop. Migrated to Gemini 2.5 Flash via the Google AI Studio free tier
+  for the public demo (in-app rate limiting protects the quota).
+- **Frontend** — Streamlit dashboard that exposes each agent's reasoning
+  side-by-side, so the disagreement is legible to the user.
+- **Optimization** — careful inference and memory tuning across Apple
+  Silicon (MLX) and Linux GPU environments.
+
+## Demo
+
+Live demo on Hugging Face Spaces.
+A pre-recorded walkthrough video is available as a fallback if the demo is
+rate-limited.
+
+[Live demo →](https://huggingface.co/spaces){.external}
+
+## Stack
+
+Python, Ollama, Gemma, Streamlit, Google Generative AI SDK.

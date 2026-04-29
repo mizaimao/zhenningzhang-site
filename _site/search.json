@@ -1,0 +1,443 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "§ 01 · Background"
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\nI am a Machine Learning Engineer focused on medical AI. Since 2019, I have worked at AstraZeneca’s R&D group in Gaithersburg, Maryland, building deep learning systems across drug discovery and medical imaging.\nMy work spans three threads. Drug discovery ML — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. Medical imaging and segmentation — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. Tooling and infrastructure — a unified ingestion and preprocessing platform that has become the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&D labs use to interpret model outputs.\nBefore AstraZeneca, I was a Software Engineer at Ann Arbor Algorithms, building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, anomaly identification — on multimodal datasets of millions of points. I trained as a bioinformatician at the University of Michigan (M.S., 2018) after my biomedical sciences B.S. at the University of Macau.\n\n§ 02 · Currently"
+  },
+  {
+    "objectID": "about.html#what-i-am-working-on",
+    "href": "about.html#what-i-am-working-on",
+    "title": "About",
+    "section": "What I am working on",
+    "text": "What I am working on\nMedical AI continues to be the through-line. Recent and ongoing threads:\n\nAutomatic contrast phase classification of polyphasic CT scans — poster at AACR 2026.\nMultimodal IC50 prediction at scale across compound libraries.\nAdversarial-critique multi-agent systems as a personal project (analyst → challenger → synthesizer architecture, locally hosted models via Ollama, lightweight Streamlit interface).\nGPU compute environments — Proxmox/KVM virtualization with PCIe passthrough for specialized ML and cross-platform development workloads.\n\n\n§ 03 · Skills"
+  },
+  {
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nProgramming — Python (expert), C++, R.\nMachine learning and AI — PyTorch (expert), Keras, scikit-learn, Hugging Face, HDBSCAN, UMAP, MLX, Ollama.\nMedical AI and imaging — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.\nInfrastructure and MLOps — Docker, Kubernetes, Git, Proxmox, KVM, Dash, Agile.\n\n§ 04 · Contact"
+  },
+  {
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nThe fastest paths to reach me:\n\nLinkedIn for professional contact.\nGitHub for code and personal projects.\nFor email and phone, see my CV."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zhenning Zhang",
+    "section": "",
+    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI\n\n\nI build deep learning systems for drug discovery and medical imaging. Five years at AstraZeneca on multimodal models for IC50 prediction, 3D volumetric segmentation with transformer architectures, and graph-based analysis of multiplex immunofluorescence. M.S. Bioinformatics, University of Michigan.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\n\n\n\n§ 01 ## Recent\n\n\n\nApril 2026 · AACR Annual Meeting\n\n\nAutomatic contrast phase classification of polyphasic CT scans\nPoster presentation at the AACR Annual Meeting 2026 (San Diego). Co-authored work on identifying contrast phase from CT volumes — a prerequisite for downstream tumor segmentation pipelines that depend on consistent imaging protocol.\n\nAbstract — Cancer Research 86, Suppl. 7, 2777\n\n\n\n\n§ 02 ## Selected work {#selected-work}\n\n\n\n2024 – Present · AstraZeneca\n\n\nMultimodal IC50 prediction\nPyTorch models fusing cell painting microscopy with SMILES chemical representations for compound activity prediction. Deployed across compound libraries totaling 39K compounds; jointly learned image-and-structure embeddings inform downstream phenotype-to-target reasoning.\n\nRead more →\n\n\n\n\n\n2023 – Present · AstraZeneca\n\n\nInteractive 3D segmentation toolset\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D. Companion paper as poster at AACR 2024.\n\nRead more → · Abstract — AACR 2024\n\n\n\n\n\n2022 – Present · AstraZeneca\n\n\nBiomedical imaging data platform\nUnified ingestion and preprocessing platform for biomedical imaging at scale — now the team’s standard data layer. Sixteen multi-center datasets, 150K CT volumes, automated mapping of thousands of annotation masks across DICOM and NIfTI standards.\n\nRead more →\n\n\n\n\n\n2021 – 2022 · AstraZeneca\n\n\nGraph-based analysis of multiplex immunofluorescence\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification. Preprint on bioRxiv; abstracts at SITC and AACR.\n\nRead more → · Preprint — bioRxiv\n\n\n\n\n\n2025 · Personal\n\n\nMulti-agent stock analysis pipeline\nThree-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard. Designed to surface disagreement and adversarial critique before final synthesis.\n\nRead more → · Live demo (Hugging Face Spaces) →\n\n\n\n\n§ 03 ## More\n\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
+  },
+  {
+    "objectID": "projects/data-ingestion-platform.html",
+    "href": "projects/data-ingestion-platform.html",
+    "title": "Biomedical imaging data platform",
+    "section": "",
+    "text": "AstraZeneca · Tooling & Infrastructure"
+  },
+  {
+    "objectID": "projects/data-ingestion-platform.html#problem",
+    "href": "projects/data-ingestion-platform.html#problem",
+    "title": "Biomedical imaging data platform",
+    "section": "Problem",
+    "text": "Problem\nMulti-center medical imaging data is fundamentally heterogeneous. A single research question — say, “train a lung tumor segmentation model robust to acquisition variability” — touches data from many sources: different hospitals, different scanner vendors, different annotation conventions, different file formats (DICOM, NIfTI), different metadata schemas. Without a unified data layer, every new model or analysis re-implements ingestion and preprocessing from scratch, with subtle inconsistencies that compound across the team."
+  },
+  {
+    "objectID": "projects/data-ingestion-platform.html#approach",
+    "href": "projects/data-ingestion-platform.html#approach",
+    "title": "Biomedical imaging data platform",
+    "section": "Approach",
+    "text": "Approach\nA unified data ingestion and preprocessing platform that standardizes:\n\nFile format normalization — DICOM and NIfTI volumes brought to a consistent on-disk representation with preserved provenance.\nAnnotation mapping — automatic mapping of thousands of annotation masks (segmentations, lesion bounding boxes, classifier labels) to the corresponding volumes, across diverse annotation file standards.\nMetadata harmonization — schema unification across vendor-specific DICOM tag conventions, with explicit handling of missing or inconsistent fields.\nVersioned snapshots — reproducible dataset definitions tied to experiments."
+  },
+  {
+    "objectID": "projects/data-ingestion-platform.html#result",
+    "href": "projects/data-ingestion-platform.html#result",
+    "title": "Biomedical imaging data platform",
+    "section": "Result",
+    "text": "Result\nSixteen multi-center datasets ingested, totaling 150K CT volumes, with automated mapping of thousands of annotation masks. Adopted as the team’s standard data layer, reducing the time-to-experiment for new modeling work substantially."
+  },
+  {
+    "objectID": "projects/data-ingestion-platform.html#stack",
+    "href": "projects/data-ingestion-platform.html#stack",
+    "title": "Biomedical imaging data platform",
+    "section": "Stack",
+    "text": "Stack\nPython, PyTorch, MONAI, ITK / SimpleITK for medical imaging I/O, custom metadata schema, internal annotation tooling."
+  },
+  {
+    "objectID": "projects/multi-agent-stock.html",
+    "href": "projects/multi-agent-stock.html",
+    "title": "Multi-agent stock analysis pipeline",
+    "section": "",
+    "text": "Personal project · 2025"
+  },
+  {
+    "objectID": "projects/multi-agent-stock.html#idea",
+    "href": "projects/multi-agent-stock.html#idea",
+    "title": "Multi-agent stock analysis pipeline",
+    "section": "Idea",
+    "text": "Idea\nSingle-LLM “stock analyst” demos tend to produce confidently wrong analysis because the model never has to defend its own claims. This project explores a three-role architecture where roles are deliberately adversarial:\n\nAnalyst — surfaces the bullish or neutral case from available data.\nChallenger — argues the bearish case, identifies weaknesses in the analyst’s reasoning, surfaces disconfirming evidence.\nSynthesizer — adjudicates the disagreement and produces a final reasoned summary, including stated uncertainty.\n\nThe structure forces explicit disagreement before synthesis, which surfaces edge cases that a single-agent pipeline would miss."
+  },
+  {
+    "objectID": "projects/multi-agent-stock.html#implementation",
+    "href": "projects/multi-agent-stock.html#implementation",
+    "title": "Multi-agent stock analysis pipeline",
+    "section": "Implementation",
+    "text": "Implementation\n\nInference — locally hosted Gemma via Ollama on an RTX 4090 Linux desktop. Migrated to Gemini 2.5 Flash via the Google AI Studio free tier for the public demo (in-app rate limiting protects the quota).\nFrontend — Streamlit dashboard that exposes each agent’s reasoning side-by-side, so the disagreement is legible to the user.\nOptimization — careful inference and memory tuning across Apple Silicon (MLX) and Linux GPU environments."
+  },
+  {
+    "objectID": "projects/multi-agent-stock.html#demo",
+    "href": "projects/multi-agent-stock.html#demo",
+    "title": "Multi-agent stock analysis pipeline",
+    "section": "Demo",
+    "text": "Demo\nLive demo on Hugging Face Spaces. A pre-recorded walkthrough video is available as a fallback if the demo is rate-limited.\nLive demo →"
+  },
+  {
+    "objectID": "projects/multi-agent-stock.html#stack",
+    "href": "projects/multi-agent-stock.html#stack",
+    "title": "Multi-agent stock analysis pipeline",
+    "section": "Stack",
+    "text": "Stack\nPython, Ollama, Gemma, Streamlit, Google Generative AI SDK."
+  },
+  {
+    "objectID": "projects/raycasting.html",
+    "href": "projects/raycasting.html",
+    "title": "Raycasting renderer",
+    "section": "",
+    "text": "Personal project"
+  },
+  {
+    "objectID": "projects/raycasting.html#idea",
+    "href": "projects/raycasting.html#idea",
+    "title": "Raycasting renderer",
+    "section": "Idea",
+    "text": "Idea\nRaycasting renders a faux-3D scene from a 2D map by casting rays per pixel column and computing wall heights from intersection distance. It is the technique behind Wolfenstein 3D (1992), and a fun rendering algorithm to implement from scratch."
+  },
+  {
+    "objectID": "projects/raycasting.html#implementation",
+    "href": "projects/raycasting.html#implementation",
+    "title": "Raycasting renderer",
+    "section": "Implementation",
+    "text": "Implementation\nPython 3 with PyQt5 for the rendering surface. The map is a 2D grid; rays are cast at the column resolution of the viewport; wall heights and shading derive from the per-ray intersection distances."
+  },
+  {
+    "objectID": "projects/raycasting.html#stack",
+    "href": "projects/raycasting.html#stack",
+    "title": "Raycasting renderer",
+    "section": "Stack",
+    "text": "Stack\nPython 3, PyQt5.\nGitHub repository →"
+  },
+  {
+    "objectID": "projects/music-gen.html",
+    "href": "projects/music-gen.html",
+    "title": "Music generation transformer",
+    "section": "",
+    "text": "Personal project · 2024"
+  },
+  {
+    "objectID": "projects/music-gen.html#idea",
+    "href": "projects/music-gen.html#idea",
+    "title": "Music generation transformer",
+    "section": "Idea",
+    "text": "Idea\nA from-scratch implementation of a decoder-only generative transformer in PyTorch — small enough to be readable, big enough to actually learn something interesting. The model is dual-modality: with a text tokenizer it behaves as a small language model; with a MIDI tokenizer it generates music."
+  },
+  {
+    "objectID": "projects/music-gen.html#implementation",
+    "href": "projects/music-gen.html#implementation",
+    "title": "Music generation transformer",
+    "section": "Implementation",
+    "text": "Implementation\nStandard decoder-only transformer with multi-head self-attention, positional encoding, and a final language modeling head — roughly the structure popularized by GPT, but at a scale that fits on a single consumer GPU. Tokenization swaps between BPE for text and a custom MIDI event tokenizer.\nTrained on Bach’s Goldberg Variations and The Well-Tempered Clavier for the music generation experiments."
+  },
+  {
+    "objectID": "projects/music-gen.html#demo",
+    "href": "projects/music-gen.html#demo",
+    "title": "Music generation transformer",
+    "section": "Demo",
+    "text": "Demo\nGenerated audio samples are linked from the GitHub repo."
+  },
+  {
+    "objectID": "projects/music-gen.html#stack",
+    "href": "projects/music-gen.html#stack",
+    "title": "Music generation transformer",
+    "section": "Stack",
+    "text": "Stack\nPyTorch, custom MIDI tokenizer, MIDI synthesis tooling for playback.\nGitHub repository →"
+  },
+  {
+    "objectID": "projects/ic50-multimodal.html",
+    "href": "projects/ic50-multimodal.html",
+    "title": "Multimodal IC50 prediction",
+    "section": "",
+    "text": "AstraZeneca · Drug Discovery ML"
+  },
+  {
+    "objectID": "projects/ic50-multimodal.html#problem",
+    "href": "projects/ic50-multimodal.html#problem",
+    "title": "Multimodal IC50 prediction",
+    "section": "Problem",
+    "text": "Problem\nPredicting compound activity (IC50) from chemical structure alone leaves information on the table. Cell painting — high-content imaging that captures cellular morphological response to compound treatment — provides a rich phenotypic signature that complements structure-based representations. Models that fuse the two should outperform either modality alone, but practical multimodal training brings its own challenges: heterogeneous data volumes, alignment between image and chemical representations, and joint embedding regularization."
+  },
+  {
+    "objectID": "projects/ic50-multimodal.html#approach",
+    "href": "projects/ic50-multimodal.html#approach",
+    "title": "Multimodal IC50 prediction",
+    "section": "Approach",
+    "text": "Approach\nPyTorch-based multimodal architecture combining:\n\nCell painting microscopy branch — convolutional encoder over the multi-channel imaging stack, learning a phenotypic embedding of compound treatment effect.\nChemical structure branch — SMILES tokenizer feeding a sequence model to produce a structural embedding.\nJoint head — fusion of the two embeddings into IC50 regression with uncertainty estimation, trained across compound libraries totaling 39K compounds."
+  },
+  {
+    "objectID": "projects/ic50-multimodal.html#result",
+    "href": "projects/ic50-multimodal.html#result",
+    "title": "Multimodal IC50 prediction",
+    "section": "Result",
+    "text": "Result\nDeployed as part of internal compound activity prediction workflows. Multimodal fusion outperforms either single modality and provides interpretable embeddings that surface structure-phenotype correspondences useful for downstream target reasoning."
+  },
+  {
+    "objectID": "projects/ic50-multimodal.html#stack",
+    "href": "projects/ic50-multimodal.html#stack",
+    "title": "Multimodal IC50 prediction",
+    "section": "Stack",
+    "text": "Stack\nPyTorch, MONAI for image preprocessing, RDKit for SMILES handling, scikit-learn for evaluation tooling."
+  },
+  {
+    "objectID": "projects/aacr-2026-contrast-classification.html",
+    "href": "projects/aacr-2026-contrast-classification.html",
+    "title": "Automatic contrast phase classification of polyphasic CT scans",
+    "section": "",
+    "text": "AACR Annual Meeting 2026 · Poster"
+  },
+  {
+    "objectID": "projects/aacr-2026-contrast-classification.html#background",
+    "href": "projects/aacr-2026-contrast-classification.html#background",
+    "title": "Automatic contrast phase classification of polyphasic CT scans",
+    "section": "Background",
+    "text": "Background\nContrast-enhanced CT is the standard imaging modality for many oncology applications — but downstream pipelines (tumor segmentation, response assessment, radiomics) generally assume a known contrast phase. In real-world multi-center data, contrast phase metadata is often missing, inconsistent, or incorrect at the DICOM tag level.\nThis work develops a deep learning classifier that infers contrast phase directly from CT volumes, allowing downstream segmentation and analysis pipelines to either filter to a target phase or be conditioned on the inferred phase."
+  },
+  {
+    "objectID": "projects/aacr-2026-contrast-classification.html#contribution",
+    "href": "projects/aacr-2026-contrast-classification.html#contribution",
+    "title": "Automatic contrast phase classification of polyphasic CT scans",
+    "section": "Contribution",
+    "text": "Contribution\nCo-authored with G. Hughes, M. Patwari, Y. Wei, M. Parker, J. Parkin, and A. Filippov. Data engineering, preprocessing, and modeling contributions through the broader medical imaging ML stack at AstraZeneca."
+  },
+  {
+    "objectID": "projects/aacr-2026-contrast-classification.html#reference",
+    "href": "projects/aacr-2026-contrast-classification.html#reference",
+    "title": "Automatic contrast phase classification of polyphasic CT scans",
+    "section": "Reference",
+    "text": "Reference\nHughes G, Patwari M, Wei Y, Parker M, Parkin J, Zhang Z, Filippov A. “Automatic contrast phase classification of polyphasic CT scans.” Poster, AACR Annual Meeting 2026. Abstract: Cancer Research 86, Suppl. 7, 2777.\nRead the abstract"
+  },
+  {
+    "objectID": "projects/embedding-visualization.html",
+    "href": "projects/embedding-visualization.html",
+    "title": "Embedding visualization toolkit",
+    "section": "",
+    "text": "AstraZeneca · Tooling & Infrastructure"
+  },
+  {
+    "objectID": "projects/embedding-visualization.html#problem",
+    "href": "projects/embedding-visualization.html#problem",
+    "title": "Embedding visualization toolkit",
+    "section": "Problem",
+    "text": "Problem\nUnsupervised models produce high-dimensional embeddings that, on their own, are nearly impossible for domain experts to interpret. Without good interactive tooling, the rich structure inside these embeddings stays invisible to the people who would actually act on it."
+  },
+  {
+    "objectID": "projects/embedding-visualization.html#approach",
+    "href": "projects/embedding-visualization.html#approach",
+    "title": "Embedding visualization toolkit",
+    "section": "Approach",
+    "text": "Approach\nA web-based visualization suite covering the interpretation paths that come up most often:\n\nClustering — HDBSCAN over UMAP-projected embeddings, with interactive parameter selection.\nHeatmaps — across embedding dimensions, with row/column reordering by similarity.\nHistograms — per-dimension distributions, conditioned on cluster or metadata variable.\nArchetype analysis — surfaces “extreme” examples that anchor cluster identity."
+  },
+  {
+    "objectID": "projects/embedding-visualization.html#result",
+    "href": "projects/embedding-visualization.html#result",
+    "title": "Embedding visualization toolkit",
+    "section": "Result",
+    "text": "Result\nUsed by R&D labs to interpret unsupervised model outputs across several projects, including downstream interpretation of the patch-based 3D imaging pipeline and the GNN multiplex IF work."
+  },
+  {
+    "objectID": "projects/embedding-visualization.html#stack",
+    "href": "projects/embedding-visualization.html#stack",
+    "title": "Embedding visualization toolkit",
+    "section": "Stack",
+    "text": "Stack\nPython, HDBSCAN, UMAP, Dash for interactive frontend."
+  },
+  {
+    "objectID": "projects/segmentation-toolkit.html",
+    "href": "projects/segmentation-toolkit.html",
+    "title": "Interactive 3D segmentation toolset",
+    "section": "",
+    "text": "AstraZeneca · Medical Imaging & Segmentation"
+  },
+  {
+    "objectID": "projects/segmentation-toolkit.html#problem",
+    "href": "projects/segmentation-toolkit.html#problem",
+    "title": "Interactive 3D segmentation toolset",
+    "section": "Problem",
+    "text": "Problem\nManually annotating tumor regions on 3D CT volumes is the bottleneck for training and evaluating downstream segmentation models. Domain experts spend substantial time per volume, and inter-annotator variability adds noise to both ground truth and evaluation. We needed a tool that gave annotators strong AI-assisted starting points while keeping them firmly in control of the final segmentation."
+  },
+  {
+    "objectID": "projects/segmentation-toolkit.html#approach",
+    "href": "projects/segmentation-toolkit.html#approach",
+    "title": "Interactive 3D segmentation toolset",
+    "section": "Approach",
+    "text": "Approach\nInteractive segmentation built on a transformer-backed architecture, with two interaction modes:\n\nClick-based prompts — a small number of foreground/background clicks produce an initial segmentation, refinable through additional clicks.\nText-guided prompts — natural language descriptions of anatomy or pathology condition the segmentation, useful when the annotator wants semantic disambiguation.\n\nWrapped in a web-based annotation UI with versioned outputs, audit trails, and integration into the team’s broader imaging data platform."
+  },
+  {
+    "objectID": "projects/segmentation-toolkit.html#result",
+    "href": "projects/segmentation-toolkit.html#result",
+    "title": "Interactive 3D segmentation toolset",
+    "section": "Result",
+    "text": "Result\nHalved annotation time on representative cases. Deployed to twelve internal users across R&D, with companion paper as poster at AACR 2024:\n\nPatwari M, Wei Y, Xu M, Zhang Z, Sidiropoulos K, Selvaraj B, Hughes G, et al. “Fast, interactive, AI-assisted 3D lung tumour segmentation.” Poster, AACR Annual Meeting 2024. Abstract: Cancer Research 84, Suppl. 6, 887.\n\nRead the abstract"
+  },
+  {
+    "objectID": "projects/segmentation-toolkit.html#stack",
+    "href": "projects/segmentation-toolkit.html#stack",
+    "title": "Interactive 3D segmentation toolset",
+    "section": "Stack",
+    "text": "Stack\nPyTorch, transformer-based foundation segmentation backbone, MONAI for pre/postprocessing, custom React/Dash frontend for annotation workflow."
+  },
+  {
+    "objectID": "projects/enigma.html",
+    "href": "projects/enigma.html",
+    "title": "Enigma machine emulator",
+    "section": "",
+    "text": "Personal project"
+  },
+  {
+    "objectID": "projects/enigma.html#idea",
+    "href": "projects/enigma.html#idea",
+    "title": "Enigma machine emulator",
+    "section": "Idea",
+    "text": "Idea\nReading about the Enigma cipher and Turing’s role in breaking it sent me down the rabbit hole of actually implementing the machine. The result is a faithful Python 3 emulation of the Enigma M3, modeled object-oriented with the machine and its components — rotors, reflectors, plugboard — as first-class classes."
+  },
+  {
+    "objectID": "projects/enigma.html#implementation",
+    "href": "projects/enigma.html#implementation",
+    "title": "Enigma machine emulator",
+    "section": "Implementation",
+    "text": "Implementation\nEach component is its own class with a clean substitution interface, so the machine itself is mostly orchestration over component composition. Settings are reproducible, which makes encrypt-then-decrypt round trips straightforward to verify."
+  },
+  {
+    "objectID": "projects/enigma.html#stack",
+    "href": "projects/enigma.html#stack",
+    "title": "Enigma machine emulator",
+    "section": "Stack",
+    "text": "Stack\nPython 3, no external dependencies.\nGitHub repository →"
+  },
+  {
+    "objectID": "projects/multiplex-if-gnn.html",
+    "href": "projects/multiplex-if-gnn.html",
+    "title": "Graph-based analysis of multiplex immunofluorescence",
+    "section": "",
+    "text": "AstraZeneca · Drug Discovery ML"
+  },
+  {
+    "objectID": "projects/multiplex-if-gnn.html#problem",
+    "href": "projects/multiplex-if-gnn.html#problem",
+    "title": "Graph-based analysis of multiplex immunofluorescence",
+    "section": "Problem",
+    "text": "Problem\nMultiplex immunofluorescence (mIF) images carry rich information about cell type, marker expression, and — crucially — spatial relationships between cells. Conventional analysis pipelines flatten this to per-cell feature tables, discarding the spatial structure that often correlates most directly with biological mechanism and clinical outcome."
+  },
+  {
+    "objectID": "projects/multiplex-if-gnn.html#approach",
+    "href": "projects/multiplex-if-gnn.html#approach",
+    "title": "Graph-based analysis of multiplex immunofluorescence",
+    "section": "Approach",
+    "text": "Approach\nTreat mIF images as graphs. Each cell becomes a node with marker-expression features; spatial proximity defines edges. Graph Neural Networks then learn representations that explicitly model cell-neighborhood interactions for downstream phenotype classification."
+  },
+  {
+    "objectID": "projects/multiplex-if-gnn.html#result",
+    "href": "projects/multiplex-if-gnn.html#result",
+    "title": "Graph-based analysis of multiplex immunofluorescence",
+    "section": "Result",
+    "text": "Result\nThe approach is described in a preprint on bioRxiv and was presented at SITC 2021 and at the AACR Tumor Immunology and Immunotherapy 2021 meeting:\n\nInnocenti C, Zhang Z, Selvaraj B, Gaffney I, Frangos M, Cohen-Setton J, et al. “An unsupervised graph embeddings approach to multiplex immunofluorescence image exploration.” bioRxiv 2021.06.09.447654 (preprint).\n\nbioRxiv preprint · SITC 2021 abstract · AACR Clinical Cancer Research abstract"
+  },
+  {
+    "objectID": "projects/multiplex-if-gnn.html#stack",
+    "href": "projects/multiplex-if-gnn.html#stack",
+    "title": "Graph-based analysis of multiplex immunofluorescence",
+    "section": "Stack",
+    "text": "Stack\nPyTorch Geometric, scikit-learn, custom mIF preprocessing pipeline."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Work",
+    "section": "",
+    "text": "§ AstraZeneca · Ann Arbor Algorithms · 2018 – present\n\nDrug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Most recent work first.\nFor personal projects and learning experiments, see Experiments.\n\n\n\n\n\n\n\n\n\nAutomatic contrast phase classification of polyphasic CT scans\n\n\n\nProfessional\n\nMedical Imaging\n\nAACR 2026\n\n\n\nCo-authored work on identifying contrast phase from CT volumes — poster at AACR 2026.\n\n\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\nMultimodal IC50 prediction\n\n\n\nProfessional\n\nDrug Discovery\n\nMultimodal\n\n\n\nPyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds.\n\n\n\n\n\nSep 1, 2024\n\n\n\n\n\n\n\nInteractive 3D segmentation toolset\n\n\n\nProfessional\n\nMedical Imaging\n\nSegmentation\n\n\n\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D.\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\nBiomedical imaging data platform\n\n\n\nProfessional\n\nInfrastructure\n\nMedical Imaging\n\n\n\nUnified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI.\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\nEmbedding visualization toolkit\n\n\n\nProfessional\n\nVisualization\n\nTooling\n\n\n\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis.\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\nGraph-based analysis of multiplex immunofluorescence\n\n\n\nProfessional\n\nDrug Discovery\n\nGraph Learning\n\n\n\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification.\n\n\n\n\n\nJun 1, 2021\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects.html#drug-discovery-medical-imaging-infrastructure",
+    "href": "projects.html#drug-discovery-medical-imaging-infrastructure",
+    "title": "Work",
+    "section": "Drug discovery, medical imaging, infrastructure",
+    "text": "Drug discovery, medical imaging, infrastructure\nWork at AstraZeneca (2019–present) and Ann Arbor Algorithms (2018–2019).\n\n\n\n\n\nAutomatic contrast phase classification of polyphasic CT scans\n\n\n\nProfessional\n\nMedical Imaging\n\nAACR 2026\n\n\n\nCo-authored work on identifying contrast phase from CT volumes — poster at AACR 2026.\n\n\n\n\n\nApr 1, 2026\n\n\n\n\n\n\n\nMultimodal IC50 prediction\n\n\n\nProfessional\n\nDrug Discovery\n\nMultimodal\n\n\n\nPyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds.\n\n\n\n\n\nSep 1, 2024\n\n\n\n\n\n\n\nInteractive 3D segmentation toolset\n\n\n\nProfessional\n\nMedical Imaging\n\nSegmentation\n\n\n\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D.\n\n\n\n\n\nJun 1, 2023\n\n\n\n\n\n\n\nBiomedical imaging data platform\n\n\n\nProfessional\n\nInfrastructure\n\nMedical Imaging\n\n\n\nUnified ingestion and preprocessing platform for biomedical imaging at scale — sixteen multi-center datasets totaling 150K CT volumes, with automated annotation mapping across DICOM and NIfTI.\n\n\n\n\n\nAug 1, 2022\n\n\n\n\n\n\n\nEmbedding visualization toolkit\n\n\n\nProfessional\n\nVisualization\n\nTooling\n\n\n\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis.\n\n\n\n\n\nJan 1, 2022\n\n\n\n\n\n\n\nGraph-based analysis of multiplex immunofluorescence\n\n\n\nProfessional\n\nDrug Discovery\n\nGraph Learning\n\n\n\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification.\n\n\n\n\n\nJun 1, 2021\n\n\n\n\n\nNo matching items\n\n\n§ 02 · Personal"
+  },
+  {
+    "objectID": "projects.html#personal-projects-and-experiments",
+    "href": "projects.html#personal-projects-and-experiments",
+    "title": "Work",
+    "section": "Personal projects and experiments",
+    "text": "Personal projects and experiments\nSide projects, learning experiments, and weekend builds.\n\n\n\n\n\nMulti-agent stock analysis pipeline\n\n\n\nPersonal\n\nAgentic AI\n\nLLMs\n\n\n\nThree-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard.\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nMusic generation transformer\n\n\n\nPersonal\n\nGenerative Models\n\nPyTorch\n\n\n\nDecoder-only generative transformer in PyTorch supporting both text and MIDI input, trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\n\n\n\n\nAug 1, 2024\n\n\n\n\n\n\n\nRaycasting renderer\n\n\n\nPersonal\n\nGraphics\n\nPython\n\n\n\nA from-scratch raycasting renderer in Python and PyQt5, evoking the rendering technique used in Wolfenstein 3D (1992).\n\n\n\n\n\nSep 1, 2023\n\n\n\n\n\n\n\nEnigma machine emulator\n\n\n\nPersonal\n\nCryptography\n\nPython\n\n\n\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors and reflectors as first-class classes.\n\n\n\n\n\nApr 1, 2023\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "§ 01 · Peer-reviewed"
+  },
+  {
+    "objectID": "publications.html#journal",
+    "href": "publications.html#journal",
+    "title": "Publications",
+    "section": "Journal",
+    "text": "Journal\n\n  Guan Y, Wang X, Li H, Zhang Z, Chen X, Siddiqui O, Nehring S, Huang X.\n  Detecting asymmetric patterns and localizing cancers on mammograms.\n  Patterns 1, no. 7 (2020).\n  DOI\n\n\n§ 02 · Preprint"
+  },
+  {
+    "objectID": "publications.html#biorxiv",
+    "href": "publications.html#biorxiv",
+    "title": "Publications",
+    "section": "bioRxiv",
+    "text": "bioRxiv\n\n  Innocenti C, Zhang Z, Selvaraj B, Gaffney I, Frangos M, Cohen-Setton J, et al.\n  An unsupervised graph embeddings approach to multiplex immunofluorescence image exploration.\n  bioRxiv 2021.06.09.447654 (2021).\n  Preprint\n\n\n§ 03 · Conference presentations"
+  },
+  {
+    "objectID": "publications.html#aacr-annual-meeting",
+    "href": "publications.html#aacr-annual-meeting",
+    "title": "Publications",
+    "section": "AACR Annual Meeting",
+    "text": "AACR Annual Meeting\n\n  Hughes G, Patwari M, Wei Y, Parker M, Parkin J, Zhang Z, Filippov A.\n  Automatic contrast phase classification of polyphasic CT scans.\n  Poster, AACR Annual Meeting 2026.\n  Abstract: Cancer Research 86, Suppl. 7, 2777.\n  Abstract\n\n\n\n  Patwari M, Wei Y, Xu M, Zhang Z, Sidiropoulos K, Selvaraj B, Hughes G, et al.\n  Fast, interactive, AI-assisted 3D lung tumour segmentation.\n  Poster, AACR Annual Meeting 2024.\n  Abstract: Cancer Research 84, Suppl. 6, 887.\n  Abstract\n\n\n\n  Wei Y, Selvaraj B, Patwari M, Li Q, Xu M, Sidiropoulos K, Zhang Z, et al.\n  Improving non-small cell lung cancer segmentation on a challenging dataset.\n  Poster, AACR Annual Meeting 2023.\n  Abstract: Cancer Research 83, Suppl. 7, 5427.\n  Abstract\n\n\n\n  Fedden L, Zhang Z, Baykaner K, Li Q, Bordeaux L.\n  DIME-CT: Self-supervised learning for medical image analysis using patch-based embeddings.\n  Poster, AACR Annual Meeting 2022.\n  Abstract: Cancer Research 82, Suppl. 12, 1937.\n  Abstract"
+  },
+  {
+    "objectID": "publications.html#society-for-immunotherapy-of-cancer-sitc",
+    "href": "publications.html#society-for-immunotherapy-of-cancer-sitc",
+    "title": "Publications",
+    "section": "Society for Immunotherapy of Cancer (SITC)",
+    "text": "Society for Immunotherapy of Cancer (SITC)\n\n  Innocenti C, Zhang Z, et al.\n  Multiplex immunofluorescence image exploration via unsupervised graph embeddings.\n  Poster, SITC 2021.\n  Abstract"
+  },
+  {
+    "objectID": "publications.html#aacr-tumor-immunology-and-immunotherapy",
+    "href": "publications.html#aacr-tumor-immunology-and-immunotherapy",
+    "title": "Publications",
+    "section": "AACR Tumor Immunology and Immunotherapy",
+    "text": "AACR Tumor Immunology and Immunotherapy\n\n  Zhang Z, et al.\n  Graph-based analysis of multiplex immunofluorescence imaging.\n  Clinical Cancer Research 27, no. 5 Supplement (2021): PR-05.\n  Abstract"
+  },
+  {
+    "objectID": "experiments.html",
+    "href": "experiments.html",
+    "title": "Experiments",
+    "section": "",
+    "text": "§ Personal · Outside the day job\n\nSide projects, weekend builds, and things I make to learn something new — generative models, retro computing, game development, agentic AI experiments, and the homelab work that supports it all.\nFor professional work, see Work.\n\n\n\n\n\n\n\n\n\nMulti-agent stock analysis pipeline\n\n\n\nPersonal\n\nAgentic AI\n\nLLMs\n\n\n\nThree-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard.\n\n\n\n\n\nDec 1, 2025\n\n\n\n\n\n\n\nMusic generation transformer\n\n\n\nPersonal\n\nGenerative Models\n\nPyTorch\n\n\n\nDecoder-only generative transformer in PyTorch supporting both text and MIDI input, trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\n\n\n\n\nAug 1, 2024\n\n\n\n\n\n\n\nRaycasting renderer\n\n\n\nPersonal\n\nGraphics\n\nPython\n\n\n\nA from-scratch raycasting renderer in Python and PyQt5, evoking the rendering technique used in Wolfenstein 3D (1992).\n\n\n\n\n\nSep 1, 2023\n\n\n\n\n\n\n\nEnigma machine emulator\n\n\n\nPersonal\n\nCryptography\n\nPython\n\n\n\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors and reflectors as first-class classes.\n\n\n\n\n\nApr 1, 2023\n\n\n\n\n\nNo matching items"
+  }
+]

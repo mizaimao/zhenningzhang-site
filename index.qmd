@@ -1,0 +1,122 @@
+---
+title: ""
+pagetitle: "Zhenning Zhang — Machine Learning Engineer"
+description-meta: "Machine Learning Engineer specializing in deep learning for drug discovery and medical imaging. Five years at AstraZeneca."
+page-layout: full
+include-in-header:
+  text: |
+    <link rel="canonical" href="https://zhenningzhang.net">
+---
+
+::: {.hero-block}
+<div class="hero-name">Zhenning Zhang</div>
+<div class="hero-role">Machine Learning Engineer · Medical AI</div>
+
+<p class="hero-lede">
+I build deep learning systems for drug discovery and medical imaging.
+Five years at AstraZeneca on multimodal models for IC50 prediction,
+3D volumetric segmentation with transformer architectures, and
+graph-based analysis of multiplex immunofluorescence.
+M.S. Bioinformatics, University of Michigan.
+</p>
+
+<p>
+[Selected work](#selected-work) &nbsp; · &nbsp;
+[Publications](publications.qmd) &nbsp; · &nbsp;
+[CV (PDF)](assets/zhenning_zhang_resume.pdf) &nbsp; · &nbsp;
+[LinkedIn](https://www.linkedin.com/in/zhenning-zhang)
+</p>
+:::
+
+::: {.section-marker}
+<span class="section-num">§ 01</span>
+## Recent
+:::
+
+::: {.work-entry}
+<div class="work-meta">April 2026 · AACR Annual Meeting</div>
+### Automatic contrast phase classification of polyphasic CT scans
+Poster presentation at the AACR Annual Meeting 2026 (San Diego). Co-authored work on
+identifying contrast phase from CT volumes — a prerequisite for downstream tumor
+segmentation pipelines that depend on consistent imaging protocol.
+<div class="work-links">
+[Abstract — Cancer Research 86, Suppl. 7, 2777](https://aacrjournals.org/cancerres/article/86/7_Supplement/2777){.external}
+</div>
+:::
+
+::: {.section-marker}
+<span class="section-num">§ 02</span>
+## Selected work {#selected-work}
+:::
+
+::: {.work-entry}
+<div class="work-meta">2024 – Present · AstraZeneca</div>
+### Multimodal IC50 prediction
+PyTorch models fusing cell painting microscopy with SMILES chemical
+representations for compound activity prediction. Deployed across compound
+libraries totaling 39K compounds; jointly learned image-and-structure embeddings
+inform downstream phenotype-to-target reasoning.
+<div class="work-links">
+[Read more →](projects/ic50-multimodal.qmd)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2023 – Present · AstraZeneca</div>
+### Interactive 3D segmentation toolset
+Transformer-backed segmentation tool for 3D volumetric data with text-guided
+prompts. Halved annotation time and deployed to twelve internal users across R&D.
+Companion paper as poster at AACR 2024.
+<div class="work-links">
+[Read more →](projects/segmentation-toolkit.qmd) ·
+[Abstract — AACR 2024](https://aacrjournals.org/cancerres/article/84/6_Supplement/887/741446){.external}
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2022 – Present · AstraZeneca</div>
+### Biomedical imaging data platform
+Unified ingestion and preprocessing platform for biomedical imaging at scale —
+now the team's standard data layer. Sixteen multi-center datasets, 150K CT
+volumes, automated mapping of thousands of annotation masks across DICOM and
+NIfTI standards.
+<div class="work-links">
+[Read more →](projects/data-ingestion-platform.qmd)
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2021 – 2022 · AstraZeneca</div>
+### Graph-based analysis of multiplex immunofluorescence
+Graph Neural Networks over multi-channel images, capturing spatial cell-cell
+relationships in multiplex IF for downstream phenotype classification.
+Preprint on bioRxiv; abstracts at SITC and AACR.
+<div class="work-links">
+[Read more →](projects/multiplex-if-gnn.qmd) ·
+[Preprint — bioRxiv](https://www.biorxiv.org/content/10.1101/2021.06.09.447654v1){.external}
+</div>
+:::
+
+::: {.work-entry}
+<div class="work-meta">2025 · Personal</div>
+### Multi-agent stock analysis pipeline
+Three-agent system (analyst → challenger → synthesizer) running on locally
+hosted Gemma via Ollama, with a Streamlit dashboard. Designed to surface
+disagreement and adversarial critique before final synthesis.
+<div class="work-links">
+[Read more →](projects/multi-agent-stock.qmd) ·
+[Live demo (Hugging Face Spaces) →](https://huggingface.co/spaces){.external}
+</div>
+:::
+
+::: {.section-marker}
+<span class="section-num">§ 03</span>
+## More
+:::
+
+For the full list of professional work, personal projects, and writing, see
+[all work](projects.qmd) or the [publications page](publications.qmd).
+
+For collaboration, hiring, or conversations: reach me on
+[LinkedIn](https://www.linkedin.com/in/zhenning-zhang)
+or via the contact details on my [CV](assets/zhenning_zhang_resume.pdf).

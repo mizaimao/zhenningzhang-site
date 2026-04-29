@@ -1,0 +1,50 @@
+---
+title: "Interactive 3D segmentation toolset"
+description: "Transformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D."
+date: 2023-06-01
+categories: [Professional, Medical Imaging, Segmentation]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AstraZeneca · Medical Imaging & Segmentation
+:::
+
+## Problem
+
+Manually annotating tumor regions on 3D CT volumes is the bottleneck for
+training and evaluating downstream segmentation models. Domain experts spend
+substantial time per volume, and inter-annotator variability adds noise to
+both ground truth and evaluation. We needed a tool that gave annotators
+strong AI-assisted starting points while keeping them firmly in control of
+the final segmentation.
+
+## Approach
+
+Interactive segmentation built on a transformer-backed architecture, with
+two interaction modes:
+
+- **Click-based prompts** — a small number of foreground/background clicks
+  produce an initial segmentation, refinable through additional clicks.
+- **Text-guided prompts** — natural language descriptions of anatomy or
+  pathology condition the segmentation, useful when the annotator wants
+  semantic disambiguation.
+
+Wrapped in a web-based annotation UI with versioned outputs, audit trails,
+and integration into the team's broader imaging data platform.
+
+## Result
+
+Halved annotation time on representative cases. Deployed to twelve internal
+users across R&D, with companion paper as poster at AACR 2024:
+
+> Patwari M, Wei Y, Xu M, **Zhang Z**, Sidiropoulos K, Selvaraj B, Hughes G, et al.
+> "Fast, interactive, AI-assisted 3D lung tumour segmentation."
+> Poster, *AACR Annual Meeting 2024*. Abstract: *Cancer Research* 84, Suppl. 6, 887.
+
+[Read the abstract](https://aacrjournals.org/cancerres/article/84/6_Supplement/887/741446){.external}
+
+## Stack
+
+PyTorch, transformer-based foundation segmentation backbone, MONAI for
+pre/postprocessing, custom React/Dash frontend for annotation workflow.

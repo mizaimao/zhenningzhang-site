@@ -1,0 +1,22 @@
+[
+  {
+    "listing": "/projects.html",
+    "items": [
+      "/projects/aacr-2026-contrast-classification.html",
+      "/projects/ic50-multimodal.html",
+      "/projects/segmentation-toolkit.html",
+      "/projects/data-ingestion-platform.html",
+      "/projects/embedding-visualization.html",
+      "/projects/multiplex-if-gnn.html"
+    ]
+  },
+  {
+    "listing": "/experiments.html",
+    "items": [
+      "/projects/multi-agent-stock.html",
+      "/projects/music-gen.html",
+      "/projects/raycasting.html",
+      "/projects/enigma.html"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+---
+title: "Enigma machine emulator"
+description: "Object-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors and reflectors as first-class classes."
+date: 2023-04-01
+categories: [Personal, Cryptography, Python]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+Personal project
+:::
+
+## Idea
+
+Reading about the Enigma cipher and Turing's role in breaking it sent me
+down the rabbit hole of actually implementing the machine. The result is
+a faithful Python 3 emulation of the Enigma M3, modeled object-oriented
+with the machine and its components — rotors, reflectors, plugboard — as
+first-class classes.
+
+## Implementation
+
+Each component is its own class with a clean substitution interface, so
+the machine itself is mostly orchestration over component composition.
+Settings are reproducible, which makes encrypt-then-decrypt round trips
+straightforward to verify.
+
+## Stack
+
+Python 3, no external dependencies.
+
+[GitHub repository →](https://github.com/mizaimao/Enigma){.external}

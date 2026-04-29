@@ -1,0 +1,41 @@
+---
+title: "Music generation transformer"
+description: "Decoder-only generative transformer in PyTorch supporting both text and MIDI input, trained on Bach's Goldberg Variations and The Well-Tempered Clavier."
+date: 2024-08-01
+categories: [Personal, Generative Models, PyTorch]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+Personal project · 2024
+:::
+
+## Idea
+
+A from-scratch implementation of a decoder-only generative transformer in
+PyTorch — small enough to be readable, big enough to actually learn
+something interesting. The model is dual-modality: with a text tokenizer
+it behaves as a small language model; with a MIDI tokenizer it generates
+music.
+
+## Implementation
+
+Standard decoder-only transformer with multi-head self-attention,
+positional encoding, and a final language modeling head — roughly the
+structure popularized by GPT, but at a scale that fits on a single
+consumer GPU. Tokenization swaps between BPE for text and a custom MIDI
+event tokenizer.
+
+Trained on Bach's *Goldberg Variations* and *The Well-Tempered Clavier*
+for the music generation experiments.
+
+## Demo
+
+Generated audio samples are linked from the [GitHub
+repo](https://github.com/mizaimao/DecoderTest){.external}.
+
+## Stack
+
+PyTorch, custom MIDI tokenizer, MIDI synthesis tooling for playback.
+
+[GitHub repository →](https://github.com/mizaimao/DecoderTest){.external}

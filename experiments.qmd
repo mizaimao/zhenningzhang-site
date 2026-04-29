@@ -1,0 +1,25 @@
+---
+title: "Experiments"
+description: "Personal projects, learning experiments, and weekend builds."
+listing:
+  contents: "projects/*.qmd"
+  type: default
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+  fields: [date, title, description, categories]
+  categories: false
+  include:
+    categories: "Personal"
+page-layout: article
+---
+
+::: {.eyebrow}
+§ Personal · Outside the day job
+:::
+
+Side projects, weekend builds, and things I make to learn something new —
+generative models, retro computing, game development, agentic AI experiments,
+and the homelab work that supports it all.
+
+For professional work, see [Work](projects.qmd).

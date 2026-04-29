@@ -1,0 +1,76 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "assets/zhenning_zhang_resume.pdf"
+    - "CNAME"
+
+website:
+  title: "Zhenning Zhang"
+  description: "Machine Learning Engineer — drug discovery and medical imaging."
+  site-url: "https://zhenningzhang.net"
+  open-graph: true
+  twitter-card: false
+  page-navigation: false
+  back-to-top-navigation: false
+
+  navbar:
+    pinned: true
+    background: "#f4f0e6"
+    foreground: "#1c1814"
+    logo: false
+    title: "Zhenning Zhang"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Work
+      - href: publications.qmd
+        text: Publications
+      - href: experiments.qmd
+        text: Experiments
+      - href: about.qmd
+        text: About
+    right:
+      - text: "CV"
+        href: "assets/zhenning_zhang_resume.pdf"
+      - icon: github
+        href: "https://github.com/mizaimao"
+        aria-label: GitHub
+      - icon: linkedin
+        href: "https://www.linkedin.com/in/zhenning-zhang"
+        aria-label: LinkedIn
+
+  page-footer:
+    background: "#f4f0e6"
+    left: |
+      © 2026 Zhenning Zhang
+    right: |
+      Built with [Quarto](https://quarto.org). Source on [GitHub](https://github.com/mizaimao).
+
+format:
+  html:
+    theme:
+      - litera
+      - theme.scss
+    toc: false
+    grid:
+      body-width: 800px
+      sidebar-width: 220px
+      margin-width: 220px
+    link-external-newwindow: true
+    link-external-icon: false
+    code-copy: true
+    smooth-scroll: true
+    anchor-sections: false
+    fontsize: "1.0625rem"
+    mainfont: "Source Serif 4, Iowan Old Style, Georgia, serif"
+    monofont: "JetBrains Mono, ui-monospace, SF Mono, Menlo, monospace"
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Source+Serif+4:opsz,wght@8..60,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+execute:
+  freeze: auto

@@ -1,0 +1,47 @@
+---
+title: "Multimodal IC50 prediction"
+description: "PyTorch models fusing cell painting microscopy with SMILES chemical representations across compound libraries totaling 39K compounds."
+date: 2024-09-01
+categories: [Professional, Drug Discovery, Multimodal]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AstraZeneca · Drug Discovery ML
+:::
+
+## Problem
+
+Predicting compound activity (IC50) from chemical structure alone leaves
+information on the table. Cell painting — high-content imaging that captures
+cellular morphological response to compound treatment — provides a rich
+phenotypic signature that complements structure-based representations.
+Models that fuse the two should outperform either modality alone, but
+practical multimodal training brings its own challenges: heterogeneous data
+volumes, alignment between image and chemical representations, and joint
+embedding regularization.
+
+## Approach
+
+PyTorch-based multimodal architecture combining:
+
+- **Cell painting microscopy branch** — convolutional encoder over the
+  multi-channel imaging stack, learning a phenotypic embedding of compound
+  treatment effect.
+- **Chemical structure branch** — SMILES tokenizer feeding a sequence model
+  to produce a structural embedding.
+- **Joint head** — fusion of the two embeddings into IC50 regression with
+  uncertainty estimation, trained across compound libraries totaling 39K
+  compounds.
+
+## Result
+
+Deployed as part of internal compound activity prediction workflows.
+Multimodal fusion outperforms either single modality and provides
+interpretable embeddings that surface structure-phenotype correspondences
+useful for downstream target reasoning.
+
+## Stack
+
+PyTorch, MONAI for image preprocessing, RDKit for SMILES handling,
+scikit-learn for evaluation tooling.

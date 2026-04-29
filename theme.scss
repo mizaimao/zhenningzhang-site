@@ -1,0 +1,321 @@
+/*-- scss:defaults --*/
+
+// =====================================================
+// Editorial-scientific theme override for Quarto Litera
+// Cream paper, deep ink, single crimson accent.
+// =====================================================
+
+// Color palette
+$paper:        #f8f5ed;
+$paper-warm:   #f4f0e6;
+$ink:          #1c1814;
+$ink-soft:     #3a342c;
+$ink-mute:     #6b635a;
+$rule:         #d8d0bd;
+$accent:       #8b1538;
+$accent-deep:  #5a0e24;
+
+// Bootstrap variable overrides
+$body-bg:                      $paper;
+$body-color:                   $ink;
+$link-color:                   $accent;
+$link-hover-color:             $accent-deep;
+
+$primary:                      $accent;
+$secondary:                    $ink-mute;
+
+$navbar-bg:                    $paper-warm;
+$navbar-fg:                    $ink;
+$navbar-hl:                    $accent;
+
+$footer-bg:                    $paper-warm;
+$footer-fg:                    $ink-mute;
+
+// Typography
+$font-family-sans-serif:       "Source Serif 4", "Iowan Old Style", Georgia, serif;
+$font-family-monospace:        "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+$headings-font-family:         "Fraunces", "Source Serif 4", Georgia, serif;
+$headings-font-weight:         500;
+$headings-color:               $ink;
+$headings-line-height:         1.15;
+
+$font-size-base:               1.0625rem;
+$line-height-base:             1.65;
+
+// Code block backgrounds
+$code-bg:                      rgba(139, 21, 56, 0.06);
+$code-color:                   $ink;
+$pre-bg:                       darken($paper, 3%);
+
+/*-- scss:rules --*/
+
+// Body refinement
+body {
+  font-feature-settings: "ss01", "kern", "liga", "onum";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Headings
+h1, h2, h3, h4 {
+  letter-spacing: -0.012em;
+  font-feature-settings: "ss01", "kern", "liga", "onum";
+}
+h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.1; }
+h2 { font-size: 1.5rem; font-weight: 500; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.15rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+
+h1.title {
+  font-size: 2.75rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-family: $font-family-monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $ink-mute;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+// Eyebrow / small-caps section labels
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $ink-mute;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+// Hairline rule between sections
+hr, .section-break {
+  border: none;
+  border-top: 1px solid $rule;
+  margin: 3rem 0;
+}
+
+// Links — editorial underline
+main a, .quarto-title-block a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(139, 21, 56, 0.25);
+  transition: border-color 200ms ease, color 200ms ease;
+  color: $accent;
+}
+main a:hover {
+  border-bottom-color: $accent;
+  color: $accent-deep;
+}
+
+// External links: no border (kept clean)
+.external-link, a.external { border-bottom: none; }
+
+// Navbar refinement
+.navbar {
+  border-bottom: 1px solid $rule;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+}
+.navbar-brand, .navbar .navbar-title {
+  font-family: $headings-font-family;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: -0.005em;
+}
+.navbar .nav-link {
+  font-family: $font-family-sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-bottom: none;
+}
+.navbar .nav-link:hover { color: $accent !important; }
+
+// Footer
+.page-footer {
+  border-top: 1px solid $rule;
+  font-size: 0.85rem;
+  padding: 1.5rem 0;
+}
+.page-footer a { color: $ink-mute; border-bottom: 1px solid transparent; }
+.page-footer a:hover { color: $accent; border-bottom-color: $accent; }
+
+// Listings (project cards)
+.quarto-listing {
+  margin-top: 1rem;
+}
+.quarto-listing-default .listing-item {
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0;
+  margin: 0;
+}
+.quarto-listing-default .listing-item:last-child {
+  border-bottom: 1px solid $rule;
+}
+.listing-title {
+  font-family: $headings-font-family;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.35rem;
+}
+.listing-title a {
+  color: $ink !important;
+  border-bottom: none !important;
+}
+.listing-title a:hover { color: $accent !important; }
+.listing-description {
+  color: $ink-soft;
+  font-size: 0.97rem;
+  line-height: 1.55;
+}
+.listing-categories .listing-category {
+  font-family: $font-family-monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $ink-mute;
+  background: transparent;
+  border: 1px solid $rule;
+  padding: 2px 8px;
+  border-radius: 0;
+  margin-right: 6px;
+}
+.listing-date {
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  color: $ink-mute;
+  letter-spacing: 0.05em;
+}
+
+// Code blocks
+pre, code {
+  font-feature-settings: "kern" off;
+}
+pre {
+  border: 1px solid $rule;
+  border-radius: 2px;
+  padding: 1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+code:not(pre code) {
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  background: $code-bg;
+  border-radius: 2px;
+  color: $accent-deep;
+}
+
+// Block quotes — editorial pull-quote feel
+blockquote {
+  border-left: 2px solid $accent;
+  padding-left: 1.25rem;
+  margin-left: 0;
+  color: $ink-soft;
+  font-style: italic;
+}
+
+// Selection
+::selection { background: $accent; color: $paper; }
+
+// Custom hero block (used on index)
+.hero-block {
+  padding: 1rem 0 2.5rem;
+}
+.hero-block .hero-name {
+  font-family: $headings-font-family;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin: 0 0 0.5rem;
+  color: $ink;
+}
+.hero-block .hero-role {
+  font-family: $font-family-monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: $ink-mute;
+  margin-bottom: 1.75rem;
+}
+.hero-block .hero-lede {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: $ink-soft;
+  max-width: 36em;
+  margin-bottom: 1.5rem;
+}
+
+// Section heading with year/index marginalia
+.section-marker {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 2.75rem 0 0.5rem;
+}
+.section-marker .section-num {
+  font-family: $font-family-monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  color: $ink-mute;
+  font-weight: 500;
+}
+.section-marker h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+// Featured work entry
+.work-entry {
+  border-top: 1px solid $rule;
+  padding: 1.5rem 0;
+}
+.work-entry:last-child { border-bottom: 1px solid $rule; }
+.work-entry .work-meta {
+  font-family: $font-family-monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $ink-mute;
+  margin-bottom: 0.4rem;
+}
+.work-entry h3 {
+  font-family: $headings-font-family;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0.45rem;
+}
+.work-entry p {
+  margin: 0 0 0.5rem;
+  color: $ink-soft;
+}
+.work-entry .work-links {
+  font-size: 0.9rem;
+  color: $ink-mute;
+}
+
+// Publications page
+.csl-entry {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $rule;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+.csl-entry:last-child { border-bottom: none; }
+
+// Mobile
+@media (max-width: 768px) {
+  h1.title { font-size: 2rem; }
+  .hero-block .hero-name { font-size: 2.25rem; }
+  .hero-block .hero-lede { font-size: 1.05rem; }
+}

@@ -1,0 +1,38 @@
+---
+title: "Automatic contrast phase classification of polyphasic CT scans"
+description: "Co-authored work on identifying contrast phase from CT volumes — poster at AACR 2026."
+date: 2026-04-01
+categories: [Professional, Medical Imaging, AACR 2026]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AACR Annual Meeting 2026 · Poster
+:::
+
+## Background
+
+Contrast-enhanced CT is the standard imaging modality for many oncology
+applications — but downstream pipelines (tumor segmentation, response
+assessment, radiomics) generally assume a known contrast phase. In real-world
+multi-center data, contrast phase metadata is often missing, inconsistent, or
+incorrect at the DICOM tag level.
+
+This work develops a deep learning classifier that infers contrast phase
+directly from CT volumes, allowing downstream segmentation and analysis
+pipelines to either filter to a target phase or be conditioned on the
+inferred phase.
+
+## Contribution
+
+Co-authored with G. Hughes, M. Patwari, Y. Wei, M. Parker, J. Parkin, and
+A. Filippov. Data engineering, preprocessing, and modeling contributions
+through the broader medical imaging ML stack at AstraZeneca.
+
+## Reference
+
+Hughes G, Patwari M, Wei Y, Parker M, Parkin J, **Zhang Z**, Filippov A.
+"Automatic contrast phase classification of polyphasic CT scans."
+Poster, *AACR Annual Meeting 2026*. Abstract: *Cancer Research* 86, Suppl. 7, 2777.
+
+[Read the abstract](https://aacrjournals.org/cancerres/article/86/7_Supplement/2777){.external}

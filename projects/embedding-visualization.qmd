@@ -1,0 +1,42 @@
+---
+title: "Embedding visualization toolkit"
+description: "Web-based visualization suite for high-dimensional embedding interpretation — clustering, heatmaps, histograms, archetype analysis."
+date: 2022-01-01
+categories: [Professional, Visualization, Tooling]
+image: ../assets/img/placeholder-square.png
+---
+
+::: {.eyebrow}
+AstraZeneca · Tooling & Infrastructure
+:::
+
+## Problem
+
+Unsupervised models produce high-dimensional embeddings that, on their own,
+are nearly impossible for domain experts to interpret. Without good
+interactive tooling, the rich structure inside these embeddings stays
+invisible to the people who would actually act on it.
+
+## Approach
+
+A web-based visualization suite covering the interpretation paths that come
+up most often:
+
+- **Clustering** — HDBSCAN over UMAP-projected embeddings, with
+  interactive parameter selection.
+- **Heatmaps** — across embedding dimensions, with row/column reordering
+  by similarity.
+- **Histograms** — per-dimension distributions, conditioned on cluster or
+  metadata variable.
+- **Archetype analysis** — surfaces "extreme" examples that anchor cluster
+  identity.
+
+## Result
+
+Used by R&D labs to interpret unsupervised model outputs across several
+projects, including downstream interpretation of the patch-based 3D
+imaging pipeline and the GNN multiplex IF work.
+
+## Stack
+
+Python, HDBSCAN, UMAP, Dash for interactive frontend.

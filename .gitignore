@@ -2,3 +2,6 @@
 # AI session context (local only)
 CLAUDE.md
 .claude/
+
+/.quarto/
+**/*.quarto_ipynb

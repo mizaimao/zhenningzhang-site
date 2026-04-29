@@ -30,6 +30,7 @@ M.S. Bioinformatics, University of Michigan.
 
 ::: {.section-marker}
 <span class="section-num">§ 01</span>
+
 ## Recent
 :::
 
@@ -46,6 +47,7 @@ segmentation pipelines that depend on consistent imaging protocol.
 
 ::: {.section-marker}
 <span class="section-num">§ 02</span>
+
 ## Selected work {#selected-work}
 :::
 
@@ -111,6 +113,7 @@ disagreement and adversarial critique before final synthesis.
 
 ::: {.section-marker}
 <span class="section-num">§ 03</span>
+
 ## More
 :::
 

@@ -1,76 +1,77 @@
 /*-- scss:defaults --*/
 
 // =====================================================
-// Editorial-scientific theme override for Quarto Litera
-// Cream paper, deep ink, single crimson accent.
+// Dark Technical theme override for Quarto Darkly.
+// Deep slate background, mono headings, single green accent.
 // =====================================================
 
-// Color palette
-$paper:        #f8f5ed;
-$paper-warm:   #f4f0e6;
-$ink:          #1c1814;
-$ink-soft:     #3a342c;
-$ink-mute:     #6b635a;
-$rule:         #d8d0bd;
-$accent:       #8b1538;
-$accent-deep:  #5a0e24;
+// Color palette (GitHub-dark inspired)
+$bg-primary:   #0f1419;
+$bg-elevated:  #161b22;
+$bg-code:      #1c2128;
+$fg-primary:   #e6edf3;
+$fg-soft:      #b1bac4;
+$fg-mute:      #8b949e;
+$rule:         #30363d;
+$accent:       #7ee787;
+$accent-deep:  #56d364;
 
 // Bootstrap variable overrides
-$body-bg:                      $paper;
-$body-color:                   $ink;
+$body-bg:                      $bg-primary;
+$body-color:                   $fg-primary;
 $link-color:                   $accent;
 $link-hover-color:             $accent-deep;
 
 $primary:                      $accent;
-$secondary:                    $ink-mute;
+$secondary:                    $fg-mute;
 
-$navbar-bg:                    $paper-warm;
-$navbar-fg:                    $ink;
+$navbar-bg:                    $bg-elevated;
+$navbar-fg:                    $fg-primary;
 $navbar-hl:                    $accent;
 
-$footer-bg:                    $paper-warm;
-$footer-fg:                    $ink-mute;
+$footer-bg:                    $bg-elevated;
+$footer-fg:                    $fg-mute;
 
 // Typography
-$font-family-sans-serif:       "Source Serif 4", "Iowan Old Style", Georgia, serif;
+$font-family-sans-serif:       "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 $font-family-monospace:        "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
-$headings-font-family:         "Fraunces", "Source Serif 4", Georgia, serif;
+$headings-font-family:         "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
 $headings-font-weight:         500;
-$headings-color:               $ink;
-$headings-line-height:         1.15;
+$headings-color:               $fg-primary;
+$headings-line-height:         1.2;
 
 $font-size-base:               1.0625rem;
 $line-height-base:             1.65;
 
-// Code block backgrounds
-$code-bg:                      rgba(139, 21, 56, 0.06);
-$code-color:                   $ink;
-$pre-bg:                       darken($paper, 3%);
+// Code block colors
+$code-bg:                      rgba(126, 231, 135, 0.10);
+$code-color:                   $accent;
+$pre-bg:                       $bg-code;
 
 /*-- scss:rules --*/
 
 // Body refinement
 body {
-  font-feature-settings: "ss01", "kern", "liga", "onum";
+  font-feature-settings: "kern", "liga";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-// Headings
+// Headings — mono, slightly relaxed letter-spacing
 h1, h2, h3, h4 {
-  letter-spacing: -0.012em;
-  font-feature-settings: "ss01", "kern", "liga", "onum";
+  letter-spacing: -0.005em;
+  font-feature-settings: "kern", "liga";
 }
-h1 { font-size: 2.25rem; font-weight: 600; line-height: 1.1; }
-h2 { font-size: 1.5rem; font-weight: 500; margin-top: 2.5rem; margin-bottom: 0.75rem; }
-h3 { font-size: 1.15rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+h1 { font-size: 2.1rem; font-weight: 600; line-height: 1.15; }
+h2 { font-size: 1.4rem; font-weight: 500; margin-top: 2.5rem; margin-bottom: 0.75rem; }
+h3 { font-size: 1.1rem; font-weight: 500; margin-top: 1.5rem; margin-bottom: 0.5rem; }
 
 h1.title {
-  font-size: 2.75rem;
+  font-size: 2.4rem;
   font-weight: 600;
-  line-height: 1.05;
-  letter-spacing: -0.02em;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
   margin-bottom: 0.25rem;
 }
 
@@ -79,7 +80,7 @@ h1.title {
   font-size: 0.8rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: $ink-mute;
+  color: $fg-mute;
   font-weight: 400;
   margin-bottom: 2rem;
 }
@@ -90,7 +91,7 @@ h1.title {
   font-size: 0.72rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: $ink-mute;
+  color: $fg-mute;
   font-weight: 500;
   display: block;
   margin-bottom: 0.5rem;
@@ -103,10 +104,10 @@ hr, .section-break {
   margin: 3rem 0;
 }
 
-// Links — editorial underline
+// Links — subtle underline
 main a, .quarto-title-block a {
   text-decoration: none;
-  border-bottom: 1px solid rgba(139, 21, 56, 0.25);
+  border-bottom: 1px solid rgba(126, 231, 135, 0.30);
   transition: border-color 200ms ease, color 200ms ease;
   color: $accent;
 }
@@ -115,10 +116,10 @@ main a:hover {
   color: $accent-deep;
 }
 
-// External links: no border (kept clean)
+// External links: no border
 .external-link, a.external { border-bottom: none; }
 
-// Navbar refinement
+// Navbar
 .navbar {
   border-bottom: 1px solid $rule;
   padding-top: 0.85rem;
@@ -127,14 +128,15 @@ main a:hover {
 .navbar-brand, .navbar .navbar-title {
   font-family: $headings-font-family;
   font-weight: 500;
-  font-size: 1.1rem;
-  letter-spacing: -0.005em;
+  font-size: 1rem;
+  letter-spacing: 0;
 }
 .navbar .nav-link {
   font-family: $font-family-sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   border-bottom: none;
+  color: $fg-soft;
 }
 .navbar .nav-link:hover { color: $accent !important; }
 
@@ -144,7 +146,7 @@ main a:hover {
   font-size: 0.85rem;
   padding: 1.5rem 0;
 }
-.page-footer a { color: $ink-mute; border-bottom: 1px solid transparent; }
+.page-footer a { color: $fg-mute; border-bottom: 1px solid transparent; }
 .page-footer a:hover { color: $accent; border-bottom-color: $accent; }
 
 // Listings (project cards)
@@ -161,17 +163,17 @@ main a:hover {
 }
 .listing-title {
   font-family: $headings-font-family;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 500;
   margin-bottom: 0.35rem;
 }
 .listing-title a {
-  color: $ink !important;
+  color: $fg-primary !important;
   border-bottom: none !important;
 }
 .listing-title a:hover { color: $accent !important; }
 .listing-description {
-  color: $ink-soft;
+  color: $fg-soft;
   font-size: 0.97rem;
   line-height: 1.55;
 }
@@ -180,7 +182,7 @@ main a:hover {
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: $ink-mute;
+  color: $fg-mute;
   background: transparent;
   border: 1px solid $rule;
   padding: 2px 8px;
@@ -190,7 +192,7 @@ main a:hover {
 .listing-date {
   font-family: $font-family-monospace;
   font-size: 0.75rem;
-  color: $ink-mute;
+  color: $fg-mute;
   letter-spacing: 0.05em;
 }
 
@@ -200,61 +202,62 @@ pre, code {
 }
 pre {
   border: 1px solid $rule;
-  border-radius: 2px;
+  border-radius: 4px;
   padding: 1rem;
   font-size: 0.85rem;
   line-height: 1.55;
+  background: $pre-bg;
 }
 code:not(pre code) {
   font-size: 0.88em;
   padding: 0.1em 0.35em;
   background: $code-bg;
-  border-radius: 2px;
-  color: $accent-deep;
+  border-radius: 3px;
+  color: $accent;
 }
 
-// Block quotes — editorial pull-quote feel
+// Block quotes
 blockquote {
   border-left: 2px solid $accent;
   padding-left: 1.25rem;
   margin-left: 0;
-  color: $ink-soft;
+  color: $fg-soft;
   font-style: italic;
 }
 
 // Selection
-::selection { background: $accent; color: $paper; }
+::selection { background: $accent; color: $bg-primary; }
 
-// Custom hero block (used on index)
+// Hero block (used on index)
 .hero-block {
   padding: 1rem 0 2.5rem;
 }
 .hero-block .hero-name {
   font-family: $headings-font-family;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(2.25rem, 4.5vw, 3.25rem);
   font-weight: 600;
-  letter-spacing: -0.025em;
-  line-height: 1;
+  letter-spacing: -0.01em;
+  line-height: 1.05;
   margin: 0 0 0.5rem;
-  color: $ink;
+  color: $fg-primary;
 }
 .hero-block .hero-role {
   font-family: $font-family-monospace;
   font-size: 0.85rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: $ink-mute;
+  color: $accent;
   margin-bottom: 1.75rem;
 }
 .hero-block .hero-lede {
-  font-size: 1.2rem;
-  line-height: 1.55;
-  color: $ink-soft;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: $fg-soft;
   max-width: 36em;
   margin-bottom: 1.5rem;
 }
 
-// Section heading with year/index marginalia
+// Section heading with index marginalia
 .section-marker {
   display: flex;
   align-items: baseline;
@@ -265,12 +268,12 @@ blockquote {
   font-family: $font-family-monospace;
   font-size: 0.75rem;
   letter-spacing: 0.14em;
-  color: $ink-mute;
+  color: $fg-mute;
   font-weight: 500;
 }
 .section-marker h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
 }
 
@@ -285,22 +288,23 @@ blockquote {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: $ink-mute;
+  color: $fg-mute;
   margin-bottom: 0.4rem;
 }
 .work-entry h3 {
   font-family: $headings-font-family;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 500;
   margin: 0 0 0.45rem;
+  color: $fg-primary;
 }
 .work-entry p {
   margin: 0 0 0.5rem;
-  color: $ink-soft;
+  color: $fg-soft;
 }
 .work-entry .work-links {
   font-size: 0.9rem;
-  color: $ink-mute;
+  color: $fg-mute;
 }
 
 // Publications page
@@ -310,12 +314,13 @@ blockquote {
   border-bottom: 1px solid $rule;
   font-size: 0.95rem;
   line-height: 1.55;
+  color: $fg-soft;
 }
 .csl-entry:last-child { border-bottom: none; }
 
 // Mobile
 @media (max-width: 768px) {
-  h1.title { font-size: 2rem; }
-  .hero-block .hero-name { font-size: 2.25rem; }
+  h1.title { font-size: 1.8rem; }
+  .hero-block .hero-name { font-size: 2rem; }
   .hero-block .hero-lede { font-size: 1.05rem; }
 }

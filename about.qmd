@@ -11,7 +11,7 @@ page-layout: article
 ## Background
 
 I am a Machine Learning Engineer focused on medical AI. Since 2019, I have
-worked at AstraZeneca's R&D group in Gaithersburg, Maryland, building deep
+worked at AstraZeneca's R&D group in Maryland, building deep
 learning systems across drug discovery and medical imaging.
 
 My work spans three threads. **Drug discovery ML** — multimodal models that

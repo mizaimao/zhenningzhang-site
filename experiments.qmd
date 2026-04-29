@@ -62,6 +62,32 @@ language modeling, MIDI tokenizer for music generation. Trained on Bach's
 ::: {.experiment-row}
 
 ::: {.experiment-text}
+<div class="experiment-meta">2026 · Terminal · Rust</div>
+
+### [MooseReader](projects/moose-reader.qmd)
+
+A featherweight terminal EPUB reader in Rust — keyboard-driven (`h` `j`
+`k` `l`), TrueColor themes (Dracula, Nord, Solarized, Catppuccin,
+Gruvbox), and percentage-based bookmarks. No electron shell, no
+heavyweight TUI framework — single-digit-megabyte footprint.
+
+<div class="experiment-links">
+[Read more →](projects/moose-reader.qmd) ·
+[GitHub](https://github.com/mizaimao/MooseReader){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<img src="assets/img/projects/moose-reader.png" alt="MooseReader terminal EPUB reader screenshot">
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
 <div class="experiment-meta">2022 · Simulation · Python · C++</div>
 
 ### [Isometric tiles](projects/isometric-tiles.qmd)

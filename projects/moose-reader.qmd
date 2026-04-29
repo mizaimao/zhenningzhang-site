@@ -1,0 +1,44 @@
+---
+title: "MooseReader"
+description: "A featherweight terminal EPUB reader in Rust — keyboard-driven, themeable, and built without heavy TUI frameworks for a single-digit-megabyte memory footprint."
+date: 2026-04-01
+categories: [Personal, Terminal, Rust]
+image: ../assets/img/projects/moose-reader.png
+---
+
+::: {.eyebrow}
+Personal project
+:::
+
+<img src="../assets/img/projects/moose-reader.png" alt="MooseReader terminal EPUB reader" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
+
+## Idea
+
+A zero-distraction terminal EPUB reader. The brief was minimal: read a
+book in the same terminal I already live in, with no electron shell, no
+heavyweight TUI dependency, and a memory footprint measured in single-digit
+megabytes. Vim-style keybindings throughout (`h` `j` `k` `l`) so the home
+row never breaks.
+
+## Implementation
+
+- **Live layout engine** — page rendering recalculates on the fly when
+  reading settings change, so font and width tweaks are immediate.
+- **TrueColor themes** — pre-built color profiles including Dracula, Nord,
+  Solarized, Catppuccin, and Gruvbox.
+- **Smart state persistence** — bookmarks are stored as a percentage
+  position rather than a line or chapter index, so resuming works cleanly
+  even after a layout change.
+- **Interactive TOC** — pop-up TUI pane for chapter navigation.
+- **Customizable footer** — chapter title, reading progress (chapter vs.
+  overall), percentage read, and a visual progress bar.
+
+Configuration lives in a `reader_config.json` written next to the binary;
+either edit by hand or use the in-program Settings menu (`S`).
+
+## Stack
+
+Rust, with direct terminal control rather than a heavyweight TUI framework
+to keep the footprint small.
+
+[GitHub repository →](https://github.com/mizaimao/MooseReader){.external}

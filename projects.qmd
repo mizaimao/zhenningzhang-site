@@ -132,12 +132,12 @@ Algorithms remain publicly viewable.
 ::: {.work-entry}
 <div class="work-meta">Dash · 2018 – 2019</div>
 ### Patient Info — disease prediction dashboard
-<div class="demo-placeholder">[ demo gif placeholder ]</div>
+<div class="demo-figure"><img src="assets/img/demos/patient.gif" alt="Patient Info disease prediction dashboard screen recording"></div>
 Integrated dashboard for displaying lung-disease predictions and patient
 metadata. Built in Dash; produced from real data with a placeholder ECG
 panel due to data availability constraints.
 <div class="work-links">
-Live demo — relinking to new host.
+[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/er-patient-stratification){.external}
 </div>
 :::
 

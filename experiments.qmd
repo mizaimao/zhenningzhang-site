@@ -79,7 +79,7 @@ heavyweight TUI framework — single-digit-megabyte footprint.
 
 ```{=html}
 <div class="experiment-media">
-<img src="assets/img/projects/moose-reader.png" alt="MooseReader terminal EPUB reader screenshot">
+<img src="assets/img/projects/moose-reader.gif" alt="MooseReader terminal EPUB reader demo">
 </div>
 ```
 

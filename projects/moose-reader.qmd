@@ -3,14 +3,14 @@ title: "MooseReader"
 description: "A featherweight terminal EPUB reader in Rust — keyboard-driven, themeable, and built without heavy TUI frameworks for a single-digit-megabyte memory footprint."
 date: 2026-04-01
 categories: [Personal, Terminal, Rust]
-image: ../assets/img/projects/moose-reader.png
+image: ../assets/img/projects/moose-reader.gif
 ---
 
 ::: {.eyebrow}
 Personal project
 :::
 
-<img src="../assets/img/projects/moose-reader.png" alt="MooseReader terminal EPUB reader" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
+<img src="../assets/img/projects/moose-reader.gif" alt="MooseReader terminal EPUB reader" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
 
 ## Idea
 

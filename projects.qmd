@@ -149,10 +149,10 @@ Dockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes
 load slowly — expect 1–2 minutes per case after click. Case 1 is the
 smallest and quickest to load.
 <div class="work-links">
-[Case 1](assets/papaya/papaya_5c4c25f93529bf21469f81a0acd5d324/) ·
-[Case 2](assets/papaya/papaya_7f1d2088b4244395b72eb8287f66a295/) ·
-[Case 3](assets/papaya/papaya_85746d90494345e38ab61533e999b3f1/) ·
-[Case 4](assets/papaya/papaya_37e90452caa5924546f33804040fc858/)
+[Case 1](assets/papaya/papaya_5c4c25f93529bf21469f81a0acd5d324/){target="_blank" rel="noopener"} ·
+[Case 2](assets/papaya/papaya_7f1d2088b4244395b72eb8287f66a295/){target="_blank" rel="noopener"} ·
+[Case 3](assets/papaya/papaya_85746d90494345e38ab61533e999b3f1/){target="_blank" rel="noopener"} ·
+[Case 4](assets/papaya/papaya_37e90452caa5924546f33804040fc858/){target="_blank" rel="noopener"}
 </div>
 :::
 
@@ -163,7 +163,7 @@ smallest and quickest to load.
 Interactive three.js viewer for chest-vessel classification and
 atherosclerosis detection. Two cases included.
 <div class="work-links">
-[Live demo](assets/plaque/)
+[Live demo](assets/plaque/){target="_blank" rel="noopener"}
 </div>
 :::
 

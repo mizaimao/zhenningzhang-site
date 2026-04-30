@@ -440,6 +440,17 @@ ul.task-list li input[type="checkbox"] {
     else document.addEventListener('DOMContentLoaded', fn);
   }
 
+  // Open all external links in a new tab. Quarto's
+  // `link-external-newwindow: true` setting is not emitting target="_blank"
+  // in the rendered HTML on this version, so we patch at runtime. Quarto
+  // adds class="external" to off-site anchors automatically.
+  ready(function () {
+    document.querySelectorAll('a.external').forEach(a => {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
+
   ready(function () {
     const trigger = document.getElementById('accent-trigger');
     const menu = document.getElementById('accent-menu');

@@ -476,7 +476,7 @@ DICOM viewer · 2018 – 2019
 </div>
 Dockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes load slowly — expect 1–2 minutes per case after click. Case 1 is the smallest and quickest to load.
 <div class="work-links">
-<p><a href="assets/papaya/papaya_5c4c25f93529bf21469f81a0acd5d324/">Case 1</a> · <a href="assets/papaya/papaya_7f1d2088b4244395b72eb8287f66a295/">Case 2</a> · <a href="assets/papaya/papaya_85746d90494345e38ab61533e999b3f1/">Case 3</a> · <a href="assets/papaya/papaya_37e90452caa5924546f33804040fc858/">Case 4</a></p>
+<p><a href="assets/papaya/papaya_5c4c25f93529bf21469f81a0acd5d324/" target="_blank" rel="noopener">Case 1</a> · <a href="assets/papaya/papaya_7f1d2088b4244395b72eb8287f66a295/" target="_blank" rel="noopener">Case 2</a> · <a href="assets/papaya/papaya_85746d90494345e38ab61533e999b3f1/" target="_blank" rel="noopener">Case 3</a> · <a href="assets/papaya/papaya_37e90452caa5924546f33804040fc858/" target="_blank" rel="noopener">Case 4</a></p>
 </div>
 </section>
 </div>
@@ -491,7 +491,7 @@ three.js · 2018 – 2019
 </div>
 Interactive three.js viewer for chest-vessel classification and atherosclerosis detection. Two cases included.
 <div class="work-links">
-<p><a href="assets/plaque/">Live demo</a></p>
+<p><a href="assets/plaque/" target="_blank" rel="noopener">Live demo</a></p>
 </div>
 </section>
 </div>
@@ -560,6 +560,17 @@ Interactive three.js viewer for chest-vessel classification and atherosclerosis 
     if (document.readyState !== 'loading') fn();
     else document.addEventListener('DOMContentLoaded', fn);
   }
+
+  // Open all external links in a new tab. Quarto's
+  // `link-external-newwindow: true` setting is not emitting target="_blank"
+  // in the rendered HTML on this version, so we patch at runtime. Quarto
+  // adds class="external" to off-site anchors automatically.
+  ready(function () {
+    document.querySelectorAll('a.external').forEach(a => {
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel', 'noopener noreferrer');
+    });
+  });
 
   ready(function () {
     const trigger = document.getElementById('accent-trigger');

@@ -167,4 +167,4 @@ atherosclerosis detection. Two cases included.
 </div>
 :::
 
-For personal projects and side builds, see [Tinkering](experiments.qmd).
+For personal projects and side builds, see [Tinkering](tinkering.qmd).

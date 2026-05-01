@@ -88,6 +88,34 @@ heavyweight TUI framework — single-digit-megabyte footprint.
 ::: {.experiment-row}
 
 ::: {.experiment-text}
+<div class="experiment-meta">2026 · Agentic AI · Python · LangChain · Streamlit</div>
+
+### [Multi-agent stock analysis pipeline](projects/multi-agent-stock.qmd)
+
+Multi-mode stock analysis dashboard built around an adversarial three-stage
+pipeline (analyst → challenger → synthesizer). Runs on locally hosted Gemma
+via Ollama for $0/run; an optional 7-agent debate via TradingAgents handles
+the highest-fidelity mode. Every run journaled to SQLite — full prompts,
+token cost, runtime, and decision rationale per run.
+
+<div class="experiment-links">
+[Read more →](projects/multi-agent-stock.qmd) ·
+[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external} ·
+[GitHub](https://github.com/mizaimao/trader-advisor){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<img src="assets/img/projects/multi-agent-stock.png" alt="Multi-agent stock analysis pipeline — Streamlit dashboard">
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
 <div class="experiment-meta">2022 · Simulation · Python · C++</div>
 
 ### [Isometric tiles](projects/isometric-tiles.qmd)
@@ -246,7 +274,3 @@ Soundboard app without round-tripping through a desktop editor.
 ```
 
 :::
-
-Also building: a [multi-agent stock analysis pipeline](projects/multi-agent-stock.qmd)
-(2026) — three-role architecture (analyst → challenger → synthesizer) running
-on local Gemma via Ollama. Screenshots coming.

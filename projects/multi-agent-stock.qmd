@@ -1,14 +1,16 @@
 ---
 title: "Multi-agent stock analysis pipeline"
-description: "Three-agent system (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard."
+description: "Adversarial three-stage analysis pipeline (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard. Live on Hugging Face Spaces."
 date: 2026-01-01
 categories: [Personal, Agentic AI, LLMs]
-image: ../assets/img/placeholder-square.png
+image: ../assets/img/projects/multi-agent-stock.png
 ---
 
 ::: {.eyebrow}
 Personal project · 2026
 :::
+
+<img src="../assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard for the adversarial three-stage analysis pipeline" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
 
 ## Idea
 
@@ -37,11 +39,7 @@ edge cases that a single-agent pipeline would miss.
 
 ## Demo
 
-Live demo on Hugging Face Spaces.
-A pre-recorded walkthrough video is available as a fallback if the demo is
-rate-limited.
-
-[Live demo →](https://huggingface.co/spaces){.external}
+[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}
 
 ## Stack
 

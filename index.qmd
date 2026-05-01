@@ -101,12 +101,13 @@ Preprint on bioRxiv; abstracts at SITC and AACR.
 ::: {.work-entry}
 <div class="work-meta">2026 · Personal</div>
 ### Multi-agent stock analysis pipeline
-Three-agent system (analyst → challenger → synthesizer) running on locally
-hosted Gemma via Ollama, with a Streamlit dashboard. Designed to surface
-disagreement and adversarial critique before final synthesis.
+Adversarial three-stage analysis pipeline (analyst → challenger → synthesizer)
+running on locally hosted Gemma via Ollama, with a Streamlit dashboard.
+Designed to surface disagreement and adversarial critique before final
+synthesis.
 <div class="work-links">
 [Read more →](projects/multi-agent-stock.qmd) ·
-[Live demo (Hugging Face Spaces) →](https://huggingface.co/spaces){.external}
+[Live demo →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}
 </div>
 :::
 

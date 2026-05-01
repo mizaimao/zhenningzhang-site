@@ -77,8 +77,8 @@
     "text": "Contact\nThe fastest paths to reach me:\n\nLinkedIn for professional contact.\nGitHub for code and personal projects.\nFor email and phone, see my CV."
   },
   {
-    "objectID": "experiments.html",
-    "href": "experiments.html",
+    "objectID": "tinkering.html",
+    "href": "tinkering.html",
     "title": "Tinkering",
     "section": "",
     "text": "§ Personal · Outside the day job\n\nThe stuff I build for the fun of figuring it out — generative models, retro computing, game engines, agentic AI, terminal toys, and the homelab work that supports it all.\nFor professional work, see Work.\n\n\n\n2024 · Generative Models · PyTorch\n\n\nMusic generation transformer\nDecoder-only generative transformer in PyTorch — small enough to be readable, big enough to learn something interesting. Dual-modality: text tokenizer for language modeling, MIDI tokenizer for music generation. Trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\nGoldberg Variations · 1\n\n\n\n\n\nGoldberg Variations · 2\n\n\n\n\n\nWell-Tempered Clavier\n\n\n\n\n\n\n\n2026 · Terminal · Rust\n\n\nMooseReader\nA featherweight terminal EPUB reader in Rust — keyboard-driven (h j k l), TrueColor themes (Dracula, Nord, Solarized, Catppuccin, Gruvbox), and percentage-based bookmarks. No electron shell, no heavyweight TUI framework — single-digit-megabyte footprint.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2022 · Simulation · Python · C++\n\n\nIsometric tiles\nA Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.\n\nRead more → · GitHub — Python · GitHub — C++\n\n\n\n\n\n\n\n\n\n\n2023 · Cryptography · Python\n\n\nEnigma machine emulator\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors, reflectors, and the plugboard modeled as first-class classes. Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Graphics · Python\n\n\nRaycasting renderer\nA from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind Wolfenstein 3D (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2019 · Game Engines · Unreal\n\n\nUnreal Engine cutscene experiment\nA video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.\n\nRead more →\n\n\n\n\n\n\n\n\n\n\n\n\n2024 · Mobile · Flutter · Swift\n\n\nSoundboard app\nA cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Web · Python\n\n\nOnline audio cutter\nA small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\nAlso building: a multi-agent stock analysis pipeline (2026) — three-role architecture (analyst → challenger → synthesizer) running on local Gemma via Ollama. Screenshots coming."
@@ -333,7 +333,7 @@
     "href": "projects/multi-agent-stock.html#demo",
     "title": "Multi-agent stock analysis pipeline",
     "section": "Demo",
-    "text": "Demo\nLive demo on Hugging Face Spaces. A pre-recorded walkthrough video is available as a fallback if the demo is rate-limited.\nLive demo →"
+    "text": "Demo\nLive demo on Hugging Face Spaces →"
   },
   {
     "objectID": "projects/multi-agent-stock.html#stack",

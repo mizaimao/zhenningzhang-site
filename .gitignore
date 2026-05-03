@@ -9,3 +9,6 @@ CLAUDE.md
 # Old website import
 public_html/
 _site/
+
+# docx2pdf
+.venv

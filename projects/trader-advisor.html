@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-01">
-<meta name="description" content="Adversarial three-stage analysis pipeline (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard. Live on Hugging Face Spaces.">
+<meta name="dcterms.date" content="2026-05-01">
+<meta name="description" content="An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during investigation, with workflow pipelines for comparison. Live on Hugging Face Spaces.">
 
-<title>Multi-agent stock analysis pipeline – Zhenning Zhang</title>
+<title>Trader Advisor — agentic stock research – Zhenning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -78,8 +78,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 
-<meta property="og:title" content="Multi-agent stock analysis pipeline – Zhenning Zhang">
-<meta property="og:description" content="Adversarial three-stage analysis pipeline (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard. Live on Hugging Face Spaces.">
+<meta property="og:title" content="Trader Advisor — agentic stock research – Zhenning Zhang">
+<meta property="og:description" content="An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during investigation, with workflow pipelines for comparison. Live on Hugging Face Spaces.">
 <meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/multi-agent-stock.png">
 <meta property="og:site_name" content="Zhenning Zhang">
 <meta property="og:image:height" content="2444">
@@ -318,7 +318,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Multi-agent stock analysis pipeline</h1>
+<h1 class="title">Trader Advisor — agentic stock research</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Personal</div>
     <div class="quarto-category">Agentic AI</div>
@@ -328,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Adversarial three-stage analysis pipeline (analyst → challenger → synthesizer) running on locally hosted Gemma via Ollama, with a Streamlit dashboard. Live on Hugging Face Spaces.
+    An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during investigation, with workflow pipelines for comparison. Live on Hugging Face Spaces.
   </div>
 </div>
 
@@ -339,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2026</p>
+      <p class="date">May 1, 2026</p>
     </div>
   </div>
   
@@ -354,32 +354,31 @@ ul.task-list li input[type="checkbox"] {
 <div class="eyebrow">
 <p>Personal project · 2026</p>
 </div>
-<p><img src="../assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard for the adversarial three-stage analysis pipeline" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;"></p>
+<p><img src="../assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard with master ticker table, run explorer, and agent trace viewer" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;"></p>
 <section id="idea" class="level2">
 <h2 data-anchor-id="idea">Idea</h2>
-<p>Single-LLM “stock analyst” demos tend to produce confidently wrong analysis because the model never has to defend its own claims. This project explores a three-role architecture where roles are deliberately adversarial:</p>
-<ul>
-<li><strong>Analyst</strong> — surfaces the bullish or neutral case from available data.</li>
-<li><strong>Challenger</strong> — argues the bearish case, identifies weaknesses in the analyst’s reasoning, surfaces disconfirming evidence.</li>
-<li><strong>Synthesizer</strong> — adjudicates the disagreement and produces a final reasoned summary, including stated uncertainty.</li>
-</ul>
-<p>The structure forces explicit disagreement before synthesis, which surfaces edge cases that a single-agent pipeline would miss.</p>
+<p>Most LLM “stock analyst” demos are single-call: dump the data, ask for a verdict. The model never has to decide <em>what</em> data to look at, because everything is pre-fetched. This project flips that — an agent that picks its own tools during the investigation, calling for price context, indicators, options, sentiment, or fundamentals based on what it has already learned. The agent’s reasoning trace is the artifact, not just the verdict.</p>
+<p>Three classical LLM pipelines (solo, core, full) ship alongside the agent as additional voices, so the same ticker can be looked at four ways.</p>
 </section>
 <section id="implementation" class="level2">
 <h2 data-anchor-id="implementation">Implementation</h2>
 <ul>
-<li><strong>Inference</strong> — locally hosted Gemma via Ollama on an RTX 4090 Linux desktop. Migrated to Gemini 2.5 Flash via the Google AI Studio free tier for the public demo (in-app rate limiting protects the quota).</li>
-<li><strong>Frontend</strong> — Streamlit dashboard that exposes each agent’s reasoning side-by-side, so the disagreement is legible to the user.</li>
-<li><strong>Optimization</strong> — careful inference and memory tuning across Apple Silicon (MLX) and Linux GPU environments.</li>
+<li><strong>Agent loop</strong> — hand-rolled tool-calling loop, no LangChain or LangGraph. Persistent message history, ephemeral system prompt rebuilt each turn with the current call budget, force-finalize on budget exhaust via <code>tool_choice="none"</code>. Eleven tools span price action, technical indicators, fundamentals, options flow, insider transactions, news, sector comparisons, and social sentiment.</li>
+<li><strong>Other modes</strong> — <em>solo</em> is one LLM call with all data dumped in (baseline). <em>Core</em> is a three-step adversarial workflow (analyst → challenger → synthesizer); flips ~30% of solo’s verdicts. <em>Full</em> wraps the open-source TradingAgents framework for a seven-agent debate.</li>
+<li><strong>Inference</strong> — primary path is locally hosted gpt-oss:20b via Ollama on a single RTX 3090 (24GB). Provider-pluggable: provider abstraction designed for Anthropic, OpenAI, and Google Generative AI; primary deployed path is Ollama.</li>
+<li><strong>Frontend</strong> — Streamlit dashboard with three tabs (Overview, Run Explorer, About) and a modal-driven run configurator. The agent trace renderer shows each step’s reasoning, the tool called, and the truncated tool result — legible as a journal of the investigation.</li>
+<li><strong>Persistence</strong> — every run journaled to SQLite: prompts, tool calls, token cost, runtime, decision rationale.</li>
 </ul>
 </section>
 <section id="demo" class="level2">
 <h2 data-anchor-id="demo">Demo</h2>
 <p><a href="https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor" class="external">Live demo on Hugging Face Spaces →</a></p>
+<p>The deployed demo runs in read-only mode (pre-loaded analyses, live runs disabled because the agent needs Finnhub, Alpha Vantage, and an LLM key). The Run Explorer tab and agent trace viewer are fully interactive over the pre-loaded data.</p>
 </section>
 <section id="stack" class="level2">
 <h2 data-anchor-id="stack">Stack</h2>
-<p>Python, Ollama, Gemma, Streamlit, Google Generative AI SDK.</p>
+<p>Python, Ollama, Streamlit, SQLite, Plotly. Provider abstraction designed for Anthropic, OpenAI, and Google Generative AI; primary deployed path is Ollama.</p>
+<p><a href="https://github.com/mizaimao/trader-advisor" class="external">GitHub repository →</a></p>
 
 
 </section>

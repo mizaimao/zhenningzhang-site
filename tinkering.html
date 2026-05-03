@@ -79,9 +79,11 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Tinkering – Zhenning Zhang">
 <meta property="og:description" content="Side projects, weekend builds, and things I make for the fun of figuring them out.">
-<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/moose-reader.gif">
+<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/multi-agent-stock.png">
 <meta property="og:site_name" content="Zhenning Zhang">
-<meta property="og:image:alt" content="MooseReader terminal EPUB reader demo">
+<meta property="og:image:alt" content="Trader Advisor — Streamlit dashboard for agentic stock research">
+<meta property="og:image:height" content="2444">
+<meta property="og:image:width" content="4366">
 </head>
 
 <body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -341,8 +343,25 @@ ul.task-list li input[type="checkbox"] {
 <div class="eyebrow">
 <p>§ Personal · Outside the day job</p>
 </div>
-<p>The stuff I build for the fun of figuring it out — generative models, retro computing, game engines, agentic AI, terminal toys, and the homelab work that supports it all.</p>
+<p>The stuff I build for the fun of figuring it out — generative models, agentic exploration, game-related stuffs, terminal toys, and small simulations.</p>
 <p>For professional work, see <a href="./projects.html">Work</a>.</p>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+2026 · Agentic AI · Python · Streamlit
+</div>
+<section id="trader-advisor-agentic-stock-research" class="level3">
+<h3 data-anchor-id="trader-advisor-agentic-stock-research"><a href="./projects/trader-advisor.html">Trader Advisor — agentic stock research</a></h3>
+<p>An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during the investigation, with a tool-call quota and hand-rolled loop (no LangChain). Eleven tools spanning price, indicators, fundamentals, options, insider activity, sentiment, and news. Three classical LLM pipelines included as additional voices. Runs locally on gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.</p>
+<div class="experiment-links">
+<p><a href="./projects/trader-advisor.html">Read more →</a> · <a href="https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor" class="external">Live demo on Hugging Face Spaces →</a> · <a href="https://github.com/mizaimao/trader-advisor" class="external">GitHub</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media">
+<img src="assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard for agentic stock research">
+</div>
+</div>
 <div class="experiment-row">
 <div class="experiment-text">
 <div class="experiment-meta">
@@ -394,23 +413,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="experiment-media">
 <img src="assets/img/projects/moose-reader.gif" alt="MooseReader terminal EPUB reader demo">
-</div>
-</div>
-<div class="experiment-row">
-<div class="experiment-text">
-<div class="experiment-meta">
-2026 · Agentic AI · Python · LangChain · Streamlit
-</div>
-<section id="multi-agent-stock-analysis-pipeline" class="level3">
-<h3 data-anchor-id="multi-agent-stock-analysis-pipeline"><a href="./projects/multi-agent-stock.html">Multi-agent stock analysis pipeline</a></h3>
-<p>Multi-mode stock analysis dashboard built around an adversarial three-stage pipeline (analyst → challenger → synthesizer). Runs on locally hosted Gemma via Ollama for $0/run; an optional 7-agent debate via TradingAgents handles the highest-fidelity mode. Every run journaled to SQLite — full prompts, token cost, runtime, and decision rationale per run.</p>
-<div class="experiment-links">
-<p><a href="./projects/multi-agent-stock.html">Read more →</a> · <a href="https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor" class="external">Live demo on Hugging Face Spaces →</a> · <a href="https://github.com/mizaimao/trader-advisor" class="external">GitHub</a></p>
-</div>
-</section>
-</div>
-<div class="experiment-media">
-<img src="assets/img/projects/multi-agent-stock.png" alt="Multi-agent stock analysis pipeline — Streamlit dashboard">
 </div>
 </div>
 <div class="experiment-row">

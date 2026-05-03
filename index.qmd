@@ -103,8 +103,8 @@ Preprint on bioRxiv; abstracts at SITC and AACR.
 ### Trader Advisor — agentic stock research
 An LLM agent that researches stocks by autonomously calling tools — picks
 its own data sources during the investigation, with a hand-rolled tool-calling
-loop and a tool-call quota. Eleven tools, four modes (one agent, three
-workflow pipelines), runs locally on gpt-oss:20b via Ollama.
+loop and a tool-call quota. Eleven tools, four modes (one agent, two workflow pipelines and one
+wrapper), runs locally on gpt-oss:20b via Ollama.
 <div class="work-links">
 [Read more →](projects/trader-advisor.qmd) ·
 [Live demo →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}

@@ -21,8 +21,9 @@ the investigation, calling for price context, indicators, options, sentiment,
 or fundamentals based on what it has already learned. The agent's reasoning
 trace is the artifact, not just the verdict.
 
-Three classical LLM pipelines (solo, core, full) ship alongside the agent as
-additional voices, so the same ticker can be looked at four ways.
+Four modes ship together: the agent, two classical LLM pipelines (solo,
+core), and a wrapper around the open-source TradingAgents framework. The
+same ticker can be looked at four ways.
 
 ## Implementation
 

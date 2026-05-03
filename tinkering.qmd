@@ -24,7 +24,7 @@ For professional work, see [Work](projects.qmd).
 An LLM agent that researches stocks by autonomously calling tools — picks
 its own data sources during the investigation, with a tool-call quota and
 hand-rolled loop (no LangChain). Eleven tools spanning price, indicators,
-fundamentals, options, insider activity, sentiment, and news. Three
+fundamentals, options, insider activity, sentiment, and news. Two
 classical LLM pipelines included as additional voices. Runs locally on
 gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.
 

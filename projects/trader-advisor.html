@@ -43,8 +43,11 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-32d12faac1a8dffbe27ec749f5aade6c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-d5dd659d3f408e88103e186f60925da1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-bb34902e0d5a3ab631adfde5f3507628.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-b29e6f2554ea4391784a3d2c8a39333a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-4662fd7aa9ead6d70009ef051458e40d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -80,10 +83,10 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Trader Advisor — agentic stock research – Zhenning Zhang">
 <meta property="og:description" content="An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during investigation, with workflow pipelines for comparison. Live on Hugging Face Spaces.">
-<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/multi-agent-stock.png">
+<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/trader-advisor-overview.png">
 <meta property="og:site_name" content="Zhenning Zhang">
-<meta property="og:image:height" content="2444">
-<meta property="og:image:width" content="4366">
+<meta property="og:image:height" content="1141">
+<meta property="og:image:width" content="1600">
 </head>
 
 <body class="nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
@@ -354,7 +357,40 @@ ul.task-list li input[type="checkbox"] {
 <div class="eyebrow">
 <p>Personal project · 2026</p>
 </div>
-<p><img src="../assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard with master ticker table, run explorer, and agent trace viewer" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;"></p>
+<div class="trader-gallery">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/trader-advisor-overview.png" class="lightbox" data-gallery="trader-advisor" title="Overview — master ticker table and featured runs"><img src="../assets/img/projects/trader-advisor-overview.png" class="gallery-lead img-fluid figure-img" alt="Overview — master ticker table and featured runs"></a></p>
+<figcaption>Overview — master ticker table and featured runs</figcaption>
+</figure>
+</div>
+<div class="trader-thumbs">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/trader-advisor-trace.png" class="lightbox" data-gallery="trader-advisor" title="Agent Trace — step-by-step reasoning and tool calls"><img src="../assets/img/projects/trader-advisor-trace.png" class="img-fluid figure-img" alt="Agent Trace — step-by-step reasoning and tool calls"></a></p>
+<figcaption>Agent Trace — step-by-step reasoning and tool calls</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/trader-advisor-architecture.png" class="lightbox" data-gallery="trader-advisor" title="Architecture — data flow and core-mode pipeline"><img src="../assets/img/projects/trader-advisor-architecture.png" class="img-fluid figure-img" alt="Architecture — data flow and core-mode pipeline"></a></p>
+<figcaption>Architecture — data flow and core-mode pipeline</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/trader-advisor-modal.png" class="lightbox" data-gallery="trader-advisor" title="Run Modal — provider, tickers, budget controls"><img src="../assets/img/projects/trader-advisor-modal.png" class="img-fluid figure-img" alt="Run Modal — provider, tickers, budget controls"></a></p>
+<figcaption>Run Modal — provider, tickers, budget controls</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/trader-advisor-analysis.png" class="lightbox" data-gallery="trader-advisor" title="Run Analysis — price, indicators, run metadata"><img src="../assets/img/projects/trader-advisor-analysis.png" class="img-fluid figure-img" alt="Run Analysis — price, indicators, run metadata"></a></p>
+<figcaption>Run Analysis — price, indicators, run metadata</figcaption>
+</figure>
+</div>
+</div>
+</div>
 <section id="idea" class="level2">
 <h2 data-anchor-id="idea">Idea</h2>
 <p>Most LLM “stock analyst” demos are single-call: dump the data, ask for a verdict. The model never has to decide <em>what</em> data to look at, because everything is pre-fetched. This project flips that — an agent that picks its own tools during the investigation, calling for price context, indicators, options, sentiment, or fundamentals based on what it has already learned. The agent’s reasoning trace is the artifact, not just the verdict.</p>
@@ -939,6 +975,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

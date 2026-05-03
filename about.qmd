@@ -48,9 +48,11 @@ Medical AI continues to be the through-line.
 
 **Currently**
 
-- **Adversarial-critique multi-agent systems** — analyst → challenger →
-  synthesizer architecture, locally hosted models via Ollama, lightweight
-  Streamlit interface.
+- **Agentic LLM systems** — hand-rolled tool-calling agent loops with
+  pluggable model providers; locally hosted models via Ollama as the
+  primary inference path. Most recent: an agent that autonomously
+  researches stocks across eleven tools, with workflow pipelines included
+  as comparison voices.
 - **GPU compute environments** — Proxmox/KVM virtualization with PCIe
   passthrough for specialized ML and cross-platform development workloads.
 

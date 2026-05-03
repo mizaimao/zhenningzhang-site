@@ -17,6 +17,35 @@ For professional work, see [Work](projects.qmd).
 ::: {.experiment-row}
 
 ::: {.experiment-text}
+<div class="experiment-meta">2026 · Agentic AI · Python · Streamlit</div>
+
+### [Trader Advisor — agentic stock research](projects/trader-advisor.qmd)
+
+An LLM agent that researches stocks by autonomously calling tools — picks
+its own data sources during the investigation, with a tool-call quota and
+hand-rolled loop (no LangChain). Eleven tools spanning price, indicators,
+fundamentals, options, insider activity, sentiment, and news. Three
+classical LLM pipelines included as additional voices. Runs locally on
+gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.
+
+<div class="experiment-links">
+[Read more →](projects/trader-advisor.qmd) ·
+[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external} ·
+[GitHub](https://github.com/mizaimao/trader-advisor){.external}
+</div>
+:::
+
+```{=html}
+<div class="experiment-media">
+<img src="assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard for agentic stock research">
+</div>
+```
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
 <div class="experiment-meta">2024 · Generative Models · PyTorch</div>
 
 ### [Music generation transformer](projects/music-gen.qmd)
@@ -80,34 +109,6 @@ heavyweight TUI framework — single-digit-megabyte footprint.
 ```{=html}
 <div class="experiment-media">
 <img src="assets/img/projects/moose-reader.gif" alt="MooseReader terminal EPUB reader demo">
-</div>
-```
-
-:::
-
-::: {.experiment-row}
-
-::: {.experiment-text}
-<div class="experiment-meta">2026 · Agentic AI · Python · LangChain · Streamlit</div>
-
-### [Multi-agent stock analysis pipeline](projects/multi-agent-stock.qmd)
-
-Multi-mode stock analysis dashboard built around an adversarial three-stage
-pipeline (analyst → challenger → synthesizer). Runs on locally hosted Gemma
-via Ollama for $0/run; an optional 7-agent debate via TradingAgents handles
-the highest-fidelity mode. Every run journaled to SQLite — full prompts,
-token cost, runtime, and decision rationale per run.
-
-<div class="experiment-links">
-[Read more →](projects/multi-agent-stock.qmd) ·
-[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external} ·
-[GitHub](https://github.com/mizaimao/trader-advisor){.external}
-</div>
-:::
-
-```{=html}
-<div class="experiment-media">
-<img src="assets/img/projects/multi-agent-stock.png" alt="Multi-agent stock analysis pipeline — Streamlit dashboard">
 </div>
 ```
 

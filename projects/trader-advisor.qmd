@@ -3,14 +3,31 @@ title: "Trader Advisor — agentic stock research"
 description: "An LLM agent that researches stocks by autonomously calling tools — picks its own data sources during investigation, with workflow pipelines for comparison. Live on Hugging Face Spaces."
 date: 2026-05-01
 categories: [Personal, Agentic AI, LLMs]
-image: ../assets/img/projects/multi-agent-stock.png
+image: ../assets/img/projects/trader-advisor-overview.png
+lightbox: auto
 ---
 
 ::: {.eyebrow}
 Personal project · 2026
 :::
 
-<img src="../assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard with master ticker table, run explorer, and agent trace viewer" style="width:100%; max-width:680px; height:auto; border:1px solid #30363d; border-radius:4px;">
+::: {.trader-gallery}
+
+![Overview — master ticker table and featured runs](../assets/img/projects/trader-advisor-overview.png){.gallery-lead group="trader-advisor"}
+
+::: {.trader-thumbs}
+
+![Agent Trace — step-by-step reasoning and tool calls](../assets/img/projects/trader-advisor-trace.png){group="trader-advisor"}
+
+![Architecture — data flow and core-mode pipeline](../assets/img/projects/trader-advisor-architecture.png){group="trader-advisor"}
+
+![Run Modal — provider, tickers, budget controls](../assets/img/projects/trader-advisor-modal.png){group="trader-advisor"}
+
+![Run Analysis — price, indicators, run metadata](../assets/img/projects/trader-advisor-analysis.png){group="trader-advisor"}
+
+:::
+
+:::
 
 ## Idea
 

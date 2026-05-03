@@ -340,6 +340,87 @@ blockquote {
   border-radius: 4px;
 }
 
+// Trader Advisor gallery — paired with the dark-theme rules. Same DOM
+// (Quarto's deeply-wrapped figure>p>a>img), same defensive !important.
+.trader-gallery {
+  margin: 1rem 0;
+  max-width: 680px;
+}
+.trader-gallery .quarto-figure,
+.trader-gallery figure.figure {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.trader-gallery > p,
+.trader-thumbs > p,
+.trader-gallery .quarto-figure p,
+.trader-gallery figure.figure p {
+  margin: 0 !important;
+}
+.trader-gallery > p {
+  margin: 0 0 0.5rem !important;
+}
+.trader-gallery figcaption,
+.trader-gallery .figure-caption {
+  display: none !important;
+}
+.trader-gallery a {
+  border-bottom: none !important;
+  display: block;
+}
+.trader-gallery img.gallery-lead {
+  width: 100% !important;
+  max-width: 680px;
+  height: auto !important;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.trader-thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 0.5rem 0 0;
+}
+.trader-thumbs img {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  border: 1px solid $rule;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.trader-thumbs a:hover img,
+.trader-thumbs img:hover {
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+@media (max-width: 600px) {
+  .trader-thumbs { grid-template-columns: repeat(2, 1fr); }
+}
+
+// Compact variant inside experiment-row media columns (Tinkering page).
+.experiment-media .trader-gallery {
+  max-width: 100%;
+  margin: 0;
+}
+.experiment-media .trader-gallery img.gallery-lead {
+  border-radius: 3px;
+}
+.experiment-media .trader-thumbs {
+  gap: 0.3rem;
+  margin-top: 0.4rem;
+}
+.experiment-media .trader-thumbs img {
+  border-radius: 2px;
+  border-width: 1px;
+}
+
 .career-threads { margin: 0.75rem 0 1.25rem; }
 .career-threads p {
   margin: 0.55rem 0;

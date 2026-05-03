@@ -2,6 +2,7 @@
 title: "Tinkering"
 description: "Side projects, weekend builds, and things I make for the fun of figuring them out."
 page-layout: article
+lightbox: auto
 ---
 
 ::: {.eyebrow}
@@ -35,11 +36,27 @@ gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.
 </div>
 :::
 
-```{=html}
-<div class="experiment-media">
-<img src="assets/img/projects/multi-agent-stock.png" alt="Trader Advisor — Streamlit dashboard for agentic stock research">
-</div>
-```
+::: {.experiment-media}
+
+::: {.trader-gallery}
+
+![Overview — master ticker table and featured runs](assets/img/projects/trader-advisor-overview.png){.gallery-lead group="tinkering-trader-advisor"}
+
+::: {.trader-thumbs}
+
+![Agent Trace — step-by-step reasoning and tool calls](assets/img/projects/trader-advisor-trace.png){group="tinkering-trader-advisor"}
+
+![Architecture — data flow and core-mode pipeline](assets/img/projects/trader-advisor-architecture.png){group="tinkering-trader-advisor"}
+
+![Run Modal — provider, tickers, budget controls](assets/img/projects/trader-advisor-modal.png){group="tinkering-trader-advisor"}
+
+![Run Analysis — price, indicators, run metadata](assets/img/projects/trader-advisor-analysis.png){group="tinkering-trader-advisor"}
+
+:::
+
+:::
+
+:::
 
 :::
 

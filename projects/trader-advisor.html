@@ -358,7 +358,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="idea" class="level2">
 <h2 data-anchor-id="idea">Idea</h2>
 <p>Most LLM “stock analyst” demos are single-call: dump the data, ask for a verdict. The model never has to decide <em>what</em> data to look at, because everything is pre-fetched. This project flips that — an agent that picks its own tools during the investigation, calling for price context, indicators, options, sentiment, or fundamentals based on what it has already learned. The agent’s reasoning trace is the artifact, not just the verdict.</p>
-<p>Three classical LLM pipelines (solo, core, full) ship alongside the agent as additional voices, so the same ticker can be looked at four ways.</p>
+<p>Four modes ship together: the agent, two classical LLM pipelines (solo, core), and a wrapper around the open-source TradingAgents framework. The same ticker can be looked at four ways.</p>
 </section>
 <section id="implementation" class="level2">
 <h2 data-anchor-id="implementation">Implementation</h2>

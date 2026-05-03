@@ -30,7 +30,7 @@ gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.
 
 <div class="experiment-links">
 [Read more →](projects/trader-advisor.qmd) ·
-[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external} ·
+[Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external} ·
 [GitHub](https://github.com/mizaimao/trader-advisor){.external}
 </div>
 :::

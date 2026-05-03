@@ -50,7 +50,7 @@ same ticker can be looked at four ways.
 
 ## Demo
 
-[Live demo on Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}
+[Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}
 
 The deployed demo runs in read-only mode (pre-loaded analyses, live runs
 disabled because the agent needs Finnhub, Alpha Vantage, and an LLM key).

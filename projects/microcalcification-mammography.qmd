@@ -24,7 +24,7 @@ A U-Net segmentation backbone trained on annotated mammograms, with a
 detection head producing pixel-level masks. The downstream pipeline locates
 asymmetric patterns and surfaces candidate cancer regions for radiologist
 review. Performance was evaluated on held-out studies and compared against
-the standard CAD baselines of the time.
+the standard CAD baselines.
 
 ## Outcome
 

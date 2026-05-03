@@ -10,9 +10,9 @@ page-layout: article
 
 ## Background
 
-I am a Machine Learning Engineer focused on medical AI. Since 2019, I have
-worked at AstraZeneca R&D in Maryland, building deep learning systems
-across drug discovery and medical imaging.
+I build deep learning systems for drug discovery and medical imaging —
+multimodal models, segmentation tools, and the data infrastructure they
+run on. Since 2019 I've been at AstraZeneca R&D in Maryland.
 
 My work spans three threads. **Drug discovery ML** — multimodal models that
 fuse cell painting microscopy with SMILES chemical representations to predict
@@ -38,8 +38,6 @@ biomedical sciences B.S. at the University of Macau.
 
 ## What I am working on
 
-Medical AI continues to be the through-line.
-
 **Recent threads at AstraZeneca**
 
 - **Automatic contrast phase classification** of polyphasic CT scans
@@ -62,9 +60,9 @@ Medical AI continues to be the through-line.
 
 ## Skills
 
-**Programming** — Python (expert), C++, R.
+**Programming** — Python, C++, R.
 
-**Machine learning and AI** — PyTorch (expert), Keras, scikit-learn,
+**Machine learning and AI** — PyTorch, Keras, scikit-learn,
 Hugging Face, HDBSCAN, UMAP, MLX, Ollama.
 
 **Medical AI and imaging** — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.
@@ -77,7 +75,7 @@ Hugging Face, HDBSCAN, UMAP, MLX, Ollama.
 
 ## Contact
 
-The fastest paths to reach me:
+The best ways to reach me:
 
 - [LinkedIn](https://www.linkedin.com/in/zhenning-zhang) for professional contact.
 - [GitHub](https://github.com/mizaimao) for code and personal projects.

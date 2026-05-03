@@ -15,12 +15,12 @@ AstraZeneca · Medical Imaging & Segmentation
 Manually annotating tumor regions on 3D CT volumes is the bottleneck for
 training and evaluating downstream segmentation models. Domain experts spend
 substantial time per volume, and inter-annotator variability adds noise to
-both ground truth and evaluation. We needed a tool that gave annotators
-strong AI-assisted starting points while keeping them firmly in control of
-the final segmentation.
+both ground truth and evaluation.
 
 ## Approach
 
+We created a tool that gave radiologists strong starting points from a
+model, while keeping the final segmentation under their control.
 Interactive segmentation built on a transformer-backed architecture, with
 two interaction modes:
 

@@ -16,10 +16,9 @@ Personal project
 
 ## Idea
 
-An experiment in Unreal Engine 4.22: a video cutscene with programmed
-object movement, physics simulation, and raytracing enabled. The point
-was the scripting and rendering pipeline, not original art — the scene is
-assembled entirely from royalty-free assets.
+Some experiments in Unreal Engine 4.22, to learn the scripting and
+rendering pipeline. The scene is assembled from royalty-free assets. I'm
+now exploring game development in Godot 4 (as of 2026).
 
 ## Implementation
 

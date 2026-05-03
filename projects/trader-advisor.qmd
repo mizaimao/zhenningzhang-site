@@ -37,8 +37,9 @@ additional voices, so the same ticker can be looked at four ways.
   synthesizer); flips ~30% of solo's verdicts. *Full* wraps the open-source
   TradingAgents framework for a seven-agent debate.
 - **Inference** — primary path is locally hosted gpt-oss:20b via Ollama on a
-  single RTX 3090 (24GB). Provider-pluggable: Anthropic, OpenAI, Google, and
-  others wired through one adapter so the agent loop is provider-agnostic.
+  single RTX 3090 (24GB). Provider-pluggable: provider abstraction designed
+  for Anthropic, OpenAI, and Google Generative AI; primary deployed path is
+  Ollama.
 - **Frontend** — Streamlit dashboard with three tabs (Overview, Run Explorer,
   About) and a modal-driven run configurator. The agent trace renderer shows
   each step's reasoning, the tool called, and the truncated tool result —
@@ -57,7 +58,7 @@ pre-loaded data.
 
 ## Stack
 
-Python, Ollama, Streamlit, SQLite, Plotly. Provider adapters for Anthropic,
-OpenAI, Google Generative AI.
+Python, Ollama, Streamlit, SQLite, Plotly. Provider abstraction designed for
+Anthropic, OpenAI, and Google Generative AI; primary deployed path is Ollama.
 
 [GitHub repository →](https://github.com/mizaimao/trader-advisor){.external}

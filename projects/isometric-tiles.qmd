@@ -14,10 +14,10 @@ Personal project
 
 ## Idea
 
-A grid simulation in the spirit of Conway's Game of Life — blue and red
-blocks that can move, multiply, and decay across an isometric tile field.
-Cell-to-cell interactions are deliberately simple; the visual interest
-comes from the emergent population dynamics on a rendered isometric grid.
+A small simulation inspired by Game of Life — blue and red blocks that
+can move, multiply, and decay across an isometric tile field. Cell-to-cell
+interactions are deliberately simple; the visual interest comes from the
+emergent population dynamics on a rendered isometric grid.
 
 ## Implementation
 

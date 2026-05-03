@@ -12,8 +12,8 @@ AstraZeneca · Drug Discovery ML
 
 ## Problem
 
-Predicting compound activity (IC50) from chemical structure alone leaves
-information on the table. Cell painting — high-content imaging that captures
+Predicting compound activity (IC50) from chemical structure alone misses
+signal that imaging can capture. Cell painting — high-content imaging that captures
 cellular morphological response to compound treatment — provides a rich
 phenotypic signature that complements structure-based representations.
 Models that fuse the two should outperform either modality alone, but

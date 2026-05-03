@@ -14,7 +14,7 @@ include-in-header:
 
 <p class="hero-lede">
 I build deep learning systems for drug discovery and medical imaging.
-Nearly seven years at AstraZeneca R&D, with peer-reviewed work in
+Seven years at AstraZeneca R&D, with peer-reviewed work in
 <em>Patterns</em> and four AACR poster presentations.
 M.S. Bioinformatics, University of Michigan.
 </p>

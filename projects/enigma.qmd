@@ -18,10 +18,10 @@ Personal project
 ## Idea
 
 Reading about the Enigma cipher and Turing's role in breaking it sent me
-down the rabbit hole of actually implementing the machine. The result is
-a faithful Python 3 emulation of the Enigma M3, modeled object-oriented
-with the machine and its components — rotors, reflectors, plugboard — as
-first-class classes.
+down the rabbit hole. I watched a couple of documentaries, then
+implemented a virtual one in Python. The result is a faithful Python 3
+emulation of the Enigma M3, modeled object-oriented with the machine and
+its components — rotors, reflectors, plugboard — as first-class classes.
 
 ## Implementation
 

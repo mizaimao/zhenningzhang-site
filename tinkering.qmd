@@ -9,8 +9,8 @@ page-layout: article
 :::
 
 The stuff I build for the fun of figuring it out — generative models,
-retro computing, game engines, agentic AI, terminal toys, and the homelab
-work that supports it all.
+agentic exploration, game-related stuffs, terminal toys, and small
+simulations.
 
 For professional work, see [Work](projects.qmd).
 

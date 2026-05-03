@@ -12,7 +12,7 @@ AstraZeneca · Tooling & Infrastructure
 
 ## Problem
 
-Multi-center medical imaging data is fundamentally heterogeneous. A single
+Multi-center medical imaging data is often heterogeneous. A single
 research question — say, "train a lung tumor segmentation model robust to
 acquisition variability" — touches data from many sources: different
 hospitals, different scanner vendors, different annotation conventions,

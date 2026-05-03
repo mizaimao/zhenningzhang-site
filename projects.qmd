@@ -8,9 +8,9 @@ page-layout: article
 § AstraZeneca · 2019 – present
 :::
 
-Drug discovery ML, medical imaging and segmentation, and the tooling and
-infrastructure that supports both. Grouped by thread, most recent work
-first inside each.
+Three threads: drug discovery ML, medical imaging and segmentation, and
+the tooling and infrastructure that supports both. Grouped by thread, most
+recent work first inside each.
 
 ## Drug Discovery ML
 
@@ -118,9 +118,9 @@ Other work at AAA:
 - **Integrated tumor segmentation** — Dockerized lung-cancer segmentation
   with 3D visualization.
 - **Lung cancer prediction** — XGBoost over patient metadata
-  (1,658 patients).
+  (~1.6K patients).
 - **ECG abnormality identification** — ResNet variant for 12-lead ECG
-  analysis (7,191 samples).
+  analysis (~7K samples).
 - **Colorectal surgical phase detection** — video and sensor-based phase
   prediction.
 

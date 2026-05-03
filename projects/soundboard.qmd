@@ -36,9 +36,9 @@ Personal project
 ## Idea
 
 A soundboard app with audio mixing, shuffling, video playback, and motion
-control. Started life as a Swift 5 iOS prank; once it became fun to use,
-I rewrote it in Flutter to ship the same UI on macOS, Windows, and Linux
-from a single codebase.
+control. Started life as a Swift 5 iOS prank app — sounds you trigger to
+mess with friends. Once it became fun to use, I rewrote it in Flutter to
+ship the same UI on macOS, Windows, and Linux from a single codebase.
 
 ## Implementation
 

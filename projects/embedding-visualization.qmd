@@ -15,7 +15,7 @@ AstraZeneca · Tooling & Infrastructure
 Unsupervised models produce high-dimensional embeddings that, on their own,
 are nearly impossible for domain experts to interpret. Without good
 interactive tooling, the rich structure inside these embeddings stays
-invisible to the people who would actually act on it.
+invisible to the domain experts who need to act on them.
 
 ## Approach
 
@@ -33,9 +33,11 @@ up most often:
 
 ## Result
 
-Used by R&D labs to interpret unsupervised model outputs across several
-projects, including downstream interpretation of the patch-based 3D
-imaging pipeline and the GNN multiplex IF work.
+The toolkit opened new ways for domain experts to explore structure that
+would otherwise stay buried in raw embedding outputs. Used by an R&D lab
+to interpret unsupervised model outputs, including downstream
+interpretation of the patch-based 3D imaging pipeline and the GNN
+multiplex IF work.
 
 ## Stack
 

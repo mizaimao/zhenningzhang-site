@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="dcterms.date" content="2026-06-01">
-<meta name="description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.">
+<meta name="description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a Proxmox host with GPU passthrough, plus a standalone GPU node. Local-first by default, with cloud providers as a pluggable option.">
 
 <title>Self-Hosted ML Infrastructure – Zhenning Zhang</title>
 <style>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="Self-Hosted ML Infrastructure – Zhenning Zhang">
-<meta property="og:description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.">
+<meta property="og:description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a Proxmox host with GPU passthrough, plus a standalone GPU node. Local-first by default, with cloud providers as a pluggable option.">
 <meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/ml-infra-diagram.svg">
 <meta property="og:site_name" content="Zhenning Zhang">
 </head>
@@ -330,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.
+    A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a Proxmox host with GPU passthrough, plus a standalone GPU node. Local-first by default, with cloud providers as a pluggable option.
   </div>
 </div>
 
@@ -354,7 +354,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="eyebrow">
-<p>Personal · Homelab infrastructure</p>
+<p>Personal · Self-hosted infrastructure</p>
 </div>
 <div class="trader-gallery">
 <div class="quarto-figure quarto-figure-center">
@@ -386,7 +386,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="what-it-does" class="level2">
 <h2 data-anchor-id="what-it-does">What it does</h2>
-<p>A self-hosted ML platform running entirely on my own hardware — local LLM serving, retrieval, agents, and multimodal generation, with no dependency on third-party inference APIs.</p>
+<p>A self-hosted ML platform running entirely on my own hardware — local LLM serving, retrieval, agents, and multimodal generation, all local-first by default. Cloud providers (Anthropic, Google) are a pluggable option, not a dependency.</p>
 <ul>
 <li><strong>Local LLM serving</strong> — a central inference VM runs Ollama as the model server, keeping several models resident at once (Qwen3.6, Gemma4, Llama 3.3 70B, GPT-OSS 120B, and others) and tuned for concurrency so multiple clients hit it in parallel.</li>
 <li><strong>Retrieval-augmented generation</strong> — MooseLLM (a rebranded AnythingLLM) and OpenWebUI are the chat and RAG front ends, wired to a self-hosted SearXNG instance so retrieval stays in-house, with no third-party search or embedding API in the loop.</li>
@@ -398,7 +398,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="how-its-built" class="level2">
 <h2 data-anchor-id="how-its-built">How it’s built</h2>
 <ul>
-<li><strong>Multi-host Proxmox cluster</strong> — ML services run as VMs and containers on a Proxmox host, alongside storage and other workloads, with a second machine dedicated to diffusion.</li>
+<li><strong>Proxmox host + standalone GPU node</strong> — ML services run as VMs and containers on a Proxmox host, alongside storage and other workloads, with a second machine dedicated to diffusion.</li>
 <li><strong>GPU passthrough</strong> — PCIe passthrough gives VMs direct GPU access: the primary host pairs an i9-12900KS with an RTX Pro 6000 Blackwell (96 GB); a secondary node runs an RTX 3090. I’ve also run AMD ROCm on an R9700, so the stack has been exercised across both CUDA and ROCm.</li>
 <li><strong>Networking and storage</strong> — per-VM NIC passthrough, link-aggregated NICs on the NAS, and ZFS underneath for storage integrity.</li>
 </ul>

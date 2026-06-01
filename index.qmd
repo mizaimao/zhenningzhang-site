@@ -48,6 +48,20 @@ segmentation pipelines that depend on consistent imaging protocol.
 </div>
 :::
 
+::: {.work-entry}
+<div class="work-meta">Ongoing · Personal infrastructure</div>
+### Self-Hosted ML Infrastructure
+A self-hosted ML platform running entirely on local hardware — LLM serving
+(Ollama), retrieval-augmented generation, agent serving, and multimodal
+generation, on a Proxmox host with GPU passthrough alongside a standalone
+GPU node, exercised across CUDA and ROCm. The same infrastructure
+discipline I apply to my team's ML platform at AstraZeneca — a system I
+own end to end.
+<div class="work-links">
+[Read more →](projects/self-hosted-ml-infra.qmd)
+</div>
+:::
+
 ::: {.section-marker}
 <span class="section-num">§ 02</span>
 

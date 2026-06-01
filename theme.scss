@@ -422,6 +422,7 @@ blockquote {
   gap: 0.5rem;
   margin: 0.5rem 0 0;
 }
+.trader-thumbs.three-thumbs { grid-template-columns: repeat(3, 1fr); }
 .trader-thumbs img {
   width: 100% !important;
   height: auto !important;

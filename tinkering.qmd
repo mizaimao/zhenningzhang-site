@@ -63,6 +63,46 @@ gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.
 ::: {.experiment-row}
 
 ::: {.experiment-text}
+<div class="experiment-meta">Ongoing · Infrastructure · Proxmox · Ollama</div>
+
+### [Self-Hosted ML Infrastructure](projects/self-hosted-ml-infra.qmd)
+
+A self-hosted ML platform — local LLM serving (Ollama), retrieval-augmented
+generation (AnythingLLM + self-hosted SearXNG), agent serving, and
+multimodal generation — running on a multi-host Proxmox cluster with GPU
+passthrough across CUDA and ROCm. Third-party inference APIs (Anthropic,
+Gemini, etc.) can be optionally used.
+
+<div class="experiment-links">
+[Read more →](projects/self-hosted-ml-infra.qmd)
+</div>
+:::
+
+::: {.experiment-media}
+
+::: {.trader-gallery}
+
+![Self-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.](assets/img/projects/ml-infra-diagram.svg){.gallery-lead group="tinkering-ml-infra"}
+
+::: {.trader-thumbs .three-thumbs}
+
+![MooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker.](assets/img/projects/ml-infra-moosellm.png){group="tinkering-ml-infra"}
+
+![Three models resident on the RTX Pro 6000 under load — `ollama ps` and `nvidia-smi`.](assets/img/projects/ml-infra-ml60-load.png){group="tinkering-ml-infra"}
+
+![The Proxmox host and its VM fleet.](assets/img/projects/ml-infra-proxmox.png){group="tinkering-ml-infra"}
+
+:::
+
+:::
+
+:::
+
+:::
+
+::: {.experiment-row}
+
+::: {.experiment-text}
 <div class="experiment-meta">2024 · Generative Models · PyTorch</div>
 
 ### [Music generation transformer](projects/music-gen.qmd)

@@ -252,81 +252,67 @@
     "text": "Stack\nPyTorch Geometric, scikit-learn, custom mIF preprocessing pipeline."
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Work",
+    "objectID": "projects/self-hosted-ml-infra.html",
+    "href": "projects/self-hosted-ml-infra.html",
+    "title": "Self-Hosted ML Infrastructure",
     "section": "",
-    "text": "§ AstraZeneca · 2019 – present\nThree threads: drug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Grouped by thread, most recent work first inside each."
+    "text": "Personal · Homelab infrastructure"
   },
   {
-    "objectID": "projects.html#drug-discovery-ml",
-    "href": "projects.html#drug-discovery-ml",
-    "title": "Work",
-    "section": "Drug Discovery ML",
-    "text": "Drug Discovery ML\n\n\n2024 – Present\n\n\nMultimodal IC50 prediction\nPyTorch models fusing cell painting microscopy with SMILES chemical representations for compound activity prediction. Deployed across compound libraries totaling 39K compounds; jointly learned image-and-structure embeddings inform downstream phenotype-to-target reasoning.\n\nRead more →\n\n\n\n\n\n2021 – 2022\n\n\nGraph-based analysis of multiplex immunofluorescence\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification. Preprint on bioRxiv; abstracts at SITC and AACR.\n\nRead more → · Preprint — bioRxiv"
+    "objectID": "projects/self-hosted-ml-infra.html#what-it-does",
+    "href": "projects/self-hosted-ml-infra.html#what-it-does",
+    "title": "Self-Hosted ML Infrastructure",
+    "section": "What it does",
+    "text": "What it does\nA self-hosted ML platform running entirely on my own hardware — local LLM serving, retrieval, agents, and multimodal generation, with no dependency on third-party inference APIs.\n\nLocal LLM serving — a central inference VM runs Ollama as the model server, keeping several models resident at once (Qwen3.6, Gemma4, Llama 3.3 70B, GPT-OSS 120B, and others) and tuned for concurrency so multiple clients hit it in parallel.\nRetrieval-augmented generation — MooseLLM (a rebranded AnythingLLM) and OpenWebUI are the chat and RAG front ends, wired to a self-hosted SearXNG instance so retrieval stays in-house, with no third-party search or embedding API in the loop.\nAgent serving — several agents run as their own services against the local endpoint: a Telegram-gateway assistant, the classifier behind my job-search funnel, and Trader Advisor. All call the same local backend.\nMultimodal — KokoroTTS for speech synthesis, and a separate node running ComfyUI for diffusion.\n\nThis is the same infrastructure discipline I bring to Ditali, my team’s ML platform at AstraZeneca — model serving, data flow, and service orchestration — applied to a system I own end to end."
   },
   {
-    "objectID": "projects.html#medical-imaging-segmentation",
-    "href": "projects.html#medical-imaging-segmentation",
-    "title": "Work",
-    "section": "Medical Imaging & Segmentation",
-    "text": "Medical Imaging & Segmentation\n\n\n2026 · AACR poster\n\n\nAutomatic contrast phase classification of polyphasic CT scans\nDeep learning classifier inferring contrast phase from CT volumes — a prerequisite for downstream tumor segmentation pipelines that depend on consistent imaging protocol. Co-authored work, poster at AACR 2026.\n\nRead more → · Abstract — AACR 2026\n\n\n\n\n\n2023 – Present\n\n\nInteractive 3D segmentation toolset\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D. Companion paper as poster at AACR 2024.\n\nRead more → · Abstract — AACR 2024"
+    "objectID": "projects/self-hosted-ml-infra.html#how-its-built",
+    "href": "projects/self-hosted-ml-infra.html#how-its-built",
+    "title": "Self-Hosted ML Infrastructure",
+    "section": "How it’s built",
+    "text": "How it’s built\n\nMulti-host Proxmox cluster — ML services run as VMs and containers on a Proxmox host, alongside storage and other workloads, with a second machine dedicated to diffusion.\nGPU passthrough — PCIe passthrough gives VMs direct GPU access: the primary host pairs an i9-12900KS with an RTX Pro 6000 Blackwell (96 GB); a secondary node runs an RTX 3090. I’ve also run AMD ROCm on an R9700, so the stack has been exercised across both CUDA and ROCm.\nNetworking and storage — per-VM NIC passthrough, link-aggregated NICs on the NAS, and ZFS underneath for storage integrity."
   },
   {
-    "objectID": "projects.html#tooling-infrastructure",
-    "href": "projects.html#tooling-infrastructure",
-    "title": "Work",
-    "section": "Tooling & Infrastructure",
-    "text": "Tooling & Infrastructure\n\n\n2022 – Present\n\n\nBiomedical imaging data platform\nUnified ingestion and preprocessing platform for biomedical imaging at scale — now the team’s standard data layer. Sixteen multi-center datasets, 150K CT volumes, automated mapping of thousands of annotation masks across DICOM and NIfTI standards.\n\nRead more →\n\n\n\n\n\n2022 – Present\n\n\nEmbedding visualization toolkit\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms, archetype analysis. Used by R&D labs across several modeling projects.\n\nRead more →\n\n\n\n\n§ Ann Arbor Algorithms · 2018 – 2019\n\nSoftware Engineer building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, and anomaly identification across multimodal datasets at scale.\n\n\n2020 · Patterns (Cell Press)\n\n\nMicrocalcification detection in mammography\nEnd-to-end deep learning detection of microcalcifications using a U-Net architecture, with downstream localization of asymmetric patterns. The work was peer-reviewed and published in Patterns — Guan, Wang, Li, Zhang, Chen, Siddiqui, Nehring, Huang. Detecting asymmetric patterns and localizing cancers on mammograms. Patterns 1, no. 7 (2020).\n\nRead more → · Paper — Patterns DOI\n\n\n\nOther work at AAA:\n\nChest vessel segmentation — 3D deep learning for atherosclerosis identification on chest MRI.\nIntegrated tumor segmentation — Dockerized lung-cancer segmentation with 3D visualization.\nLung cancer prediction — XGBoost over patient metadata (~1.6K patients).\nECG abnormality identification — ResNet variant for 12-lead ECG analysis (~7K samples).\nColorectal surgical phase detection — video and sensor-based phase prediction."
+    "objectID": "projects/self-hosted-ml-infra.html#how-it-got-here",
+    "href": "projects/self-hosted-ml-infra.html#how-it-got-here",
+    "title": "Self-Hosted ML Infrastructure",
+    "section": "How it got here",
+    "text": "How it got here\nThe platform grew out of years of iteration: it started on a Dell R710 running ESXi, migrated to Proxmox on a Skylake-era box (which stuck), and went through a long series of upgrades — recovering from ZFS pool corruption, expanding GPU passthrough, power-managing a Thunderbolt eGPU — before reaching the current 12900KS + RTX Pro 6000 host. Each step taught something that maps directly onto building and operating real ML infrastructure: virtualization, hardware and driver debugging, storage reliability, and service orchestration."
   },
   {
-    "objectID": "projects.html#demos",
-    "href": "projects.html#demos",
-    "title": "Work",
-    "section": "Demos",
-    "text": "Demos\nAZ work is largely confidential. These demos from earlier work at Ann Arbor Algorithms remain publicly viewable.\n\n\nDash · 2018 – 2019\n\n\nPatient Info — disease prediction dashboard\n\n\n\nIntegrated dashboard for displaying lung-disease predictions and patient metadata. Built in Dash; produced from real data with a placeholder ECG panel due to data availability constraints.\n\nLive demo on Hugging Face Spaces →\n\n\n\n\n\nDICOM viewer · 2018 – 2019\n\n\nPapaya — lung-nodule DICOM viewer\n\n\n\nDockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes load slowly — expect 1–2 minutes per case after click. Case 1 is the smallest and quickest to load.\n\nCase 1 · Case 2 · Case 3 · Case 4\n\n\n\n\n\nthree.js · 2018 – 2019\n\n\nPlaque — chest-vessel atherosclerosis 3D viewer\n\n\n\nInteractive three.js viewer for chest-vessel classification and atherosclerosis detection. Two cases included.\n\nLive demo\n\n\n\nFor personal projects and side builds, see Tinkering."
-  },
-  {
-    "objectID": "tinkering.html",
-    "href": "tinkering.html",
-    "title": "Tinkering",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zhenning Zhang",
     "section": "",
-    "text": "§ Personal · Outside the day job\n\nThe stuff I build for the fun of figuring it out — generative models, agentic exploration, game-related stuffs, terminal toys, and small simulations.\nFor professional work, see Work.\n\n\n\n2026 · Agentic AI · Python · Streamlit\n\n\nTrader Advisor — agentic stock research\nAn LLM agent that researches stocks by autonomously calling tools — picks its own data sources during the investigation, with a tool-call quota and hand-rolled loop (no LangChain). Eleven tools spanning price, indicators, fundamentals, options, insider activity, sentiment, and news. Two classical LLM pipelines included as additional voices. Runs locally on gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.\n\nRead more → · Hugging Face Spaces → · GitHub\n\n\n\n\n\n\n\n\nOverview — master ticker table and featured runs\n\n\n\n\n\n\nAgent Trace — step-by-step reasoning and tool calls\n\n\n\n\n\nArchitecture — data flow and core-mode pipeline\n\n\n\n\n\nRun Modal — provider, tickers, budget controls\n\n\n\n\n\nRun Analysis — price, indicators, run metadata\n\n\n\n\n\n\n\n\n\n2024 · Generative Models · PyTorch\n\n\nMusic generation transformer\nDecoder-only generative transformer in PyTorch — small enough to be readable, big enough to learn something interesting. Dual-modality: text tokenizer for language modeling, MIDI tokenizer for music generation. Trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\nGoldberg Variations · 1\n\n\n\n\n\nGoldberg Variations · 2\n\n\n\n\n\nWell-Tempered Clavier\n\n\n\n\n\n\n\n2026 · Terminal · Rust\n\n\nMooseReader\nA featherweight terminal EPUB reader in Rust — keyboard-driven (h j k l), TrueColor themes (Dracula, Nord, Solarized, Catppuccin, Gruvbox), and percentage-based bookmarks. No electron shell, no heavyweight TUI framework — single-digit-megabyte footprint.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2022 · Simulation · Python · C++\n\n\nIsometric tiles\nA Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.\n\nRead more → · GitHub — Python · GitHub — C++\n\n\n\n\n\n\n\n\n\n\n2023 · Cryptography · Python\n\n\nEnigma machine emulator\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors, reflectors, and the plugboard modeled as first-class classes. Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Graphics · Python\n\n\nRaycasting renderer\nA from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind Wolfenstein 3D (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2019 · Game Engines · Unreal\n\n\nUnreal Engine cutscene experiment\nA video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.\n\nRead more →\n\n\n\n\n\n\n\n\n\n\n\n\n2024 · Mobile · Flutter · Swift\n\n\nSoundboard app\nA cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Web · Python\n\n\nOnline audio cutter\nA small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.\n\nRead more → · GitHub"
+    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI · Applied LLM Systems\n\n\nI build deep learning systems for drug discovery and medical imaging. 6+ years at AstraZeneca R&D, with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nCurrently open to ML and applied-AI roles — best reached via LinkedIn.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nBefore AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) — chest vessel segmentation, 3D tumor segmentation, lung cancer prediction, ECG abnormality detection. Full project list →\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "§ 01 · Background"
+    "objectID": "index.html#recent",
+    "href": "index.html#recent",
+    "title": "Zhenning Zhang",
+    "section": "Recent",
+    "text": "Recent"
   },
   {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "Background",
-    "text": "Background\nI build deep learning systems for drug discovery and medical imaging — multimodal models, segmentation tools, and the data infrastructure they run on. Since 2019 I’ve been at AstraZeneca R&D in Maryland.\nMy work spans three threads. Drug discovery ML — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. Medical imaging and segmentation — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. Tooling and infrastructure — a unified ingestion and preprocessing platform that has become the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&D labs use to interpret model outputs.\nBefore AstraZeneca, I was a Software Engineer at Ann Arbor Algorithms, building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, anomaly identification — on multimodal datasets of millions of points. I trained as a bioinformatician at the University of Michigan (M.S., 2018) after my biomedical sciences B.S. at the University of Macau.\n\n§ 02 · Now"
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Zhenning Zhang",
+    "section": "Selected work",
+    "text": "Selected work"
   },
   {
-    "objectID": "about.html#what-i-am-working-on",
-    "href": "about.html#what-i-am-working-on",
-    "title": "About",
-    "section": "What I am working on",
-    "text": "What I am working on\nRecent threads at AstraZeneca\n\nAutomatic contrast phase classification of polyphasic CT scans (poster, AACR 2026).\nMultimodal IC50 prediction at scale across compound libraries.\n\nCurrently\n\nAgentic LLM systems — hand-rolled tool-calling agent loops with pluggable model providers; locally hosted models via Ollama as the primary inference path. Most recent: an agent that autonomously researches stocks across eleven tools, with workflow pipelines included as comparison voices.\nGPU compute environments — Proxmox/KVM virtualization with PCIe passthrough for specialized ML and cross-platform development workloads.\n\n\n§ 03 · Skills"
+    "objectID": "index.html#career-astrazeneca-2019-present",
+    "href": "index.html#career-astrazeneca-2019-present",
+    "title": "Zhenning Zhang",
+    "section": "Career — AstraZeneca, 2019 – present",
+    "text": "Career — AstraZeneca, 2019 – present"
   },
   {
-    "objectID": "about.html#skills",
-    "href": "about.html#skills",
-    "title": "About",
-    "section": "Skills",
-    "text": "Skills\nProgramming — Python, C++, R.\nMachine learning and AI — PyTorch, Keras, scikit-learn, Hugging Face, HDBSCAN, UMAP, MLX, Ollama.\nApplied AI / LLM — LLM tool-calling & agent loops, RAG (AnythingLLM), structured outputs, model evaluation, prompt engineering, Ollama / local inference.\nMedical AI and imaging — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.\nInfrastructure and MLOps — Docker, Kubernetes, Git, Proxmox, KVM, Dash, Agile.\n\n§ 04 · Contact"
-  },
-  {
-    "objectID": "about.html#contact",
-    "href": "about.html#contact",
-    "title": "About",
-    "section": "Contact",
-    "text": "Contact\nI’m currently open to new ML / applied-AI opportunities. The best way to reach me is via LinkedIn.\n\nGitHub for code and personal projects.\nFor email and phone, see my CV."
+    "objectID": "index.html#more",
+    "href": "index.html#more",
+    "title": "Zhenning Zhang",
+    "section": "More",
+    "text": "More"
   },
   {
     "objectID": "publications.html",
@@ -371,39 +357,81 @@
     "text": "AACR Tumor Immunology and Immunotherapy\n\n  Zhang Z, et al.\n  Graph-based analysis of multiplex immunofluorescence imaging.\n  Clinical Cancer Research 27, no. 5 Supplement (2021): PR-05.\n  Abstract"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Zhenning Zhang",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI · Applied LLM Systems\n\n\nI build deep learning systems for drug discovery and medical imaging. 6+ years at AstraZeneca R&D, with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nCurrently open to ML and applied-AI roles — best reached via LinkedIn.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nBefore AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) — chest vessel segmentation, 3D tumor segmentation, lung cancer prediction, ECG abnormality detection. Full project list →\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
+    "text": "§ 01 · Background"
   },
   {
-    "objectID": "index.html#recent",
-    "href": "index.html#recent",
-    "title": "Zhenning Zhang",
-    "section": "Recent",
-    "text": "Recent"
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "Background",
+    "text": "Background\nI build deep learning systems for drug discovery and medical imaging — multimodal models, segmentation tools, and the data infrastructure they run on. Since 2019 I’ve been at AstraZeneca R&D in Maryland.\nMy work spans three threads. Drug discovery ML — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. Medical imaging and segmentation — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. Tooling and infrastructure — a unified ingestion and preprocessing platform that has become the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&D labs use to interpret model outputs.\nBefore AstraZeneca, I was a Software Engineer at Ann Arbor Algorithms, building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, anomaly identification — on multimodal datasets of millions of points. I trained as a bioinformatician at the University of Michigan (M.S., 2018) after my biomedical sciences B.S. at the University of Macau.\n\n§ 02 · Now"
   },
   {
-    "objectID": "index.html#selected-work",
-    "href": "index.html#selected-work",
-    "title": "Zhenning Zhang",
-    "section": "Selected work",
-    "text": "Selected work"
+    "objectID": "about.html#what-i-am-working-on",
+    "href": "about.html#what-i-am-working-on",
+    "title": "About",
+    "section": "What I am working on",
+    "text": "What I am working on\nRecent threads at AstraZeneca\n\nAutomatic contrast phase classification of polyphasic CT scans (poster, AACR 2026).\nMultimodal IC50 prediction at scale across compound libraries.\n\nCurrently\n\nAgentic LLM systems — hand-rolled tool-calling agent loops with pluggable model providers; locally hosted models via Ollama as the primary inference path. Most recent: an agent that autonomously researches stocks across eleven tools, with workflow pipelines included as comparison voices.\nGPU compute environments — Proxmox/KVM virtualization with PCIe passthrough for specialized ML and cross-platform development workloads.\n\n\n§ 03 · Skills"
   },
   {
-    "objectID": "index.html#career-astrazeneca-2019-present",
-    "href": "index.html#career-astrazeneca-2019-present",
-    "title": "Zhenning Zhang",
-    "section": "Career — AstraZeneca, 2019 – present",
-    "text": "Career — AstraZeneca, 2019 – present"
+    "objectID": "about.html#skills",
+    "href": "about.html#skills",
+    "title": "About",
+    "section": "Skills",
+    "text": "Skills\nProgramming — Python, C++, R.\nMachine learning and AI — PyTorch, Keras, scikit-learn, Hugging Face, HDBSCAN, UMAP, MLX, Ollama.\nApplied AI / LLM — LLM tool-calling & agent loops, RAG (AnythingLLM), structured outputs, model evaluation, prompt engineering, Ollama / local inference.\nMedical AI and imaging — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.\nInfrastructure and MLOps — Docker, Kubernetes, Git, Proxmox, KVM, Dash, Agile.\n\n§ 04 · Contact"
   },
   {
-    "objectID": "index.html#more",
-    "href": "index.html#more",
-    "title": "Zhenning Zhang",
-    "section": "More",
-    "text": "More"
+    "objectID": "about.html#contact",
+    "href": "about.html#contact",
+    "title": "About",
+    "section": "Contact",
+    "text": "Contact\nI’m currently open to new ML / applied-AI opportunities. The best way to reach me is via LinkedIn.\n\nGitHub for code and personal projects.\nFor email and phone, see my CV."
+  },
+  {
+    "objectID": "tinkering.html",
+    "href": "tinkering.html",
+    "title": "Tinkering",
+    "section": "",
+    "text": "§ Personal · Outside the day job\n\nThe stuff I build for the fun of figuring it out — generative models, agentic exploration, game-related stuffs, terminal toys, and small simulations.\nFor professional work, see Work.\n\n\n\n2026 · Agentic AI · Python · Streamlit\n\n\nTrader Advisor — agentic stock research\nAn LLM agent that researches stocks by autonomously calling tools — picks its own data sources during the investigation, with a tool-call quota and hand-rolled loop (no LangChain). Eleven tools spanning price, indicators, fundamentals, options, insider activity, sentiment, and news. Two classical LLM pipelines included as additional voices. Runs locally on gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.\n\nRead more → · Hugging Face Spaces → · GitHub\n\n\n\n\n\n\n\n\nOverview — master ticker table and featured runs\n\n\n\n\n\n\nAgent Trace — step-by-step reasoning and tool calls\n\n\n\n\n\nArchitecture — data flow and core-mode pipeline\n\n\n\n\n\nRun Modal — provider, tickers, budget controls\n\n\n\n\n\nRun Analysis — price, indicators, run metadata\n\n\n\n\n\n\n\n\n\nOngoing · Infrastructure · Proxmox · Ollama\n\n\nSelf-Hosted ML Infrastructure\nA self-hosted ML platform — local LLM serving (Ollama), retrieval-augmented generation (AnythingLLM + self-hosted SearXNG), agent serving, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough across CUDA and ROCm. Local inference is the default path; provider-pluggable for Anthropic, Google, and others.\n\nRead more →\n\n\n\n\n\n\n\n\nSelf-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.\n\n\n\n\n\n\nMooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker.\n\n\n\n\n\nThree models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi.\n\n\n\n\n\nThe Proxmox host and its VM fleet.\n\n\n\n\n\n\n\n\n\n2024 · Generative Models · PyTorch\n\n\nMusic generation transformer\nDecoder-only generative transformer in PyTorch — small enough to be readable, big enough to learn something interesting. Dual-modality: text tokenizer for language modeling, MIDI tokenizer for music generation. Trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\nGoldberg Variations · 1\n\n\n\n\n\nGoldberg Variations · 2\n\n\n\n\n\nWell-Tempered Clavier\n\n\n\n\n\n\n\n2026 · Terminal · Rust\n\n\nMooseReader\nA featherweight terminal EPUB reader in Rust — keyboard-driven (h j k l), TrueColor themes (Dracula, Nord, Solarized, Catppuccin, Gruvbox), and percentage-based bookmarks. No electron shell, no heavyweight TUI framework — single-digit-megabyte footprint.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2022 · Simulation · Python · C++\n\n\nIsometric tiles\nA Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.\n\nRead more → · GitHub — Python · GitHub — C++\n\n\n\n\n\n\n\n\n\n\n2023 · Cryptography · Python\n\n\nEnigma machine emulator\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors, reflectors, and the plugboard modeled as first-class classes. Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Graphics · Python\n\n\nRaycasting renderer\nA from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind Wolfenstein 3D (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2019 · Game Engines · Unreal\n\n\nUnreal Engine cutscene experiment\nA video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.\n\nRead more →\n\n\n\n\n\n\n\n\n\n\n\n\n2024 · Mobile · Flutter · Swift\n\n\nSoundboard app\nA cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Web · Python\n\n\nOnline audio cutter\nA small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.\n\nRead more → · GitHub"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Work",
+    "section": "",
+    "text": "§ AstraZeneca · 2019 – present\nThree threads: drug discovery ML, medical imaging and segmentation, and the tooling and infrastructure that supports both. Grouped by thread, most recent work first inside each."
+  },
+  {
+    "objectID": "projects.html#drug-discovery-ml",
+    "href": "projects.html#drug-discovery-ml",
+    "title": "Work",
+    "section": "Drug Discovery ML",
+    "text": "Drug Discovery ML\n\n\n2024 – Present\n\n\nMultimodal IC50 prediction\nPyTorch models fusing cell painting microscopy with SMILES chemical representations for compound activity prediction. Deployed across compound libraries totaling 39K compounds; jointly learned image-and-structure embeddings inform downstream phenotype-to-target reasoning.\n\nRead more →\n\n\n\n\n\n2021 – 2022\n\n\nGraph-based analysis of multiplex immunofluorescence\nGraph Neural Networks over multi-channel images, capturing spatial cell-cell relationships in multiplex IF for downstream phenotype classification. Preprint on bioRxiv; abstracts at SITC and AACR.\n\nRead more → · Preprint — bioRxiv"
+  },
+  {
+    "objectID": "projects.html#medical-imaging-segmentation",
+    "href": "projects.html#medical-imaging-segmentation",
+    "title": "Work",
+    "section": "Medical Imaging & Segmentation",
+    "text": "Medical Imaging & Segmentation\n\n\n2026 · AACR poster\n\n\nAutomatic contrast phase classification of polyphasic CT scans\nDeep learning classifier inferring contrast phase from CT volumes — a prerequisite for downstream tumor segmentation pipelines that depend on consistent imaging protocol. Co-authored work, poster at AACR 2026.\n\nRead more → · Abstract — AACR 2026\n\n\n\n\n\n2023 – Present\n\n\nInteractive 3D segmentation toolset\nTransformer-backed segmentation tool for 3D volumetric data with text-guided prompts. Halved annotation time and deployed to twelve internal users across R&D. Companion paper as poster at AACR 2024.\n\nRead more → · Abstract — AACR 2024"
+  },
+  {
+    "objectID": "projects.html#tooling-infrastructure",
+    "href": "projects.html#tooling-infrastructure",
+    "title": "Work",
+    "section": "Tooling & Infrastructure",
+    "text": "Tooling & Infrastructure\n\n\n2022 – Present\n\n\nBiomedical imaging data platform\nUnified ingestion and preprocessing platform for biomedical imaging at scale — now the team’s standard data layer. Sixteen multi-center datasets, 150K CT volumes, automated mapping of thousands of annotation masks across DICOM and NIfTI standards.\n\nRead more →\n\n\n\n\n\n2022 – Present\n\n\nEmbedding visualization toolkit\nWeb-based visualization suite for high-dimensional embedding interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms, archetype analysis. Used by R&D labs across several modeling projects.\n\nRead more →\n\n\n\n\n§ Ann Arbor Algorithms · 2018 – 2019\n\nSoftware Engineer building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, and anomaly identification across multimodal datasets at scale.\n\n\n2020 · Patterns (Cell Press)\n\n\nMicrocalcification detection in mammography\nEnd-to-end deep learning detection of microcalcifications using a U-Net architecture, with downstream localization of asymmetric patterns. The work was peer-reviewed and published in Patterns — Guan, Wang, Li, Zhang, Chen, Siddiqui, Nehring, Huang. Detecting asymmetric patterns and localizing cancers on mammograms. Patterns 1, no. 7 (2020).\n\nRead more → · Paper — Patterns DOI\n\n\n\nOther work at AAA:\n\nChest vessel segmentation — 3D deep learning for atherosclerosis identification on chest MRI.\nIntegrated tumor segmentation — Dockerized lung-cancer segmentation with 3D visualization.\nLung cancer prediction — XGBoost over patient metadata (~1.6K patients).\nECG abnormality identification — ResNet variant for 12-lead ECG analysis (~7K samples).\nColorectal surgical phase detection — video and sensor-based phase prediction."
+  },
+  {
+    "objectID": "projects.html#demos",
+    "href": "projects.html#demos",
+    "title": "Work",
+    "section": "Demos",
+    "text": "Demos\nAZ work is largely confidential. These demos from earlier work at Ann Arbor Algorithms remain publicly viewable.\n\n\nDash · 2018 – 2019\n\n\nPatient Info — disease prediction dashboard\n\n\n\nIntegrated dashboard for displaying lung-disease predictions and patient metadata. Built in Dash; produced from real data with a placeholder ECG panel due to data availability constraints.\n\nLive demo on Hugging Face Spaces →\n\n\n\n\n\nDICOM viewer · 2018 – 2019\n\n\nPapaya — lung-nodule DICOM viewer\n\n\n\nDockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes load slowly — expect 1–2 minutes per case after click. Case 1 is the smallest and quickest to load.\n\nCase 1 · Case 2 · Case 3 · Case 4\n\n\n\n\n\nthree.js · 2018 – 2019\n\n\nPlaque — chest-vessel atherosclerosis 3D viewer\n\n\n\nInteractive three.js viewer for chest-vessel classification and atherosclerosis detection. Two cases included.\n\nLive demo\n\n\n\nFor personal projects and side builds, see Tinkering."
   },
   {
     "objectID": "projects/moose-reader.html",

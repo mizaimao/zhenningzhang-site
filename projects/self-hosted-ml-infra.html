@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Background, current focus, and how to get in touch.">
+<meta name="dcterms.date" content="2026-06-01">
+<meta name="description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.">
 
-<title>About – Zhenning Zhang</title>
+<title>Self-Hosted ML Infrastructure – Zhenning Zhang</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,23 +28,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7217e5b59b61482b0fc7291dd9e30879.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0bcf48ec04af2820fc91730b70e74ba8.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ad2e9003e877733d64441ba6124c9f3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9fbb5de7526779a1db4ff73f7007b709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7217e5b59b61482b0fc7291dd9e30879.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-0bcf48ec04af2820fc91730b70e74ba8.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ad2e9003e877733d64441ba6124c9f3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-9fbb5de7526779a1db4ff73f7007b709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,8 +81,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
 
-<meta property="og:title" content="About – Zhenning Zhang">
-<meta property="og:description" content="Background, current focus, and how to get in touch.">
+<meta property="og:title" content="Self-Hosted ML Infrastructure – Zhenning Zhang">
+<meta property="og:description" content="A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.">
+<meta property="og:image" content="https://zhenningzhang.net/assets/img/projects/ml-infra-diagram.svg">
 <meta property="og:site_name" content="Zhenning Zhang">
 </head>
 
@@ -249,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Zhenning Zhang</span>
     </a>
   </div>
@@ -260,29 +265,29 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Work</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./tinkering.html"> 
+    <a class="nav-link" href="../tinkering.html"> 
 <span class="menu-text">Tinkering</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./assets/zhenning_zhang_resume.pdf"> 
+    <a class="nav-link" href="../assets/zhenning_zhang_resume.pdf"> 
 <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
@@ -314,12 +319,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
-</div>
+<h1 class="title">Self-Hosted ML Infrastructure</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Personal</div>
+    <div class="quarto-category">Infrastructure</div>
+    <div class="quarto-category">ML Platform</div>
+    <div class="quarto-category">Self-Hosted</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    Background, current focus, and how to get in touch.
+    A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs.
   </div>
 </div>
 
@@ -327,6 +338,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 1, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -337,51 +354,58 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="eyebrow">
-<p>§ 01 · Background</p>
+<p>Personal · Homelab infrastructure</p>
 </div>
-<section id="background" class="level2">
-<h2 data-anchor-id="background">Background</h2>
-<p>I build deep learning systems for drug discovery and medical imaging — multimodal models, segmentation tools, and the data infrastructure they run on. Since 2019 I’ve been at AstraZeneca R&amp;D in Maryland.</p>
-<p>My work spans three threads. <strong>Drug discovery ML</strong> — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. <strong>Medical imaging and segmentation</strong> — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. <strong>Tooling and infrastructure</strong> — a unified ingestion and preprocessing platform that has become the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&amp;D labs use to interpret model outputs.</p>
-<p>Before AstraZeneca, I was a Software Engineer at Ann Arbor Algorithms, building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, anomaly identification — on multimodal datasets of millions of points. I trained as a bioinformatician at the University of Michigan (M.S., 2018) after my biomedical sciences B.S. at the University of Macau.</p>
-<div class="eyebrow" style="margin-top: 3rem;">
-<p>§ 02 · Now</p>
+<div class="trader-gallery">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/ml-infra-diagram.svg" class="lightbox" data-gallery="ml-infra" title="Self-hosted inference platform — a Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion."><img src="../assets/img/projects/ml-infra-diagram.svg" class="gallery-lead img-fluid figure-img" alt="Self-hosted inference platform — a Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion."></a></p>
+<figcaption>Self-hosted inference platform — a Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.</figcaption>
+</figure>
 </div>
-</section>
-<section id="what-i-am-working-on" class="level2">
-<h2 data-anchor-id="what-i-am-working-on">What I am working on</h2>
-<p><strong>Recent threads at AstraZeneca</strong></p>
+<div class="trader-thumbs three-thumbs">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/ml-infra-moosellm.png" class="lightbox" data-gallery="ml-infra" title="MooseLLM (AnythingLLM) running against the local model roster, with the supporting services up in Docker."><img src="../assets/img/projects/ml-infra-moosellm.png" class="img-fluid figure-img" alt="MooseLLM (AnythingLLM) running against the local model roster, with the supporting services up in Docker."></a></p>
+<figcaption>MooseLLM (AnythingLLM) running against the local model roster, with the supporting services up in Docker.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/ml-infra-ml60-load.png" class="lightbox" data-gallery="ml-infra" title="Three models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi."><img src="../assets/img/projects/ml-infra-ml60-load.png" class="img-fluid figure-img" alt="Three models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi."></a></p>
+<figcaption>Three models resident on the RTX Pro 6000 under load — <code>ollama ps</code> and <code>nvidia-smi</code>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/projects/ml-infra-proxmox.png" class="lightbox" data-gallery="ml-infra" title="The Proxmox host and its VM fleet."><img src="../assets/img/projects/ml-infra-proxmox.png" class="img-fluid figure-img" alt="The Proxmox host and its VM fleet."></a></p>
+<figcaption>The Proxmox host and its VM fleet.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="what-it-does" class="level2">
+<h2 data-anchor-id="what-it-does">What it does</h2>
+<p>A self-hosted ML platform running entirely on my own hardware — local LLM serving, retrieval, agents, and multimodal generation, with no dependency on third-party inference APIs.</p>
 <ul>
-<li><strong>Automatic contrast phase classification</strong> of polyphasic CT scans (poster, AACR 2026).</li>
-<li><strong>Multimodal IC50 prediction</strong> at scale across compound libraries.</li>
+<li><strong>Local LLM serving</strong> — a central inference VM runs Ollama as the model server, keeping several models resident at once (Qwen3.6, Gemma4, Llama 3.3 70B, GPT-OSS 120B, and others) and tuned for concurrency so multiple clients hit it in parallel.</li>
+<li><strong>Retrieval-augmented generation</strong> — MooseLLM (a rebranded AnythingLLM) and OpenWebUI are the chat and RAG front ends, wired to a self-hosted SearXNG instance so retrieval stays in-house, with no third-party search or embedding API in the loop.</li>
+<li><strong>Agent serving</strong> — several agents run as their own services against the local endpoint: a Telegram-gateway assistant, the classifier behind my job-search funnel, and Trader Advisor. All call the same local backend.</li>
+<li><strong>Multimodal</strong> — KokoroTTS for speech synthesis, and a separate node running ComfyUI for diffusion.</li>
 </ul>
-<p><strong>Currently</strong></p>
-<ul>
-<li><strong>Agentic LLM systems</strong> — hand-rolled tool-calling agent loops with pluggable model providers; locally hosted models via Ollama as the primary inference path. Most recent: an agent that autonomously researches stocks across eleven tools, with workflow pipelines included as comparison voices.</li>
-<li><strong>GPU compute environments</strong> — Proxmox/KVM virtualization with PCIe passthrough for specialized ML and cross-platform development workloads.</li>
-</ul>
-<div class="eyebrow" style="margin-top: 3rem;">
-<p>§ 03 · Skills</p>
-</div>
+<p>This is the same infrastructure discipline I bring to Ditali, my team’s ML platform at AstraZeneca — model serving, data flow, and service orchestration — applied to a system I own end to end.</p>
 </section>
-<section id="skills" class="level2">
-<h2 data-anchor-id="skills">Skills</h2>
-<p><strong>Programming</strong> — Python, C++, R.</p>
-<p><strong>Machine learning and AI</strong> — PyTorch, Keras, scikit-learn, Hugging Face, HDBSCAN, UMAP, MLX, Ollama.</p>
-<p><strong>Applied AI / LLM</strong> — LLM tool-calling &amp; agent loops, RAG (AnythingLLM), structured outputs, model evaluation, prompt engineering, Ollama / local inference.</p>
-<p><strong>Medical AI and imaging</strong> — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.</p>
-<p><strong>Infrastructure and MLOps</strong> — Docker, Kubernetes, Git, Proxmox, KVM, Dash, Agile.</p>
-<div class="eyebrow" style="margin-top: 3rem;">
-<p>§ 04 · Contact</p>
-</div>
-</section>
-<section id="contact" class="level2">
-<h2 data-anchor-id="contact">Contact</h2>
-<p>I’m currently open to new ML / applied-AI opportunities. The best way to reach me is via <a href="https://www.linkedin.com/in/zhenning-zhang">LinkedIn</a>.</p>
+<section id="how-its-built" class="level2">
+<h2 data-anchor-id="how-its-built">How it’s built</h2>
 <ul>
-<li><a href="https://github.com/mizaimao">GitHub</a> for code and personal projects.</li>
-<li>For email and phone, see my <a href="assets/zhenning_zhang_resume.pdf">CV</a>.</li>
+<li><strong>Multi-host Proxmox cluster</strong> — ML services run as VMs and containers on a Proxmox host, alongside storage and other workloads, with a second machine dedicated to diffusion.</li>
+<li><strong>GPU passthrough</strong> — PCIe passthrough gives VMs direct GPU access: the primary host pairs an i9-12900KS with an RTX Pro 6000 Blackwell (96 GB); a secondary node runs an RTX 3090. I’ve also run AMD ROCm on an R9700, so the stack has been exercised across both CUDA and ROCm.</li>
+<li><strong>Networking and storage</strong> — per-VM NIC passthrough, link-aggregated NICs on the NAS, and ZFS underneath for storage integrity.</li>
 </ul>
+</section>
+<section id="how-it-got-here" class="level2">
+<h2 data-anchor-id="how-it-got-here">How it got here</h2>
+<p>The platform grew out of years of iteration: it started on a Dell R710 running ESXi, migrated to Proxmox on a Skylake-era box (which stuck), and went through a long series of upgrades — recovering from ZFS pool corruption, expanding GPU passthrough, power-managing a Thunderbolt eGPU — before reaching the current 12900KS + RTX Pro 6000 host. Each step taught something that maps directly onto building and operating real ML infrastructure: virtualization, hardware and driver debugging, storage reliability, and service orchestration.</p>
 
 
 </section>
@@ -942,9 +966,41 @@ ul.task-list li input[type="checkbox"] {
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

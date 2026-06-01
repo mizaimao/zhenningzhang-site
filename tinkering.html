@@ -42,8 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0bcf48ec04af2820fc91730b70e74ba8.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-669cdc55ab4cf09c22fdb13d44252110.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-02bb4dddc67567160480d8ffe621be7f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-ad2e9003e877733d64441ba6124c9f3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-9fbb5de7526779a1db4ff73f7007b709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -392,6 +392,50 @@ ul.task-list li input[type="checkbox"] {
 <figure class="figure">
 <p><a href="assets/img/projects/trader-advisor-analysis.png" class="lightbox" data-gallery="tinkering-trader-advisor" title="Run Analysis — price, indicators, run metadata"><img src="assets/img/projects/trader-advisor-analysis.png" class="img-fluid figure-img" alt="Run Analysis — price, indicators, run metadata"></a></p>
 <figcaption>Run Analysis — price, indicators, run metadata</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="experiment-row">
+<div class="experiment-text">
+<div class="experiment-meta">
+Ongoing · Infrastructure · Proxmox · Ollama
+</div>
+<section id="self-hosted-ml-infrastructure" class="level3">
+<h3 data-anchor-id="self-hosted-ml-infrastructure"><a href="./projects/self-hosted-ml-infra.html">Self-Hosted ML Infrastructure</a></h3>
+<p>A self-hosted ML platform — local LLM serving (Ollama), retrieval-augmented generation (AnythingLLM + self-hosted SearXNG), agent serving, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough across CUDA and ROCm. Local inference is the default path; provider-pluggable for Anthropic, Google, and others.</p>
+<div class="experiment-links">
+<p><a href="./projects/self-hosted-ml-infra.html">Read more →</a></p>
+</div>
+</section>
+</div>
+<div class="experiment-media">
+<div class="trader-gallery">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/img/projects/ml-infra-diagram.svg" class="lightbox" data-gallery="tinkering-ml-infra" title="Self-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion."><img src="assets/img/projects/ml-infra-diagram.svg" class="gallery-lead img-fluid figure-img" alt="Self-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion."></a></p>
+<figcaption>Self-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.</figcaption>
+</figure>
+</div>
+<div class="trader-thumbs three-thumbs">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/img/projects/ml-infra-moosellm.png" class="lightbox" data-gallery="tinkering-ml-infra" title="MooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker."><img src="assets/img/projects/ml-infra-moosellm.png" class="img-fluid figure-img" alt="MooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker."></a></p>
+<figcaption>MooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/img/projects/ml-infra-ml60-load.png" class="lightbox" data-gallery="tinkering-ml-infra" title="Three models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi."><img src="assets/img/projects/ml-infra-ml60-load.png" class="img-fluid figure-img" alt="Three models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi."></a></p>
+<figcaption>Three models resident on the RTX Pro 6000 under load — <code>ollama ps</code> and <code>nvidia-smi</code>.</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="assets/img/projects/ml-infra-proxmox.png" class="lightbox" data-gallery="tinkering-ml-infra" title="The Proxmox host and its VM fleet."><img src="assets/img/projects/ml-infra-proxmox.png" class="img-fluid figure-img" alt="The Proxmox host and its VM fleet."></a></p>
+<figcaption>The Proxmox host and its VM fleet.</figcaption>
 </figure>
 </div>
 </div>

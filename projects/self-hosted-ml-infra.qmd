@@ -1,6 +1,6 @@
 ---
 title: "Self-Hosted ML Infrastructure"
-description: "A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a multi-host Proxmox cluster with GPU passthrough. No third-party inference APIs."
+description: "A self-hosted ML platform — local LLM serving, retrieval, agents, and multimodal generation — running on a Proxmox host with GPU passthrough, plus a standalone GPU node. Local-first by default, with cloud providers as a pluggable option."
 date: 2026-06-01
 categories: [Personal, Infrastructure, ML Platform, Self-Hosted]
 image: ../assets/img/projects/ml-infra-diagram.svg
@@ -8,7 +8,7 @@ lightbox: auto
 ---
 
 ::: {.eyebrow}
-Personal · Homelab infrastructure
+Personal · Self-hosted infrastructure
 :::
 
 ::: {.trader-gallery}
@@ -30,8 +30,9 @@ Personal · Homelab infrastructure
 ## What it does
 
 A self-hosted ML platform running entirely on my own hardware — local LLM
-serving, retrieval, agents, and multimodal generation, with no dependency
-on third-party inference APIs.
+serving, retrieval, agents, and multimodal generation, all local-first by
+default. Cloud providers (Anthropic, Google) are a pluggable option, not
+a dependency.
 
 - **Local LLM serving** — a central inference VM runs Ollama as the model
   server, keeping several models resident at once (Qwen3.6, Gemma4, Llama
@@ -53,7 +54,7 @@ orchestration — applied to a system I own end to end.
 
 ## How it's built
 
-- **Multi-host Proxmox cluster** — ML services run as VMs and containers
+- **Proxmox host + standalone GPU node** — ML services run as VMs and containers
   on a Proxmox host, alongside storage and other workloads, with a second
   machine dedicated to diffusion.
 - **GPU passthrough** — PCIe passthrough gives VMs direct GPU access: the

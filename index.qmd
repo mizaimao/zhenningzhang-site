@@ -10,13 +10,17 @@ include-in-header:
 
 ::: {.hero-block}
 <div class="hero-name">Zhenning Zhang</div>
-<div class="hero-role">Machine Learning Engineer · Medical AI</div>
+<div class="hero-role">Machine Learning Engineer · Medical AI · Applied LLM Systems</div>
 
 <p class="hero-lede">
 I build deep learning systems for drug discovery and medical imaging.
 6+ years at AstraZeneca R&D, with peer-reviewed work in
 <em>Patterns</em> and four AACR poster presentations.
 M.S. Bioinformatics, University of Michigan.
+</p>
+
+<p class="hero-availability">
+Currently open to ML and applied-AI roles — best reached via [LinkedIn](https://www.linkedin.com/in/zhenning-zhang).
 </p>
 
 <p>
@@ -101,10 +105,11 @@ Preprint on bioRxiv; abstracts at SITC and AACR.
 ::: {.work-entry}
 <div class="work-meta">2026 · Personal</div>
 ### Trader Advisor — agentic stock research
-An LLM agent that researches stocks by autonomously calling tools — picks
-its own data sources during the investigation, with a hand-rolled tool-calling
-loop and a tool-call quota. Eleven tools, four modes (one agent, two workflow pipelines and one
-wrapper), runs locally on gpt-oss:20b via Ollama.
+A production-style LLM agent: a hand-rolled tool-calling loop with quota
+control, structured-output parsing, and failure recovery across eleven
+tools — plus an evaluation path comparing agent vs. workflow-pipeline modes.
+Runs locally on various models (Qwen3.6, Gemma4, Llama3.3-70B, GPT-OSS:120B,
+etc.) via Ollama with a Streamlit dashboard.
 <div class="work-links">
 [Read more →](projects/trader-advisor.qmd) ·
 [Hugging Face Spaces →](https://huggingface.co/spaces/DonkeyTheMoose/trader-advisor){.external}

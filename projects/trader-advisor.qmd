@@ -31,16 +31,11 @@ Personal project · 2026
 
 ## Idea
 
-Most LLM "stock analyst" demos are single-call: dump the data, ask for a verdict.
-The model never has to decide *what* data to look at, because everything is
-pre-fetched. This project flips that — an agent that picks its own tools during
-the investigation, calling for price context, indicators, options, sentiment,
-or fundamentals based on what it has already learned. The agent's reasoning
-trace is the artifact, not just the verdict.
-
-Four modes ship together: the agent, two classical LLM pipelines (solo,
-core), and a wrapper around the open-source TradingAgents framework. The
-same ticker can be looked at four ways.
+A production-style LLM agent: a hand-rolled tool-calling loop with quota
+control, structured-output parsing, and failure recovery across eleven
+tools — plus an evaluation path comparing agent vs. workflow-pipeline modes.
+Runs locally on various models (Qwen3.6, Gemma4, Llama3.3-70B, GPT-OSS:120B,
+etc.) via Ollama with a Streamlit dashboard.
 
 ## Implementation
 

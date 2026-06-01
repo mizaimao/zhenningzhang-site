@@ -65,6 +65,10 @@ biomedical sciences B.S. at the University of Macau.
 **Machine learning and AI** — PyTorch, Keras, scikit-learn,
 Hugging Face, HDBSCAN, UMAP, MLX, Ollama.
 
+**Applied AI / LLM** — LLM tool-calling & agent loops, RAG (AnythingLLM),
+structured outputs, model evaluation, prompt engineering, Ollama / local
+inference.
+
 **Medical AI and imaging** — MONAI, nnU-Net, DICOM, NIfTI, ITK / SimpleITK.
 
 **Infrastructure and MLOps** — Docker, Kubernetes, Git, Proxmox, KVM, Dash, Agile.
@@ -75,8 +79,8 @@ Hugging Face, HDBSCAN, UMAP, MLX, Ollama.
 
 ## Contact
 
-The best ways to reach me:
+I'm currently open to new ML / applied-AI opportunities. The best way to
+reach me is via [LinkedIn](https://www.linkedin.com/in/zhenning-zhang).
 
-- [LinkedIn](https://www.linkedin.com/in/zhenning-zhang) for professional contact.
 - [GitHub](https://github.com/mizaimao) for code and personal projects.
 - For email and phone, see my [CV](assets/zhenning_zhang_resume.pdf).

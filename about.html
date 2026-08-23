@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -38,12 +41,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7217e5b59b61482b0fc7291dd9e30879.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0bcf48ec04af2820fc91730b70e74ba8.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4ae5678aede40a912d22b5d7be75382.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-67394aabf658114a9853b413a45db421.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ad2e9003e877733d64441ba6124c9f3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-9fbb5de7526779a1db4ff73f7007b709.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-7b91590e57920bb6617ef0f5b461cc9d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-943137890d0948faf674ef5609c4bdb5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -341,8 +344,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="background" class="level2">
 <h2 data-anchor-id="background">Background</h2>
-<p>I build deep learning systems for drug discovery and medical imaging — multimodal models, segmentation tools, and the data infrastructure they run on. Since 2019 I’ve been at AstraZeneca R&amp;D in Maryland.</p>
-<p>My work spans three threads. <strong>Drug discovery ML</strong> — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. <strong>Medical imaging and segmentation</strong> — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. <strong>Tooling and infrastructure</strong> — a unified ingestion and preprocessing platform that has become the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&amp;D labs use to interpret model outputs.</p>
+<p>I build deep learning systems for drug discovery and medical imaging — multimodal models, segmentation tools, and the data infrastructure they run on. From 2019 to 2026 I was at AstraZeneca R&amp;D in Maryland.</p>
+<p>My work there spanned three threads. <strong>Drug discovery ML</strong> — multimodal models that fuse cell painting microscopy with SMILES chemical representations to predict compound activity (IC50), with companion graph-based pipelines for multiplex immunofluorescence analysis. <strong>Medical imaging and segmentation</strong> — transformer-backed interactive segmentation tools for 3D volumetric data, patch-based unsupervised pipelines for imaging at scales that exceed GPU memory. <strong>Tooling and infrastructure</strong> — a unified ingestion and preprocessing platform that became the team’s standard data layer (sixteen multi-center datasets, 150K CT volumes), and the visualization suites that R&amp;D labs use to interpret model outputs.</p>
 <p>Before AstraZeneca, I was a Software Engineer at Ann Arbor Algorithms, building containerized end-to-end deep learning pipelines for medical imaging — classification, 3D bounding-box detection, anomaly identification — on multimodal datasets of millions of points. I trained as a bioinformatician at the University of Michigan (M.S., 2018) after my biomedical sciences B.S. at the University of Macau.</p>
 <div class="eyebrow" style="margin-top: 3rem;">
 <p>§ 02 · Now</p>
@@ -350,15 +353,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="what-i-am-working-on" class="level2">
 <h2 data-anchor-id="what-i-am-working-on">What I am working on</h2>
-<p><strong>Recent threads at AstraZeneca</strong></p>
-<ul>
-<li><strong>Automatic contrast phase classification</strong> of polyphasic CT scans (poster, AACR 2026).</li>
-<li><strong>Multimodal IC50 prediction</strong> at scale across compound libraries.</li>
-</ul>
 <p><strong>Currently</strong></p>
 <ul>
 <li><strong>Agentic LLM systems</strong> — hand-rolled tool-calling agent loops with pluggable model providers; locally hosted models via Ollama as the primary inference path. Most recent: an agent that autonomously researches stocks across eleven tools, with workflow pipelines included as comparison voices.</li>
 <li><strong>GPU compute environments</strong> — Proxmox/KVM virtualization with PCIe passthrough for specialized ML and cross-platform development workloads.</li>
+</ul>
+<p><strong>Most recently at AstraZeneca (through June 2026)</strong></p>
+<ul>
+<li><strong>Automatic contrast phase classification</strong> of polyphasic CT scans (poster, AACR 2026).</li>
+<li><strong>Multimodal IC50 prediction</strong> at scale across compound libraries.</li>
 </ul>
 <div class="eyebrow" style="margin-top: 3rem;">
 <p>§ 03 · Skills</p>

@@ -48,7 +48,7 @@ a dependency.
 - **Multimodal** — KokoroTTS for speech synthesis, and a separate node
   running ComfyUI for diffusion.
 
-This is the same infrastructure discipline I bring to Ditali, my team's
+This is the same infrastructure discipline I brought to Ditali, my team's
 ML platform at AstraZeneca — model serving, data flow, and service
 orchestration — applied to a system I own end to end.
 

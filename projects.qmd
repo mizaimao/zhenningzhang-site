@@ -5,7 +5,7 @@ page-layout: article
 ---
 
 ::: {.eyebrow}
-§ AstraZeneca · 2019 – present
+§ AstraZeneca · 2019 – 2026
 :::
 
 Three threads: drug discovery ML, medical imaging and segmentation, and
@@ -15,7 +15,7 @@ recent work first inside each.
 ## Drug Discovery ML
 
 ::: {.work-entry}
-<div class="work-meta">2024 – Present</div>
+<div class="work-meta">2024 – 2026</div>
 ### Multimodal IC50 prediction
 PyTorch models fusing cell painting microscopy with SMILES chemical
 representations for compound activity prediction. Deployed across compound
@@ -53,7 +53,7 @@ consistent imaging protocol. Co-authored work, poster at AACR 2026.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2023 – Present</div>
+<div class="work-meta">2023 – 2026</div>
 ### Interactive 3D segmentation toolset
 Transformer-backed segmentation tool for 3D volumetric data with
 text-guided prompts. Halved annotation time and deployed to twelve
@@ -67,10 +67,10 @@ internal users across R&D. Companion paper as poster at AACR 2024.
 ## Tooling & Infrastructure
 
 ::: {.work-entry}
-<div class="work-meta">2022 – Present</div>
+<div class="work-meta">2022 – 2026</div>
 ### Biomedical imaging data platform
 Unified ingestion and preprocessing platform for biomedical imaging at
-scale — now the team's standard data layer. Sixteen multi-center datasets,
+scale — became the team's standard data layer. Sixteen multi-center datasets,
 150K CT volumes, automated mapping of thousands of annotation masks across
 DICOM and NIfTI standards.
 <div class="work-links">
@@ -79,7 +79,7 @@ DICOM and NIfTI standards.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2022 – Present</div>
+<div class="work-meta">2022 – 2026</div>
 ### Embedding visualization toolkit
 Web-based visualization suite for high-dimensional embedding
 interpretation — clustering (HDBSCAN over UMAP), heatmaps, histograms,

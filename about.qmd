@@ -12,16 +12,16 @@ page-layout: article
 
 I build deep learning systems for drug discovery and medical imaging —
 multimodal models, segmentation tools, and the data infrastructure they
-run on. Since 2019 I've been at AstraZeneca R&D in Maryland.
+run on. From 2019 to 2026 I was at AstraZeneca R&D in Maryland.
 
-My work spans three threads. **Drug discovery ML** — multimodal models that
+My work there spanned three threads. **Drug discovery ML** — multimodal models that
 fuse cell painting microscopy with SMILES chemical representations to predict
 compound activity (IC50), with companion graph-based pipelines for multiplex
 immunofluorescence analysis. **Medical imaging and segmentation** —
 transformer-backed interactive segmentation tools for 3D volumetric data,
 patch-based unsupervised pipelines for imaging at scales that exceed GPU
 memory. **Tooling and infrastructure** — a unified ingestion and
-preprocessing platform that has become the team's standard data layer
+preprocessing platform that became the team's standard data layer
 (sixteen multi-center datasets, 150K CT volumes), and the visualization
 suites that R&D labs use to interpret model outputs.
 
@@ -38,12 +38,6 @@ biomedical sciences B.S. at the University of Macau.
 
 ## What I am working on
 
-**Recent threads at AstraZeneca**
-
-- **Automatic contrast phase classification** of polyphasic CT scans
-  (poster, AACR 2026).
-- **Multimodal IC50 prediction** at scale across compound libraries.
-
 **Currently**
 
 - **Agentic LLM systems** — hand-rolled tool-calling agent loops with
@@ -53,6 +47,12 @@ biomedical sciences B.S. at the University of Macau.
   as comparison voices.
 - **GPU compute environments** — Proxmox/KVM virtualization with PCIe
   passthrough for specialized ML and cross-platform development workloads.
+
+**Most recently at AstraZeneca (through June 2026)**
+
+- **Automatic contrast phase classification** of polyphasic CT scans
+  (poster, AACR 2026).
+- **Multimodal IC50 prediction** at scale across compound libraries.
 
 ::: {.eyebrow style="margin-top: 3rem;"}
 § 03 · Skills

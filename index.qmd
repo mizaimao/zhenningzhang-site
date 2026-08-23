@@ -1,7 +1,7 @@
 ---
 title: ""
 pagetitle: "Zhenning Zhang — Machine Learning Engineer"
-description-meta: "Machine Learning Engineer specializing in deep learning for drug discovery and medical imaging. 6+ years at AstraZeneca R&D."
+description-meta: "Machine Learning Engineer specializing in deep learning for drug discovery and medical imaging. Seven years at AstraZeneca R&D, 2019–2026."
 page-layout: full
 include-in-header:
   text: |
@@ -14,7 +14,7 @@ include-in-header:
 
 <p class="hero-lede">
 I build deep learning systems for drug discovery and medical imaging.
-6+ years at AstraZeneca R&D, with peer-reviewed work in
+Seven years at AstraZeneca R&D (2019 – 2026), with peer-reviewed work in
 <em>Patterns</em> and four AACR poster presentations.
 M.S. Bioinformatics, University of Michigan.
 </p>
@@ -55,8 +55,8 @@ A self-hosted ML platform running entirely on local hardware — LLM serving
 (Ollama), retrieval-augmented generation, agent serving, and multimodal
 generation, on a Proxmox host with GPU passthrough alongside a standalone
 GPU node, exercised across CUDA and ROCm. The same infrastructure
-discipline I apply to my team's ML platform at AstraZeneca — a system I
-own end to end.
+discipline I applied to my team's ML platform at AstraZeneca — a system I
+owned end to end.
 <div class="work-links">
 [Read more →](projects/self-hosted-ml-infra.qmd)
 </div>
@@ -69,7 +69,7 @@ own end to end.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2024 – Present · AstraZeneca</div>
+<div class="work-meta">2024 – 2026 · AstraZeneca</div>
 ### Multimodal IC50 prediction
 PyTorch models fusing cell painting microscopy with SMILES chemical
 representations for compound activity prediction. Deployed across compound
@@ -81,10 +81,10 @@ inform downstream phenotype-to-target reasoning.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2022 – Present · AstraZeneca</div>
+<div class="work-meta">2022 – 2026 · AstraZeneca</div>
 ### Biomedical imaging data platform
 Unified ingestion and preprocessing platform for biomedical imaging at scale —
-now the team's standard data layer. Sixteen multi-center datasets, 150K CT
+became the team's standard data layer. Sixteen multi-center datasets, 150K CT
 volumes, automated mapping of thousands of annotation masks across DICOM and
 NIfTI standards.
 <div class="work-links">
@@ -93,7 +93,7 @@ NIfTI standards.
 :::
 
 ::: {.work-entry}
-<div class="work-meta">2023 – Present · AstraZeneca</div>
+<div class="work-meta">2023 – 2026 · AstraZeneca</div>
 ### Interactive 3D segmentation toolset
 Transformer-backed segmentation tool for 3D volumetric data with text-guided
 prompts. Halved annotation time and deployed to twelve internal users across R&D.
@@ -133,7 +133,7 @@ etc.) via Ollama with a Streamlit dashboard.
 ::: {.section-marker}
 <span class="section-num">§ 03</span>
 
-## Career — AstraZeneca, 2019 – present
+## Career — AstraZeneca, 2019 – 2026
 :::
 
 ::: {.career-threads}

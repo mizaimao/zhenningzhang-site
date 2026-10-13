@@ -322,11 +322,39 @@
     "text": "AACR Tumor Immunology and Immunotherapy\n\n  Zhang Z, et al.\n  Graph-based analysis of multiplex immunofluorescence imaging.\n  Clinical Cancer Research 27, no. 5 Supplement (2021): PR-05.\n  Abstract"
   },
   {
-    "objectID": "tinkering.html",
-    "href": "tinkering.html",
-    "title": "Tinkering",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Zhenning Zhang",
     "section": "",
-    "text": "§ Personal · Outside the day job\n\nThe stuff I build for the fun of figuring it out — generative models, agentic exploration, game-related stuffs, terminal toys, and small simulations.\nFor professional work, see Work.\n\n\n\n2026 · Agentic AI · Python · Streamlit\n\n\nTrader Advisor — agentic stock research\nAn LLM agent that researches stocks by autonomously calling tools — picks its own data sources during the investigation, with a tool-call quota and hand-rolled loop (no LangChain). Eleven tools spanning price, indicators, fundamentals, options, insider activity, sentiment, and news. Two classical LLM pipelines included as additional voices. Runs locally on gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.\n\nRead more → · Hugging Face Spaces → · GitHub\n\n\n\n\n\n\n\n\nOverview — master ticker table and featured runs\n\n\n\n\n\n\nAgent Trace — step-by-step reasoning and tool calls\n\n\n\n\n\nArchitecture — data flow and core-mode pipeline\n\n\n\n\n\nRun Modal — provider, tickers, budget controls\n\n\n\n\n\nRun Analysis — price, indicators, run metadata\n\n\n\n\n\n\n\n\n\nOngoing · Infrastructure · Proxmox · Ollama\n\n\nSelf-Hosted ML Infrastructure\nA self-hosted ML platform — local LLM serving (Ollama), retrieval-augmented generation (AnythingLLM + self-hosted SearXNG), agent serving, and multimodal generation — running on a Proxmox host with GPU passthrough across CUDA and ROCm, plus a standalone GPU node. Local inference is the default path; provider-pluggable for Anthropic, Google, and others.\n\nRead more →\n\n\n\n\n\n\n\n\nSelf-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.\n\n\n\n\n\n\nMooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker.\n\n\n\n\n\nThree models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi.\n\n\n\n\n\nThe Proxmox host and its VM fleet.\n\n\n\n\n\n\n\n\n\n2024 · Generative Models · PyTorch\n\n\nMusic generation transformer\nDecoder-only generative transformer in PyTorch — small enough to be readable, big enough to learn something interesting. Dual-modality: text tokenizer for language modeling, MIDI tokenizer for music generation. Trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\nGoldberg Variations · 1\n\n\n\n\n\nGoldberg Variations · 2\n\n\n\n\n\nWell-Tempered Clavier\n\n\n\n\n\n\n\n2026 · Terminal · Rust\n\n\nMooseReader\nA featherweight terminal EPUB reader in Rust — keyboard-driven (h j k l), TrueColor themes (Dracula, Nord, Solarized, Catppuccin, Gruvbox), and percentage-based bookmarks. No electron shell, no heavyweight TUI framework — single-digit-megabyte footprint.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2022 · Simulation · Python · C++\n\n\nIsometric tiles\nA Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.\n\nRead more → · GitHub — Python · GitHub — C++\n\n\n\n\n\n\n\n\n\n\n2023 · Cryptography · Python\n\n\nEnigma machine emulator\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors, reflectors, and the plugboard modeled as first-class classes. Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Graphics · Python\n\n\nRaycasting renderer\nA from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind Wolfenstein 3D (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2019 · Game Engines · Unreal\n\n\nUnreal Engine cutscene experiment\nA video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.\n\nRead more →\n\n\n\n\n\n\n\n\n\n\n\n\n2024 · Mobile · Flutter · Swift\n\n\nSoundboard app\nA cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Web · Python\n\n\nOnline audio cutter\nA small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.\n\nRead more → · GitHub"
+    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI · Applied LLM Systems\n\n\nI build deep learning systems for drug discovery and medical imaging. Seven years at AstraZeneca R&D (2019 – 2026), with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nCurrently open to ML and applied-AI roles — best reached via LinkedIn.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nBefore AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) — chest vessel segmentation, 3D tumor segmentation, lung cancer prediction, ECG abnormality detection. Full project list →\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
+  },
+  {
+    "objectID": "index.html#recent",
+    "href": "index.html#recent",
+    "title": "Zhenning Zhang",
+    "section": "Recent",
+    "text": "Recent"
+  },
+  {
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
+    "title": "Zhenning Zhang",
+    "section": "Selected work",
+    "text": "Selected work"
+  },
+  {
+    "objectID": "index.html#career-astrazeneca-2019-2026",
+    "href": "index.html#career-astrazeneca-2019-2026",
+    "title": "Zhenning Zhang",
+    "section": "Career — AstraZeneca, 2019 – 2026",
+    "text": "Career — AstraZeneca, 2019 – 2026"
+  },
+  {
+    "objectID": "index.html#more",
+    "href": "index.html#more",
+    "title": "Zhenning Zhang",
+    "section": "More",
+    "text": "More"
   },
   {
     "objectID": "projects.html",
@@ -364,53 +392,11 @@
     "text": "Demos\nAZ work is largely confidential. These demos from earlier work at Ann Arbor Algorithms remain publicly viewable.\n\n\nDash · 2018 – 2019\n\n\nPatient Info — disease prediction dashboard\n\n\n\nIntegrated dashboard for displaying lung-disease predictions and patient metadata. Built in Dash; produced from real data with a placeholder ECG panel due to data availability constraints.\n\nLive demo on Hugging Face Spaces →\n\n\n\n\n\nDICOM viewer · 2018 – 2019\n\n\nPapaya — lung-nodule DICOM viewer\n\n\n\nDockerized lung-cancer nodule detection with 3D DICOM visualization. Volumes load slowly — expect 1–2 minutes per case after click. Case 1 is the smallest and quickest to load.\n\nCase 1 · Case 2 · Case 3 · Case 4\n\n\n\n\n\nthree.js · 2018 – 2019\n\n\nPlaque — chest-vessel atherosclerosis 3D viewer\n\n\n\nInteractive three.js viewer for chest-vessel classification and atherosclerosis detection. Two cases included.\n\nLive demo\n\n\n\nFor personal projects and side builds, see Tinkering."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Zhenning Zhang",
+    "objectID": "tinkering.html",
+    "href": "tinkering.html",
+    "title": "Tinkering",
     "section": "",
-    "text": "Zhenning Zhang\n\n\nMachine Learning Engineer · Medical AI · Applied LLM Systems\n\n\nI build deep learning systems for drug discovery and medical imaging. Seven years at AstraZeneca R&D (2019 – 2026), with peer-reviewed work in Patterns and four AACR poster presentations. M.S. Bioinformatics, University of Michigan.\n\n\nCurrently open to ML and applied-AI roles — best reached via LinkedIn.\n\n\nSelected work   ·   Publications   ·   CV (PDF)   ·   LinkedIn\nBefore AZ: Software Engineer at Ann Arbor Algorithms (2018 – 2019) — chest vessel segmentation, 3D tumor segmentation, lung cancer prediction, ECG abnormality detection. Full project list →\nFor the full list of professional work, personal projects, and writing, see all work or the publications page.\nFor collaboration, hiring, or conversations: reach me on LinkedIn or via the contact details on my CV."
-  },
-  {
-    "objectID": "index.html#recent",
-    "href": "index.html#recent",
-    "title": "Zhenning Zhang",
-    "section": "Recent",
-    "text": "Recent"
-  },
-  {
-    "objectID": "index.html#selected-work",
-    "href": "index.html#selected-work",
-    "title": "Zhenning Zhang",
-    "section": "Selected work",
-    "text": "Selected work"
-  },
-  {
-    "objectID": "index.html#career-astrazeneca-2019-2026",
-    "href": "index.html#career-astrazeneca-2019-2026",
-    "title": "Zhenning Zhang",
-    "section": "Career — AstraZeneca, 2019 – 2026",
-    "text": "Career — AstraZeneca, 2019 – 2026"
-  },
-  {
-    "objectID": "index.html#more",
-    "href": "index.html#more",
-    "title": "Zhenning Zhang",
-    "section": "More",
-    "text": "More"
-  },
-  {
-    "objectID": "STATUS.html",
-    "href": "STATUS.html",
-    "title": "Zhenning Zhang",
-    "section": "",
-    "text": "Not filled in yet. First agent session in this repo, before other work: 1. Fill in the frontmatter above (phase, next, blocked_on) from this repo’s own docs, history and current state. 2. File the real open work as GitHub issues with the standard labels (type, readiness, size). Mark anything that needs Frank’s call needs-decision with the question in the body. 3. Replace this note with a short “where we left off”."
-  },
-  {
-    "objectID": "STATUS.html#where-we-left-off",
-    "href": "STATUS.html#where-we-left-off",
-    "title": "Zhenning Zhang",
-    "section": "",
-    "text": "Not filled in yet. First agent session in this repo, before other work: 1. Fill in the frontmatter above (phase, next, blocked_on) from this repo’s own docs, history and current state. 2. File the real open work as GitHub issues with the standard labels (type, readiness, size). Mark anything that needs Frank’s call needs-decision with the question in the body. 3. Replace this note with a short “where we left off”."
+    "text": "§ Personal · Outside the day job\n\nThe stuff I build for the fun of figuring it out — generative models, agentic exploration, game-related stuffs, terminal toys, and small simulations.\nFor professional work, see Work.\n\n\n\n2026 · Agentic AI · Python · Streamlit\n\n\nTrader Advisor — agentic stock research\nAn LLM agent that researches stocks by autonomously calling tools — picks its own data sources during the investigation, with a tool-call quota and hand-rolled loop (no LangChain). Eleven tools spanning price, indicators, fundamentals, options, insider activity, sentiment, and news. Two classical LLM pipelines included as additional voices. Runs locally on gpt-oss:20b via Ollama; provider-pluggable for Anthropic, OpenAI, Google.\n\nRead more → · Hugging Face Spaces → · GitHub\n\n\n\n\n\n\n\n\nOverview — master ticker table and featured runs\n\n\n\n\n\n\nAgent Trace — step-by-step reasoning and tool calls\n\n\n\n\n\nArchitecture — data flow and core-mode pipeline\n\n\n\n\n\nRun Modal — provider, tickers, budget controls\n\n\n\n\n\nRun Analysis — price, indicators, run metadata\n\n\n\n\n\n\n\n\n\nOngoing · Infrastructure · Proxmox · Ollama\n\n\nSelf-Hosted ML Infrastructure\nA self-hosted ML platform — local LLM serving (Ollama), retrieval-augmented generation (AnythingLLM + self-hosted SearXNG), agent serving, and multimodal generation — running on a Proxmox host with GPU passthrough across CUDA and ROCm, plus a standalone GPU node. Local inference is the default path; provider-pluggable for Anthropic, Google, and others.\n\nRead more →\n\n\n\n\n\n\n\n\nSelf-hosted inference platform — Proxmox host serving local LLMs to several client apps, with a standalone node for diffusion.\n\n\n\n\n\n\nMooseLLM (AnythingLLM) against the local model roster, supporting services up in Docker.\n\n\n\n\n\nThree models resident on the RTX Pro 6000 under load — ollama ps and nvidia-smi.\n\n\n\n\n\nThe Proxmox host and its VM fleet.\n\n\n\n\n\n\n\n\n\n2024 · Generative Models · PyTorch\n\n\nMusic generation transformer\nDecoder-only generative transformer in PyTorch — small enough to be readable, big enough to learn something interesting. Dual-modality: text tokenizer for language modeling, MIDI tokenizer for music generation. Trained on Bach’s Goldberg Variations and The Well-Tempered Clavier.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\nGoldberg Variations · 1\n\n\n\n\n\nGoldberg Variations · 2\n\n\n\n\n\nWell-Tempered Clavier\n\n\n\n\n\n\n\n2026 · Terminal · Rust\n\n\nMooseReader\nA featherweight terminal EPUB reader in Rust — keyboard-driven (h j k l), TrueColor themes (Dracula, Nord, Solarized, Catppuccin, Gruvbox), and percentage-based bookmarks. No electron shell, no heavyweight TUI framework — single-digit-megabyte footprint.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2022 · Simulation · Python · C++\n\n\nIsometric tiles\nA Game-of-Life-inspired tile simulation. Blue and red blocks move, multiply, and decay over an isometric grid. Written in Python first, then ported to C++ for larger grids and faster step rates.\n\nRead more → · GitHub — Python · GitHub — C++\n\n\n\n\n\n\n\n\n\n\n2023 · Cryptography · Python\n\n\nEnigma machine emulator\nObject-oriented Python 3 emulation of the Enigma M3 cipher machine, with rotors, reflectors, and the plugboard modeled as first-class classes. Settings are reproducible — encrypt-then-decrypt round trips verify cleanly.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Graphics · Python\n\n\nRaycasting renderer\nA from-scratch raycasting renderer in Python and PyQt5 — the rendering technique behind Wolfenstein 3D (1992). Casts rays per pixel column over a 2D map and computes wall heights from intersection distance.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n2019 · Game Engines · Unreal\n\n\nUnreal Engine cutscene experiment\nA video cutscene and physics-driven object-movement experiment in Unreal Engine 4.22, with raytracing enabled. Built from royalty-free assets — the focus was the scripting and rendering pipeline rather than original art.\n\nRead more →\n\n\n\n\n\n\n\n\n\n\n\n\n2024 · Mobile · Flutter · Swift\n\n\nSoundboard app\nA cross-platform soundboard with audio mixing, shuffling, video playback, and motion control. Started as a Swift 5 iOS prank; rewritten in Flutter to ship the same UI on macOS, Windows, and Linux from one codebase.\n\nRead more → · GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n2023 · Web · Python\n\n\nOnline audio cutter\nA small Dash web service that extracts audio clips from pre-defined videos by time interval. Built to feed source material into the Soundboard app without round-tripping through a desktop editor.\n\nRead more → · GitHub"
   },
   {
     "objectID": "about.html",
